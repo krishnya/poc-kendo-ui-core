@@ -1,0 +1,397 @@
+﻿@page
+@using AdminDashboard.Data.Models.Categories
+@model AdminDashboard.Pages.ProfileModel
+@{
+    Layout = "/Pages/Shared/_AppLayout.cshtml";
+    ViewData["Title"] = "Profile";
+}
+
+<script id="info-template" type="text/html">
+    <kendo-tabstrip name="tabstrip" on-select="onTabSelect" is-in-client-template=true>
+        <popup-animation enabled=false>
+            </popup-animation>
+        <items>
+            <tabstrip-item text='<button class="k-selected k-button k-button-md k-button-rectangle k-rounded-null k-button-flat k-button-flat-primary"><span class="k-icon k-i-user k-button-icon"></span><span class="k-button-text">Account</span></button>' selected="true" encoded=false>
+                <content>
+                <div id="account">
+                        <div class="k-d-flex-col">
+                    <div style="margin-bottom: 16px;">
+                            <div class="formTitle">USERNAME</div>
+                            <kendo-form name="UserDetailsForm" 
+                                    form-data="@Model.UserDetails" 
+                                    layout="grid" 
+                                    buttons-template=" " 
+                                    method="POST" 
+                                    class="settingsForm"
+                                    on-change="onChange"
+                                    is-in-client-template=true>
+                                <validatable validate-on-blur="false" validation-summary="false" />
+                                <grid cols="2" gutter="20" />
+                                <form-items>
+                                    <form-item field="Username">
+                                        <item-label text="Username" />
+                                    </form-item>
+                                    <form-item field="Email">
+                                        <item-label text="Email Address" />
+                                    </form-item>
+                                    <form-item field="Nickname">
+                                        <item-label text="Nickname" />
+                                    </form-item>
+                                    <form-item field="Phone">
+                                        <item-label text="Phone Number" />
+                                        <maskedtextbox-editor mask="(+9) 0000-000-00-00"></maskedtextbox-editor>
+                                    </form-item>
+                                </form-items>
+                            </kendo-form>
+                    </div>
+           
+                    <div style="margin-bottom: 16px;">
+                        <div class="formTitle">INFORMATION</div>
+                        <kendo-form name="UserInformationForm" 
+                                form-data="@Model.UserInformation" 
+                                layout="grid" 
+                                buttons-template=" " 
+                                method="POST" 
+                                class="settingsForm"
+                                on-change="onChange"
+                                is-in-client-template=true>
+                            <validatable validate-on-blur="false" validation-summary="false" />
+                            <grid cols="2" gutter="20" />
+                            <form-items>
+                                <form-item field="BirthDate">
+                                    <item-label text="BirthDate" />
+                                    <datepicker-editor date-input="true" format="{0:MM|dd|yy}" />
+                                </form-item>
+                                <form-item field="Country">
+                                    <item-label text="Country" />
+                                    <dropdownlist-editor datatextfield="Text" datavaluefield="Value" bind-to="Model.CountryOptions"></dropdownlist-editor>
+                                </form-item>
+                                <form-item field="Website">
+                                    <item-label text="Website" />
+                                </form-item>
+                                <form-item field="WorkPhone">
+                                    <item-label text="Phone Number" />
+                                    <maskedtextbox-editor mask="(+9) 0000-000-00-00"></maskedtextbox-editor>
+                                </form-item>
+                            </form-items>
+                        </kendo-form>
+                    </div>
+
+                    <div style="margin-bottom: 16px;">
+                        <div class="formTitle">SECURITY</div>
+                        <kendo-form name="SecurityForm" 
+                                form-data="@Model.UserSecurityDetails" 
+                                layout="grid" 
+                                buttons-template=" " 
+                                orientation="horizontal"
+                                method="POST" 
+                                class="settingsForm"
+                                on-change="onChange"
+                                is-in-client-template=true>
+                            <validatable validate-on-blur="false" validation-summary="false" />
+                            <grid cols="1" gutter="20" />
+                            <form-items>
+                                <form-item field="CurrentPassword" html-attributes='new Dictionary<string, object> { { "type", "password" } }' hint="You can only change your password once within 48 hours." >
+                                    <item-label text="Current Password" />
+                                </form-item>
+                                <form-item field="NewPassword" html-attributes='new Dictionary<string, object> { { "type", "password" } }' hint="Password must contain an uppercase character, lowercase character, a digit, and a non-alphanumeric character and be at least six characters long.">
+                                    <item-label text="New Password" />
+                                </form-item>
+                                <form-item field="Enable2FA">
+                                    <item-label text="Enable 2-step authentication" />
+                                    <switch-editor></switch-editor>
+                                </form-item>
+                                <form-item field="RequestChange">
+                                    <item-label text="Ask to change password on every 6 months" />
+                                    <switch-editor></switch-editor>
+                                </form-item>
+                            </form-items>
+                        </kendo-form>
+                    </div>
+                    </div>
+                </div>
+                </content>
+            </tabstrip-item>
+        </items>
+    </kendo-tabstrip>
+    <div class="k-hstack" style="padding: 0px 16px;">
+        <div id=profileSwitch> Public Profile
+            <kendo-switch name=publicProfile on-change="onChange" checked=true is-in-client-template=true></kendo-switch>
+        </div>
+        <div class="k-spacer"></div>
+        <div style="float: right;">
+            <kendo-button name="cancelButton" on-click="onCancelClick" fill-mode=ButtonFillMode.Flat shape=ComponentShape.Rectangle enable=false is-in-client-template=true>Cancel</kendo-button>
+            <kendo-button name="save" on-click="onSaveClick" fill-mode=ButtonFillMode.Solid theme-color=ThemeColor.Primary shape=ComponentShape.Rectangle enable=false is-in-client-template=true type="submit" >Save Changes</kendo-button>
+        </div>
+    </div>
+</script>
+
+<script id="date-template" type="text/html">
+    <div style="display:flex; justify-content:center; flex-direction:row; align-content:center">
+        <kendo-calendar name="calendar" component-type="modern" week-number="true" is-in-client-template="true"></kendo-calendar>
+    </div>
+</script>
+
+<script id="weather-header-template" type="text/html">
+    <span class="k-card-title">Weather</span>
+    <span class="k-spacer k-toolbar-spacer"></span>
+    <a class="k-card-title k-link" style="float: right; color: \\#0058E9 "><span class="k-icon k-i-globe" style="margin-right:9px;"></span><span>Sofia</span></a>
+</script>
+
+<script id="weather-template" type="text/html">
+    <div class="k-d-flex-col k-align-items-center k-justify-content-around">
+        <div style="width: 100px; height: 100px; background-image: url(@Url.Content("~/assets/settings/cloud.svg"))"></div>
+        <div class="k-disabled">Partly Cloudy</div>
+        <div style="font-size: 70px; font-weight: 300; line-height: 84px; color: \\#0058E9">12 &\\#176;C</div>
+    </div>
+    <div class="k-card-footer">
+        <div class="weather-data-container k-d-flex-row k-align-items-center k-justify-content-center">
+            <div>
+                Humidity:<br>
+                Dew:<br>
+                Pressure:<br>
+                Wind Speed:
+            </div>
+            <div>
+                76%<br>
+                2˚C<br>
+                1031mb<br>
+                12km/h NW
+            </div>
+        </div>
+    </div>
+</script>
+
+<kendo-tilelayout name="settings" columns="3" resizable="true" reorderable="true" columns-width="33%" rows-height="auto">
+    <containers>
+        <container body-template-id="info-template" col-span="2" row-span="2">
+        </container>
+        <container body-template-id="date-template" col-span="1" row-span="1">
+            <container-header template='<span class="k-card-title">Date</span>' />
+        </container>
+        <container body-template-id="weather-template" col-span="1" row-span="1">
+            <container-header template-id="weather-header-template" />
+        </container>
+    </containers>
+</kendo-tilelayout>
+
+<kendo-dialog name="dialog" visible=false title="Success">
+    <content>
+        Updates submitted successfully!
+    </content>
+</kendo-dialog>
+
+<kendo-dialog name="detailsDialog" visible=false title="Plan Details">
+</kendo-dialog>
+
+<script>
+ 
+
+    $(document).ready(function(){
+        $("input[name='CurrentPassword']").closest(".k-form-field").css("display", "block");
+        $("input[name='CurrentPassword']").closest(".k-textbox").width("65%");
+        $("input[name='NewPassword']").closest(".k-form-field").css("display", "block");
+        $("input[name='NewPassword']").closest(".k-textbox").width("65%");
+    })
+    function onChange(){
+        enableButtons(true);
+    }
+    function enableButtons(arg) {
+        $("#cancelButton").data("kendoButton").enable(arg);
+        $("#save").data("kendoButton").enable(arg);
+      }
+    function onTabSelect(e){
+        var tabstrip = e.sender;
+        $(tabstrip.tabGroup).find("button.k-selected").removeClass("k-selected");
+        $(e.item).find("button").addClass("k-selected");
+
+        if($(e.item).index() != 0){
+            $("#profileSwitch").hide()
+        } else 
+        {
+            $("#profileSwitch").show()
+        }
+    }
+    function onCancelClick(e) {
+        var formElements = $("#tabstrip").find(".k-widget.k-form");
+        formElements.each((idx, elm)=>$(elm).getKendoForm().clear());
+        
+        $("#publicProfile").data("kendoSwitch").check(true);
+        
+        enableButtons(false);
+    }
+    function onSaveClick(){
+        //handle forms and submit content
+        //refer to teh followind documentation article for details https://docs.telerik.com/aspnet-core/html-helpers/layout/form/razor-page
+        $("#dialog").data("kendoDialog").open();
+        enableButtons(false);
+    }
+      
+    
+    function toggleAllChange(e){
+        var switchValue = e.sender.check();
+        var alertsFormData = $("#alertsForm").data("kendoForm").options.formData;
+        var emailsFormData = $("#emailsForm").data("kendoForm").options.formData
+
+        for (const key of Object.keys(alertsFormData)) {
+          alertsFormData[key] = switchValue;
+        }
+
+        $("#alertsForm").data("kendoForm").setOptions({
+          formData: alertsFormData
+        });
+
+        for (const key of Object.keys(emailsFormData)) {
+          emailsFormData[key] = switchValue;
+        }
+
+        $("#emailsForm").data("kendoForm").setOptions({
+          formData: emailsFormData
+        });
+
+        enableButtons(true);
+    }
+
+    function selectCard(e) {
+        $(".selected").removeClass("selected");
+        $(e.target).closest(".k-card-type-rich").addClass("selected");
+    }
+
+    function forgeryToken() {
+        return kendo.antiForgeryTokens();
+    }
+
+    function grid_error(e) {
+        var errors = e.errors;
+        if (errors) {
+            var grid = $("#grid").data("kendoGrid");
+            grid.one("dataBinding", function (e) {
+                e.preventDefault();
+                $.each(errors, function (key, value) {
+                    var message = "";
+                    if ('errors' in value) {
+                        $.each(value.errors, function () {
+                            message += this + "\n";
+                        });
+                    }
+
+                    // As long as the key matches the field name, this line of code will be displayed as validation message in the popup.
+                    grid.editable.element.find("[data-valmsg-for='" + key + "']").replaceWith('<div class="k-tooltip k-tooltip-error k-validator-tooltip k-invalid-msg field-validation-error" ><span class="k-tooltip-icon k-icon k-i-warning"></span><span class="k-tooltip-content">' + message + '</span><span class="k-callout k-callout-n"></span></div>').show();
+                });
+            });
+        }
+    }
+
+</script>
+<style>
+    @@media only screen and (max-width: 600px) {
+        .k-tilelayout-item.k-card {
+            grid-column-end: span 3 !important;
+        }
+
+        .k-grid-cols-2 {
+            grid-template-columns: repeat(1,minmax(0,1fr));
+        }
+        .k-form-horizontal .k-form-field>.k-form-label, .k-form-horizontal .k-form-field>.k-label, .k-form-horizontal .k-form-field>kendo-label{
+            text-align: start;
+        }
+    }
+    #settings .k-card-header {
+        border-style: none;
+    }
+    .weather-data-container {
+        padding: 8px 0px 0px;
+        gap: 18px
+    }
+    .weather-data-container > div {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .weather-data-container > div:nth-child(1) {
+        font-weight: bold;
+        text-align: right;
+    }
+    /*FORMS*/
+    #UserInformationForm > div.k-form-buttons{
+        justify-content:space-between;
+    }
+    .formTitle {
+        color: #8F8F8F;
+        padding: 16px 0px 8px 0px;
+        font-size: 12px;
+      }
+      .settingsForm {
+        background-color: #fafafa;
+        padding: 0px 16px 0px 16px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+      }
+      .k-form-horizontal .k-form-field>.k-form-label {
+        align-items: flex-start;
+        width: 85%;
+      }
+      #NewPassword-form-hint{
+          width:65%;
+      }
+      .alertSubLabel {
+        color: #8F8F8F;
+      }
+    /*TABSTRIP*/
+    .k-tabstrip-items-wrapper .k-item.k-active, .k-tabstrip-items-wrapper .k-item.k-selected, .k-tabstrip-items-wrapper .k-item:active{
+        border-color:transparent;
+    }
+    .k-tabstrip-top>.k-tabstrip-items-wrapper .k-item.k-active{
+        border-bottom-color: rgba(0, 0, 0, 0.08);
+    }
+    .k-tabstrip-content, .k-tabstrip>.k-content {
+        border-color:transparent;
+    }
+
+    /*CARDS*/
+    #cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .k-card-type-rich {
+        min-width: 160px;
+        flex-grow: 1;
+        padding: 8px 16px;
+        justify-content: space-between;
+    }
+
+    .plan-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 8px 8px 0px;
+    }
+
+    .plan-title {
+        font-family: Roboto;
+        font-size: 20px;
+        color: #424242;
+    }
+
+    .body-label {
+        text-align: center;
+        font-weight: 300;
+        font-size: 28px;
+    }
+
+    .plan-footer {
+        color: #8F8F8F;
+        font-weight: 400;
+        font-size: 12px;
+        border-width: 0px;
+        align-self: center;
+    }
+    .selected {
+        border: 1px solid #37B400;
+      }
+
+</style>

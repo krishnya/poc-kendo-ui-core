@@ -1,0 +1,145 @@
+﻿@page
+@using AdminDashboard.Data.Models.Payments
+@model AdminDashboard.Pages.PaymentsModel
+@{ 
+    Layout = "/Pages/Shared/_AppLayout.cshtml";
+    ViewData["Title"] = "Payments";
+}
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+@Html.AntiForgeryToken()
+
+
+<div class="tile">
+    <div class="k-card">
+        <div class="k-card-body">
+            @(Html.Kendo().Grid<Payment>().Name("paymentGrid")
+                .Sortable()
+                .Editable(mode => mode.Mode(GridEditMode.PopUp))
+                .Scrollable()
+                .ToolBar(x =>
+                {
+                    x.Create();
+                    x.Excel();
+                })
+                .Columns(columns =>
+                {
+                    columns.Bound(p => p.Id).Hidden();
+                    columns.Bound(p => p.Amount);                    
+                    columns.Command(column =>
+                    {
+                        column.Edit();
+                        column.Destroy();
+                    });
+                })
+                .Excel(excel => excel
+                .FileName("Export.xlsx")
+                .Filterable(true)
+                .ProxyURL("/Payments?handler=Save")
+                )
+                .DataSource(ds => ds.Ajax()
+                .Read(r => r.Url("/Payments?handler=Read").Data("forgeryToken"))
+                .Update(u => u.Url("/Payments?handler=Update").Data("forgeryToken"))
+                .Create(c => c.Url("/Payments?handler=Create").Data("forgeryToken"))
+                .Destroy(d => d.Url("/Payments?handler=Destroy").Data("forgeryToken"))
+                .Model(m =>
+                {
+                    m.Id(id => id.Id);
+                    m.Field(f => f.Id).Editable(false);
+                })
+                .Events(events => events.Error("grid_error")) // Handle the "error" event.
+                .PageSize(10)
+                )
+                .Pageable()
+                )
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function forgeryToken() {
+        return kendo.antiForgeryTokens();
+    }
+
+    function grid_error(e) {
+        var errors = e.errors;
+        if (errors) {
+            var grid = $("#paymentGrid").data("kendoGrid");
+            grid.one("dataBinding", function (e) {
+                e.preventDefault();
+                $.each(errors, function (key, value) {
+                    var message = "";
+                    if ('errors' in value) {
+                        $.each(value.errors, function () {
+                            message += this + "\n";
+                        });
+                    }
+
+                    // As long as the key matches the field name, this line of code will be displayed as validation message in the popup.
+                    grid.editable.element.find("[data-valmsg-for='" + key + "']").replaceWith('<div class="k-tooltip k-tooltip-error k-validator-tooltip k-invalid-msg field-validation-error" ><span class="k-tooltip-icon k-icon k-i-warning"></span><span class="k-tooltip-content">' + message + '</span><span class="k-callout k-callout-n"></span></div>').show();
+                });
+            });
+        }
+    }
+</script>
+
+<style>
+    /*   .wrapper {
+                height: 455px;
+                margin: 20px auto;
+                padding: 20px 0 0 0;
+                # background: url('https://demos.telerik.com/kendo-ui/content/web/tabstrip/bmw.png') no-repeat center 60px transparent;
+            } */
+    .tile {
+        background-color: #f5f5f5; /* light gray */
+        padding: 16px;
+        border-radius: 5px;
+    }
+
+    #tabstrip-container {
+        background-color: lightgray;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    /*    #tabstrip {
+                max-width: 400px;
+                float: left;
+                margin-bottom: 20px;
+            } */
+
+    #tabstrip .k-content {
+        height: 50vh !important;
+        overflow: auto;
+    }
+
+    .specification {
+        max-width: 670px;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+        .specification dt, dd {
+            max-width: 140px;
+            float: left;
+            margin: 0;
+            padding: 5px 0 8px 0;
+        }
+
+        .specification dt {
+            clear: left;
+            width: 100px;
+            margin-right: 7px;
+            padding-right: 0;
+            opacity: 0.7;
+        }
+
+        .specification:after, .wrapper:after {
+            content: ".";
+            display: block;
+            clear: both;
+            height: 0;
+            visibility: hidden;
+        }
+</style>

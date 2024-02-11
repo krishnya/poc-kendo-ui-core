@@ -1,0 +1,219 @@
+﻿@using AdminDashboard.Data.Models
+@inject UserManager<ApplicationUser> userManager
+@{
+    Layout = "/Pages/Shared/_Layout.cshtml";
+    var routeUrl = Url.RouteUrl(ViewContext.RouteData.Values);
+}
+
+<kendo-drawer name="drawer" mode="push" width="240" position="left" template-id="drawerTemplate" auto-collapse="false" on-item-click="onItemClick">
+    <mini enabled="false" />
+    <content>
+        <div>
+            <main role="main">
+                <kendo-appbar name="appbar" theme-color="AppBarThemeColor.Inherit" style="height:48px;">
+                    <items>
+                        <appbar-item type="AppBarItemType.ContentItem" template="<a id='menuIcon' href='\\#' class='k-button k-button-md k-button-rectangle k-rounded-md k-button-flat' onclick='toggleDrawer()'><span class='k-icon k-i-menu'></span></a>"></appbar-item>
+                        <appbar-item type="AppBarItemType.Spacer" width="16px"></appbar-item>
+                        <appbar-item type="AppBarItemType.ContentItem" template="<div class='title'>@ViewData["Title"]</div>"></appbar-item>
+                        <appbar-item type="AppBarItemType.Spacer"></appbar-item>
+                        <appbar-item type="AppBarItemType.ContentItem" template="<div class='app-bar-link'><span class='k-icon k-i-notification'><span data-role='badge' class='k-badge k-badge-solid k-badge-error k-badge-md k-badge-dot k-badge-outside k-top-end'></span></span></div>"></appbar-item>
+                        <appbar-item type="AppBarItemType.Spacer" width="8px"></appbar-item>
+                        <appbar-item type="AppBarItemType.ContentItem" template="<a href='@Url.Page("About")' class='app-bar-link'>About</a>"></appbar-item>
+                    </items>
+                </kendo-appbar>
+                @RenderBody()
+            </main>
+        </div>
+    </content>
+</kendo-drawer>
+
+<kendo-popover for="#appbar" 
+    filter=".k-i-notification" 
+    show-on="click" 
+    width="400" 
+    height="392" 
+    position="bottom"
+    header-handler="headerHandler"
+    body-handler="bodyHandler"
+    on-show="onPopOverShow"
+    >
+</kendo-popover>
+<script id="drawerTemplate" type="text/html">
+    <div class="k-d-flex-col k-align-items-center k-justify-content-evenly" style="height:220px;">
+        <div class="k-avatar k-avatar-circle k-avatar-image k-avatar-lg" id="avatar"><a asp-page="/Profile"><img src='@Url.Content("~/assets/navigation/Avatar.svg")' /></a></div>
+        <div id="name">@userManager.GetUserAsync(User).Result.FullName</div>
+        <div id="email">@userManager.GetUserAsync(User).Result.Email</div>
+
+        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+            <button type="submit" class="k-button k-button-md k-button-rectangle k-rounded-md k-button-solid k-button-solid-base">Sign Out</button>
+        </form>
+    </div>
+    <ul>
+        <li data-role='drawer-item'><a asp-page="/Index"><span class="k-icon k-i-grid "></span>Dashboard</a></li>
+        <li data-role='drawer-item'><a asp-page="/Members"><span class="k-icon k-i-globe"></span>Members</a></li>
+        <li data-role='drawer-item'><a asp-page="/Payments"><span class="k-icon k-i-aggregate-fields"></span>Payments</a></li>        
+        <li data-role='drawer-separator'></li>
+        <li data-role='drawer-item'><a asp-page="/Settings"><span class="k-icon k-i-gear"></span>Settings</a></li>
+        <li data-role='drawer-item'><a asp-page="/Profile"><span class="k-icon k-i-user"></span>Profile</a></li>
+    </ul>
+</script>
+
+<script id="notification-body" type="text/x-kendo-template">       
+        <button id="mark-as-read" style="margin: 15px 15px 0px 0px; background-color: \#FFFFFF; border-color: \#FF6358; color:\#FF6358; width: 165px; float: right;">Mark all as read</button>
+</script>
+
+<script id="notification-header" type="text/x-kendo-template">
+    <div class="k-hstack">
+        <div style="font-size: 19px">Notifications</div>
+        <div class="k-spacer"></div>
+        <div id="new-count">2 New</div>
+    </div>
+    </script>
+
+<style>
+    #name {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    #email {
+        font-size: 12px;
+        text-decoration-line: underline;
+    }
+
+    #menuIcon {
+        cursor: pointer;
+    }
+
+    .title {
+        font-size: 18px;
+        line-height: 20px;
+        color: #2D73F5;
+    }
+
+    .app-bar-link {
+        font-size: 14px;
+        line-height: 20px;
+        color: #424242;
+        cursor: pointer;
+        text-decoration:none;
+    }
+
+    li[data-role='drawer-item'] > a {
+        color: #424242;
+    }
+
+    li.k-selected[data-role='drawer-item'] > a {
+        color: #FFFFFF;
+    }
+    .k-drawer-item > a {
+        text-decoration: none;
+    }
+     
+    .k-popover-callout {
+            display: none;
+    }
+
+    .k-popover-body {
+        padding: 0px;
+    }
+
+    .customer-name {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 3 px;
+    }
+    @@media (max-width: 716px) {
+        .k-drawer-wrapper {
+            transition: none;
+        }
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        //highlight selected Drawer item on page load
+        $('a[href="@routeUrl"]').parent().addClass('k-selected');
+
+        //show Drawer as expanded on page load
+        $('.k-drawer-container').addClass('k-drawer-expanded');
+        $('.k-drawer-wrapper').css('width', '240px');
+        
+        if ($(window).width() < 600) {
+            $("#drawer").getKendoDrawer().hide()
+            $('.k-drawer-container').removeClass('k-drawer-expanded');
+            updateCategoryAxisLabels();
+            kendo.resize($(".k-chart"))
+        }
+
+        resizeWidgets()
+
+        $(window).resize(function () {
+            resizeWidgets()
+        })
+    })
+
+    function toggleDrawer() {
+        var drawerInstance = $("#drawer").getKendoDrawer();
+        var drawerContainer = drawerInstance.drawerContainer;
+        if (drawerContainer.hasClass("k-drawer-expanded")) {
+            drawerInstance.hide();
+            $('.k-drawer-container').removeClass('k-drawer-expanded');
+        } else {
+            drawerInstance.show();
+        }
+        
+        //resize widgets after Drawer animmation has completed
+        setTimeout(resizeWidgets,400)
+    }
+    function onItemClick(e) {
+        if (!e.item.hasClass("k-drawer-separator")) {
+            var targetPage = e.item.find("a").attr("href");
+            window.location.href = targetPage;
+        }
+    }
+
+    function resizeWidgets() {
+        var charts = $(".k-chart");
+        if (charts) {
+            charts.each((idx, elem) => $(elem).getKendoChart().resize(true))
+        }
+
+        var grid = $(".k-grid");
+        if (grid) {
+            grid.each((idx, elem) => $(elem).getKendoGrid().resize(true))
+        }
+    }
+
+    function headerHandler(e){
+        var template = kendo.template($("#notification-header").html())
+        var result = template({});
+        return result;
+    }
+    function bodyHandler(e){
+        var template = kendo.template($("#notification-body").html())
+        var result = template({});
+        return result;
+    }
+    function onPopOverShow(e){
+        $("#new-count").kendoBadge({
+            themeColor: "warning",
+            shape: "rectangle"
+        });
+
+        $('.badge-missed').kendoBadge({
+            themeColor: 'warning',
+            shape: 'circle',
+            size: 'small'
+        });
+
+        $("#mark-as-read").kendoButton({
+            click: function () {
+                $(".k-badge-dot").remove();
+                $('.badge-missed').remove();
+                $("#new-count").text("0 New");
+                $(".notification-item").css("background-color", "rgba(66, 66, 66, 0.04)")
+            }
+        });
+    }
+</script>

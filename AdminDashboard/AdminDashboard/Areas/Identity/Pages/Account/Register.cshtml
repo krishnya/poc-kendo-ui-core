@@ -1,0 +1,106 @@
+﻿@page "/Signup"
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "Shared/_SignInLayout.cshtml";
+    var token = Xsrf.GetAndStoreTokens(HttpContext).RequestToken;
+}
+
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+@Html.AntiForgeryToken()
+
+<div class="form-container k-d-flex-col k-align-items-center k-justify-content-center">
+    <div class="logo-container k-d-flex-col k-align-items-center k-justify-content-center">
+        <img src="@Url.Content("~/assets/signin/signin.svg")" />
+        <div class="signin k-justify-content-center">Sign Up</div>
+        <div class="register k-d-flex-row k-justify-content-evenly"><span>Already have an account?</span> <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Sign In</a></div>
+    </div>
+    <kendo-form name="Register"
+                form-data="Model.Input"
+                layout="grid"
+                buttons-template="<button class='k-button k-button-md k-button-rectangle k-rounded-md k-button-solid k-button-solid-primary' style='width:100%'>Create Free Account</button>"
+                method="post"
+                style="width:100%">
+        <validatable validate-on-blur="true" validation-summary="false" />
+        <grid cols="1" gutter="5" />
+        <form-items>
+            <form-item field="FullName">
+                <item-label text="Full Name:" />
+            </form-item>
+            <form-item field="Email">
+                <item-label text="Email:" />
+            </form-item>
+            <form-item field="Password" html-attributes='new Dictionary<string, object> { { "type", "password" },{"autocomplete","off" } }'>
+                <item-label text="Password:" />
+            </form-item>
+            <form-item field="Company">
+                <item-label text="Company:" />
+            </form-item>
+            <form-item field="AgreeToTerms">
+                <item-label encoded="false" text='<span>I agree to the <a href="#">Terms of Services</a> and <a href="\\#">Privacy Policy<a/>:</span>' />
+            </form-item>
+        </form-items>
+    </kendo-form>
+</div>
+<script>
+    $(document).ready(function(){
+        $("#Password").parent().append("<span class='k-icon k-i-preview'></span>");
+        $(".k-i-preview").mousedown(function(){
+
+            $("#Password").attr("type", "text");
+        })
+        $(".k-i-preview").mouseup(function(){
+
+            $("#Password").attr("type", "password");
+        })           
+    })
+</script>
+<style>
+    .logo-container {
+        gap: 32px;
+    }
+    .form-container {
+        width: 270px;
+    }
+
+        .form-container > div > span {
+            display: inherit;
+            position: static;
+            width: 75px;
+            left: calc(50% - 75px/2 + 97.5px);
+            border: 1px solid #8F8F8F;
+        }
+
+    .signin {
+        display: flex;
+        font-weight: 300;
+        font-size: 56px;
+        line-height: 67px;
+        color: #2727BE;
+    }
+
+    .register {
+        display: flex;
+        align-items: center;
+        color: #424242;
+        gap: 18px;
+    }
+
+    #Register > div.k-form-layout.k-d-grid.k-grid-cols-1 > div:nth-child(5) {
+        display: flex;
+    }
+
+    #AgreeToTerms-form-label {
+        order: 1;
+        padding-left: 0.5em;
+    }
+    .k-icon.k-i-preview {
+        z-index: 10;
+        position: absolute;
+        bottom: 2px;
+        right: 5px;
+        width: 24px;
+        height: 24px;
+        color:gray;
+    }
+</style>

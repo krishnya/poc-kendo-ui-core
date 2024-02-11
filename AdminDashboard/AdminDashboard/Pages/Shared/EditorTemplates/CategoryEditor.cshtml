@@ -1,0 +1,24 @@
+﻿@model AdminDashboard.Data.Models.Categories.Category
+@Html.HiddenFor(model => model.Id)
+<div class="k-edit-form-container">
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.CategoryName)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.CategoryName)
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.Code)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.Code)
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.Amount)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.Amount)
+    </div>
+</div>

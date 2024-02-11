@@ -1,0 +1,96 @@
+﻿@model AdminDashboard.Data.Models.Members.Member
+
+@Html.HiddenFor(model => model.Id)
+
+<div class="k-edit-form-container">
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.FirstName)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.FirstName)
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.LastName)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.LastName)
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.MiddleName)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.MiddleName)
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.Gender)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.Gender)
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.Phone)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.Phone)
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.Address)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.Address)
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.DateOfBirth)
+    </div>
+    <div class="k-edit-field">
+        @(Html.Kendo().DatePickerFor(model => model.DateOfBirth))
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.TitleId)
+    </div>
+    <div class="k-edit-field">
+        @(Html.Kendo().DropDownListFor(m => m.TitleId)
+            .ValuePrimitive(true)
+            .OptionLabel("Select Title..")
+            .DataValueField("Id")
+            .DataTextField("TitleName")
+            .DataSource(ds => ds.Read(read => read.Url(Url.Page("Settings", "GetTitles"))))
+            )
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.DateOfJoin)
+    </div>
+    <div class="k-edit-field">
+        @(Html.Kendo().DatePickerFor(model => model.DateOfJoin))
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.PassportNo)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.PassportNo)
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.AadharNo)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.AadharNo)
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.DrivingLicenseNo)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.DrivingLicenseNo)
+    </div>
+</div>
+

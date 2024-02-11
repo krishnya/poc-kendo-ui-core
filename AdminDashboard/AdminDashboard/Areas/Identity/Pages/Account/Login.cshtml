@@ -1,0 +1,114 @@
+﻿@page "/Login"
+@model LoginModel
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+@{
+    ViewData["Title"] = "Log in";
+    Layout = "Shared/_SignInLayout.cshtml";
+    var token = Xsrf.GetAndStoreTokens(HttpContext).RequestToken;
+}
+<div class="form-container k-d-flex-col k-align-items-center k-justify-content-center">
+    <div class="logo-container k-d-flex-col k-align-items-center k-justify-content-center">
+        <img src="@Url.Content("~/assets/signin/signin.svg")" />
+        <div class="signin k-justify-content-center">Sign In</div>
+        <div class="register k-d-flex-row k-justify-content-evenly"><span>Don't have an account?</span> <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Sign Up</a></div>
+    </div>
+    <kendo-form name="Login"
+                form-data="Model.Input"
+                layout="grid"
+                buttons-template="<button class='k-button k-button-md k-button-rectangle k-rounded-md k-button-solid k-button-solid-primary' style='width:100%'>Sign In</button>"
+                method="post"
+                style="width:100%">
+        <validatable validate-on-blur="true" validation-summary="false" />
+        <grid cols="1" gutter="5" />
+        <form-items>
+            <form-item field="Email">
+                <item-label text="Email:" />
+            </form-item>
+            <form-item field="Password" html-attributes='new Dictionary<string, object> { { "type", "password" },{"autocomplete","off" } }'>
+                <item-label text="Password:" />
+            </form-item>
+            <form-item field="RememberMe">
+                <item-label text="Remember Me:" />
+            </form-item>
+        </form-items>
+    </kendo-form>
+    <div style="padding:10px;" class="k-d-flex-row k-align-items-center k-justify-content-center">
+        <span style="flex: none; order: 0; flex-grow: 1; margin: 0px 9px;"></span>
+        <span style="border: none; width: 102px; font-size:14px">Or continue with</span>
+        <span style="flex: none; order: 2; flex-grow: 1; margin: 0px 9px;"></span>
+    </div>
+    <div class="button-container k-d-flex-row k-justify-content-evenly">
+        <kendo-button name="facebook" icon="facebook" class="k-flat k-secondary k-state-hover"></kendo-button>
+        <kendo-button name="twitter" icon="twitter" class="k-flat k-secondary k-state-hover"></kendo-button>
+        <kendo-button name="reddit" icon="reddit" class="k-flat k-secondary k-state-hover"></kendo-button>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#Password").parent().append("<span class='k-icon k-i-preview'></span>");
+        $(".k-i-preview").mousedown(function(){
+
+            $("#Password").attr("type", "text");
+        })
+        $(".k-i-preview").mouseup(function(){
+
+            $("#Password").attr("type", "password");
+        })           
+    })
+</script>
+
+<style>
+    .form-container {
+        width: 270px;
+    }
+
+        .form-container > div > span {
+            display: inherit;
+            position: static;
+            width: 75px;
+            left: calc(50% - 75px/2 + 97.5px);
+            border: 1px solid #8F8F8F;
+        }
+
+    .logo-container {
+        gap: 32px;
+    }
+
+    .signin {
+        display: flex;
+        font-weight: 300;
+        font-size: 56px;
+        line-height: 67px;
+        color: #2727BE;
+    }
+
+    .register {
+        display: flex;
+        align-items: center;
+        color: #424242;
+        gap: 18px;
+    }
+
+    .button-container {
+        width: 100%;
+    }
+
+    #Login > div.k-form-layout.k-d-grid.k-grid-cols-1 > div:nth-child(3) {
+        display: flex;
+    }
+
+    #RememberMe-form-label {
+        order: 1;
+        padding-left: 0.5em;
+    }
+    .k-icon.k-i-preview {
+        z-index: 10;
+        position: absolute;
+        bottom: 2px;
+        right: 5px;
+        width: 24px;
+        height: 24px;
+        color:gray;
+    }
+</style>

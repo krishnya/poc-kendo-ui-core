@@ -1,0 +1,25 @@
+﻿@model AdminDashboard.Data.Models.Titles.Title
+
+@Html.HiddenFor(model => model.Id)
+
+<div class="k-edit-form-container">
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.TitleName)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.TitleName)
+    </div>
+
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.CategoryId)
+    </div>
+    <div class="k-edit-field">
+        @(Html.Kendo().DropDownListFor(m => m.CategoryId)
+            .ValuePrimitive(true)
+            .OptionLabel("Select Category..")
+            .DataValueField("Id")
+            .DataTextField("CategoryName")
+            .DataSource(ds => ds.Read(read => read.Url(Url.Page("Settings", "GetCategories"))))
+            )
+    </div>
+</div>
