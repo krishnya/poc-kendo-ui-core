@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\mylearning\\admin-dashboard-sample-app-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj": {}
+    "D:\\Projects\\IMAF\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj": {}
   },
   "projects": {
-    "C:\\mylearning\\admin-dashboard-sample-app-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj": {
+    "D:\\Projects\\IMAF\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\mylearning\\admin-dashboard-sample-app-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj",
+        "projectUniqueName": "D:\\Projects\\IMAF\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj",
         "projectName": "AdminDashboard",
-        "projectPath": "C:\\mylearning\\admin-dashboard-sample-app-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj",
-        "packagesPath": "C:\\Users\\krishnya\\.nuget\\packages\\",
-        "outputPath": "C:\\mylearning\\admin-dashboard-sample-app-core\\AdminDashboard\\AdminDashboard\\obj\\",
+        "projectPath": "D:\\Projects\\IMAF\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj",
+        "packagesPath": "C:\\Users\\yammani\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\IMAF\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\krishnya\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\yammani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -70,6 +74,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Telerik.UI.for.AspNet.Core": {
               "target": "Package",

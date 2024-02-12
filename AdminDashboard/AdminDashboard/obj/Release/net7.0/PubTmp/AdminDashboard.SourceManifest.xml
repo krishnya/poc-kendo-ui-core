@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\mylearning\admin-dashboard-sample-app-core\AdminDashboard\AdminDashboard\obj\Release\net7.0\PubTmp\Out\" />
+  <IisApp path="D:\Projects\IMAF\poc-kendo-ui-core\AdminDashboard\AdminDashboard\obj\Release\net7.0\PubTmp\Out\" />
 </sitemanifest>

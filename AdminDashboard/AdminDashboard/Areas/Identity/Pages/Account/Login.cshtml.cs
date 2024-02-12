@@ -61,8 +61,8 @@ namespace AdminDashboard.Areas.Identity.Pages.Account
             {
                 Input = new InputModel()
                 {
-                    Email = "jaxons.danniels@company.com",
-                    Password = "User*123"
+                    //Email = "jaxons.danniels@company.com",
+                    //Password = "User*123"
 
                 };
             }
