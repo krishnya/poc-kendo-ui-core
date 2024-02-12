@@ -220,12 +220,33 @@
         
         enableButtons(false);
     }
-    function onSaveClick(){
-        //handle forms and submit content
-        //refer to teh followind documentation article for details https://docs.telerik.com/aspnet-core/html-helpers/layout/form/razor-page
-        $("#dialog").data("kendoDialog").open();
+
+    function onSaveClick() {
+        var currentPassword = $("input[name='CurrentPassword']").val();
+        var newPassword = $("input[name='NewPassword']").val();
+
+        if (currentPassword && newPassword) {
+            $.ajax({
+                url: '/Profile/SavePassword', // replace with the actual URL of your SavePassword method
+                type: 'POST',
+                data: {
+                    currentPassword: currentPassword,
+                    newPassword: newPassword
+                },
+                success: function (result) {
+                    if (result.success) {
+                        // Password saved successfully
+                        $("#dialog").data("kendoDialog").open();
+                    } else {
+                        // Show error message
+                        alert(result.errorMessage);
+                    }
+                }
+            });
+        }
         enableButtons(false);
     }
+
       
     
     function toggleAllChange(e){

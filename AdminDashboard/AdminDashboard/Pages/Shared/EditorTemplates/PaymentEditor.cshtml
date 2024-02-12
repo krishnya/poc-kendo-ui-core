@@ -1,25 +1,35 @@
-﻿@model AdminDashboard.Data.Models.Titles.Title
+﻿@model AdminDashboard.Data.Models.Payments.Payment
 
 @Html.HiddenFor(model => model.Id)
 
 <div class="k-edit-form-container">
     <div class="k-edit-label">
-        @Html.LabelFor(model => model.TitleName)
+        @Html.LabelFor(model => model.MemberId)
     </div>
     <div class="k-edit-field">
-        @Html.EditorFor(model => model.TitleName)
-    </div>
-
-    <div class="k-edit-label">
-        @Html.LabelFor(model => model.CategoryId)
-    </div>
-    <div class="k-edit-field">
-        @(Html.Kendo().DropDownListFor(m => m.CategoryId)
+        @(Html.Kendo().ComboBoxFor(m => m.MemberId)
             .ValuePrimitive(true)
-            .OptionLabel("Select Category..")
+            .Placeholder("Select Member..")            
             .DataValueField("Id")
-            .DataTextField("CategoryName")
-            .DataSource(ds => ds.Read(read => read.Url(Url.Page("Settings", "GetCategories"))))
+            .DataTextField("FullName")
+            .Filter(FilterType.Contains)
+            .DataSource(ds => ds.Read(read => read.Url(Url.Page("Members", "GetMembers"))))
+            .TemplateId("memberTemplate")
+            .Height(500)            
             )
     </div>
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.Amount)
+    </div>
+    <div class="k-edit-field">
+        @Html.EditorFor(model => model.Amount)
+    </div>
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.PaymentDate)
+    </div>
+    <div class="k-edit-field">
+         @Html.Kendo().DatePickerFor(model => model.PaymentDate)
+    </div>    
 </div>
+
+

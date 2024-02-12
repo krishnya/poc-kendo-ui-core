@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\IMAF\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj": {}
+    "C:\\mylearning\\kendo-ui-poc\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\IMAF\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj": {
+    "C:\\mylearning\\kendo-ui-poc\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\IMAF\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj",
+        "projectUniqueName": "C:\\mylearning\\kendo-ui-poc\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj",
         "projectName": "AdminDashboard",
-        "projectPath": "D:\\Projects\\IMAF\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj",
-        "packagesPath": "C:\\Users\\yammani\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\IMAF\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\obj\\",
+        "projectPath": "C:\\mylearning\\kendo-ui-poc\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\AdminDashboard.csproj",
+        "packagesPath": "C:\\Users\\krishnya\\.nuget\\packages\\",
+        "outputPath": "C:\\mylearning\\kendo-ui-poc\\poc-kendo-ui-core\\AdminDashboard\\AdminDashboard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\yammani\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
+          "C:\\Users\\krishnya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

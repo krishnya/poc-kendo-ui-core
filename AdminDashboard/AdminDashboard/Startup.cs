@@ -75,6 +75,7 @@ namespace AdminDashboard
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapFallbackToPage("/Members");
             });
         }
     }

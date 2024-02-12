@@ -17,7 +17,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 
 namespace AdminDashboard.Pages
-{
+{ 
+    public class SavePasswordResult
+    {
+        public bool Success { get; set; }
+        public string ErrorMessage { get; set; }
+    }
+
     [Authorize]
     public class ProfileModel : PageModel
     {
@@ -217,6 +223,38 @@ namespace AdminDashboard.Pages
 
             return new JsonResult(new[] { category }.ToDataSourceResult(request, ModelState));
         }
+
+        public async Task<SavePasswordResult> SavePassword(string currentPassword, string newPassword)
+        {        
+
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return new SavePasswordResult
+                {
+                    Success = false,
+                    ErrorMessage = "User not found"
+                };
+            }
+
+            var changePasswordResult = await _userManager.ChangePasswordAsync(user, currentPassword, newPassword);
+
+            if (!changePasswordResult.Succeeded)
+            {
+                return new SavePasswordResult
+                {
+                    Success = false,
+                    ErrorMessage = string.Join(", ", changePasswordResult.Errors.Select(x => x.Description))
+                };
+            }
+
+            return new SavePasswordResult
+            {
+                Success = true,
+                ErrorMessage = null
+            };
+        }
+
 
         [HttpPost]
         public ActionResult OnPostSave(string contentType, string base64, string fileName)

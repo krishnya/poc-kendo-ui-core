@@ -39,8 +39,12 @@
     >
 </kendo-popover>
 <script id="drawerTemplate" type="text/html">
-    <div class="k-d-flex-col k-align-items-center k-justify-content-evenly" style="height:220px;">
-        <div class="k-avatar k-avatar-circle k-avatar-image k-avatar-lg" id="avatar"><a asp-page="/Profile"><img src='@Url.Content("~/assets/navigation/Avatar.svg")' /></a></div>
+        <div class="k-d-flex-col k-align-items-center k-justify-content-evenly" style="height:220px;">
+                <div class="k-avatar k-avatar-circle k-avatar-image k-avatar-lg" id="avatar">
+            <a asp-page="/Profile">
+                <img src='~/assets/navigation/Profile.svg' alt="Profile Avatar" />
+            </a>
+        </div>
         <div id="name">@userManager.GetUserAsync(User).Result.FullName</div>
         <div id="email">@userManager.GetUserAsync(User).Result.Email</div>
 
@@ -49,7 +53,7 @@
         </form>
     </div>
     <ul>
-        <li data-role='drawer-item'><a asp-page="/Index"><span class="k-icon k-i-grid "></span>Dashboard</a></li>
+        @* <li data-role='drawer-item'><a asp-page="/Index"><span class="k-icon k-i-grid "></span>Dashboard</a></li> *@
         <li data-role='drawer-item'><a asp-page="/Members"><span class="k-icon k-i-globe"></span>Members</a></li>
         <li data-role='drawer-item'><a asp-page="/Payments"><span class="k-icon k-i-aggregate-fields"></span>Payments</a></li>        
         <li data-role='drawer-separator'></li>

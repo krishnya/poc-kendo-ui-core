@@ -13,30 +13,37 @@
 @Html.AntiForgeryToken()
 
 
+
 <div class="tile">
     <div class="k-card">
         <div class="k-card-body">
-            @(Html.Kendo().Grid<Member>().Name("memberGrid")
-                .Sortable()
-                .Editable(mode => mode.Mode(GridEditMode.PopUp).TemplateName("MemberEditor"))
-                .Scrollable()
-                .ToolBar(x =>
-                {
-                    x.Create();
-                    x.Excel();
-                })
-                .Columns(columns =>
-                {                   
-                    columns.Bound(p => p.FirstName);
-                    columns.Bound(p => p.LastName);
-                    columns.Bound(p => p.Gender);
-                    columns.ForeignKey(p => p.TitleId, ds => ds.Read(read => read.Url(Url.Page("Settings", "GetTitles"))), "Id", "TitleName", true).Title("Title");
-                    columns.Command(column =>
-                    {
-                        column.Edit();
-                        column.Destroy();
-                    });
-                })
+            @(
+                Html.Kendo().Grid<Member>().Name("memberGrid")
+                        .Sortable()
+                        .Editable(mode => mode.Mode(GridEditMode.PopUp).TemplateName("MemberEditor"))
+                        .Scrollable()
+                        .Filterable()
+                        .ToolBar(x =>
+                        {
+                            x.Create();
+                            x.Excel();
+                        })
+                        .Columns(columns =>
+                        {
+                            columns.Bound(p => p.Id).Hidden();
+                            columns.Bound(p => p.FirstName);
+                            columns.Bound(p => p.LastName);
+                            columns.Bound(p => p.Gender);
+                            columns.ForeignKey(p => p.TitleId, ds => ds.Read(read => read.Url(Url.Page("Settings", "GetTitles"))), "Id", "TitleName", true).Title("Title");
+                            columns.Bound(m => m.DateOfJoin).Format("{0:yyyy-MM-dd}");
+                            columns.Bound(p => p.CategoryAmount);
+                            columns.Bound(p => p.TotalPaid);
+                            columns.Command(column =>
+                            {
+                                column.Edit();
+                                column.Destroy();                        
+                            });
+                    })
                 .Excel(excel => excel
                 .FileName("Export.xlsx")
                 .Filterable(true)
@@ -52,40 +59,22 @@
                     m.Id(id => id.Id);
                     m.Field(f => f.Id).Editable(false);
                 })
-                .Events(events => events.Error("grid_error")) // Handle the "error" event.
+                .Events(events => events.Error("grid_error")) 
                 .PageSize(10)
                 )
-                .Pageable()
-                .ClientDetailTemplateId("template")
+                .Pageable()                
                 )
 
         </div>
     </div>
 </div>
 
-<script id="template" type="text/kendo-tmpl">
-    @(
-        Html.Kendo().Grid<Payment>()
-                .Name("grid_#=Id#") // Template expression to give each detail grid a unique name
-                .Columns(columns =>
-                {
-                    columns.Bound(p => p.Id).Hidden();
-                    columns.Bound(p => p.Amount);
-                    columns.Bound(p => p.PaymentDate);
-                })
-            .DataSource(dataSource => dataSource
-                .Ajax()
-                .Read(read => read.Action("GetPayments", "Members", new { memberId = "#=Id#" })) // Template expression to pass the Member ID to the action
-            )
-            .ToClientTemplate()
-        )
-</script>
 
 <script>
     function forgeryToken() {
         return kendo.antiForgeryTokens();
     }
-
+     
     function grid_error(e) {
         var errors = e.errors;
         if (errors) {
