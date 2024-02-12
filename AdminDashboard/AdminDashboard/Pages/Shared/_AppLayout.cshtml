@@ -16,6 +16,11 @@
                         <appbar-item type="AppBarItemType.Spacer" width="16px"></appbar-item>
                         <appbar-item type="AppBarItemType.ContentItem" template="<div class='title'>@ViewData["Title"]</div>"></appbar-item>
                         <appbar-item type="AppBarItemType.Spacer"></appbar-item>
+                        <!-- New app header added here -->
+                        <appbar-item type="AppBarItemType.ContentItem" template="<h3 class='app-bar-header'>Indian Film & Movie Association</h3>">
+                        </appbar-item>
+
+                        <appbar-item type="AppBarItemType.Spacer"></appbar-item>
                         <appbar-item type="AppBarItemType.ContentItem" template="<div class='app-bar-link'><span class='k-icon k-i-notification'><span data-role='badge' class='k-badge k-badge-solid k-badge-error k-badge-md k-badge-dot k-badge-outside k-top-end'></span></span></div>"></appbar-item>
                         <appbar-item type="AppBarItemType.Spacer" width="8px"></appbar-item>
                         <appbar-item type="AppBarItemType.ContentItem" template="<a href='@Url.Page("About")' class='app-bar-link'>About</a>"></appbar-item>
@@ -42,7 +47,9 @@
         <div class="k-d-flex-col k-align-items-center k-justify-content-evenly" style="height:220px;">
                 <div class="k-avatar k-avatar-circle k-avatar-image k-avatar-lg" id="avatar">
             <a asp-page="/Profile">
-                <img src='~/assets/navigation/Profile.svg' alt="Profile Avatar" />
+                    <span class='user-profile-icon'>
+                        <span class='k-icon k-i-user'></span>
+                    </span>
             </a>
         </div>
         <div id="name">@userManager.GetUserAsync(User).Result.FullName</div>
@@ -74,6 +81,9 @@
     </div>
     </script>
 
+
+
+
 <style>
     #name {
         font-weight: bold;
@@ -104,13 +114,14 @@
     }
 
     li[data-role='drawer-item'] > a {
-        color: #424242;
+        color: white;
     }
 
     li.k-selected[data-role='drawer-item'] > a {
         color: #FFFFFF;
     }
     .k-drawer-item > a {
+      
         text-decoration: none;
     }
      
@@ -132,6 +143,52 @@
             transition: none;
         }
     }
+
+    .k-drawer.k-drawer-start {
+        position: relative; /* Ensure relative positioning for pseudo-element */
+        background-color: rgba(0, 0, 0, 0.75); /* Light black background with transparency */
+        border-top-left-radius: 10px; /* Rounded corner at top left */
+        border-bottom-left-radius: 10px; /* Rounded corner at bottom left */
+        padding: 20px; /* Add padding for spacing */
+        color: white; /* Set text color to white for contrast */
+    }
+
+        /* Add glossy effect */
+        .k-drawer.k-drawer-start::before {
+            content: ''; /* Create a pseudo-element */
+            position: absolute; /* Position absolutely relative to the drawer container */
+            top: 0; /* Position at the top */
+            left: -20px; /* Position 20px to the left to create glossy effect */
+            width: 20px; /* Width of the glossy effect */
+            height: 100%; /* Height of the glossy effect */
+            background: linear-gradient(to right, rgba(255, 200, 150, 0.1), transparent); /* Glossy effect gradient */
+            z-index: -1; /* Move the pseudo-element behind the content */
+        }
+
+
+    .user-profile-icon {
+        display: inline-block;
+        width: 4em; /* Set width and height to four times the default size */
+        height: 4em;
+        border-radius: 50%; /* Make it circular */
+        background-color: #f7b5b0; /* Example background color */
+        color: white; /* Example icon color */
+        font-size: 2em; /* Adjust the icon size */
+        line-height: 4em; /* Center the icon vertically */
+        text-align: center; /* Center the icon horizontally */
+    }
+
+    .k-avatar-lg {
+        /* Inherit all other styles 
+         all: inherit; */
+        /* Override border-radius */
+        border-radius: 50%;
+    }
+
+    .app-bar-header{
+        color: #ff6358;
+    }
+
 </style>
 
 <script>
