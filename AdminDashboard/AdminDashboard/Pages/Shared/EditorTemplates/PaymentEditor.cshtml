@@ -28,7 +28,7 @@
         @Html.LabelFor(model => model.PaymentDate)
     </div>
     <div class="k-edit-field">
-         @Html.Kendo().DatePickerFor(model => model.PaymentDate)
+         @Html.Kendo().DatePickerFor(model => model.PaymentDate).Format("dd/MM/yyyy")
     </div>    
 </div>
 

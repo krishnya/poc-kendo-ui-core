@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -46,7 +47,20 @@ namespace AdminDashboard
             });
             services.AddRazorPages().AddJsonOptions(options =>
                 options.JsonSerializerOptions.PropertyNamingPolicy = null);
-            
+
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var supportedCultures = new List<CultureInfo>
+                {
+                    new CultureInfo("en-GB"), // Use "en-GB" for dd/mm/yyyy format
+                    // Add other supported cultures if needed
+                };
+
+                options.DefaultRequestCulture = new RequestCulture("en-GB");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
+
             // Add the Kendo UI services to the services container.
             services.AddKendo();
         }

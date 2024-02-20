@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AdminDashboard.Data;
 using AdminDashboard.Data.Models.Members;
+using AdminDashboard.Data.Models.Titles;
 using Kendo.Mvc.Extensions;
 using Kendo.Mvc.UI;
 using Microsoft.AspNetCore.Authorization;
@@ -50,27 +51,17 @@ namespace AdminDashboard.Pages
         public IActionResult OnPostRead([DataSourceRequest] DataSourceRequest request)
         {
             var members = _context.Members
-         .Include(m => m.Payments) // Load the Payments related to each Member
-         .Include(m => m.Title) // Load the Title related to each Member
-             .ThenInclude(t => t.Category) // Load the Category related to each Title
-         .Select(m => new {
-             Id = m.Id,
-             FirstName = m.FirstName,
-             LastName = m.LastName,
-             Gender = m.Gender,
-             FullName = m.FirstName + " " + m.LastName,
-             TitleId = m.TitleId,
-             DateOfJoin = m.DateOfJoin,
-             TotalPaid = m.TotalPaid,
-             CategoryAmount = m.CategoryAmount
-         })
-         .ToDataSourceResult(request);
+                .Include(m => m.Payments) // Load the Payments related to each Member
+                .Include(m => m.Title) // Load the Title related to each Member
+                    .ThenInclude(t => t.Category) // Load the Category related to each Title
+                .ToDataSourceResult(request);
 
             return new JsonResult(members);
         }
 
-        public async Task<IActionResult> OnPostCreateAsync([DataSourceRequest] DataSourceRequest request, Member member, List<IFormFile> files)
+        public IActionResult OnPostCreate([DataSourceRequest] DataSourceRequest request, Member member, List<IFormFile> files)
         {
+            ModelState.Clear(); // Clear the ModelState
             if (ModelState.IsValid)
             {
                 if (files != null && files.Count > 0)
@@ -81,7 +72,7 @@ namespace AdminDashboard.Pages
                         var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\documents", fileName);
                         using (var stream = new FileStream(filePath, FileMode.Create))
                         {
-                            await file.CopyToAsync(stream);
+                            file.CopyTo(stream);
                         }
 
                         member.Documents.Add(new Document { FileName = "/documents/" + fileName });
@@ -94,9 +85,9 @@ namespace AdminDashboard.Pages
             return new JsonResult(new[] { member }.ToDataSourceResult(request, ModelState));
         }
 
-
-        public async Task<IActionResult> OnPostUpdate([DataSourceRequest] DataSourceRequest request, Member member, List<IFormFile> files)
+        public IActionResult OnPostUpdate([DataSourceRequest] DataSourceRequest request, Member member, List<IFormFile> files)
         {
+            ModelState.Clear(); // Clear the ModelState
             using (var transaction = _context.Database.BeginTransaction())
             {
                 try
@@ -109,7 +100,7 @@ namespace AdminDashboard.Pages
                             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\documents", fileName);
                             using (var stream = new FileStream(filePath, FileMode.Create))
                             {
-                                await file.CopyToAsync(stream);
+                                file.CopyTo(stream);
                             }
 
                             member.Documents.Add(new Document { FileName = "/documents/" + fileName });

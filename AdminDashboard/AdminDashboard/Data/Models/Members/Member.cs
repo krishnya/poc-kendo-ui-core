@@ -21,10 +21,12 @@ namespace AdminDashboard.Data.Models.Members
         public string Gender { get; set; }
         public string FullName => $"{LastName}, {FirstName}";
         public string Phone { get; set; }
-        public string Address { get; set; }        
+        public string Address { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DateOfBirth { get; set; }
         [ForeignKey("Title")]
-        public int TitleId { get; set; }        
+        public int TitleId { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DateOfJoin { get; set; }
         public string PassportNo { get; set; }
         public string AadharNo { get; set; }
@@ -32,9 +34,12 @@ namespace AdminDashboard.Data.Models.Members
         public virtual Title Title { get; set; }
         [NotMapped]
         public double TotalPaid => Payments?.Sum(p => p.Amount) ?? 0;
-        [NotMapped]
+        [NotMapped]        
         public double CategoryAmount => Title?.Category?.Amount ?? 0;
+        [NotMapped]
+        public double Balance => CategoryAmount - TotalPaid;
         public virtual ICollection<Payment> Payments { get; set; }
         public virtual ICollection<Document> Documents { get; set; }
+        
     }
 }
