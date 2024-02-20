@@ -28,7 +28,7 @@
                     //columns.Bound(p => p.Id).Hidden();
                     columns.ForeignKey(p => p.MemberId, ds => ds.Read(read => read.Url(Url.Page("Members", "GetMembers"))), "Id", "FullName", true).Title("Member");
                     columns.Bound(p => p.Amount);
-                    columns.Bound(p => p.PaymentDate).Format("{0:yyyy-MM-dd}");
+                    columns.Bound(p => p.PaymentDate).Format("{0:dd-MM-yyyy}");
                     columns.Command(column =>
                     {
                         column.Edit();

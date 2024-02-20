@@ -21,10 +21,10 @@ namespace AdminDashboard.Data.Models.Members
         public string Gender { get; set; }
         public string FullName => $"{LastName}, {FirstName}";
         public string Phone { get; set; }
-        public string Address { get; set; }
+        public string Address { get; set; }        
         public DateTime DateOfBirth { get; set; }
         [ForeignKey("Title")]
-        public int TitleId { get; set; }
+        public int TitleId { get; set; }        
         public DateTime DateOfJoin { get; set; }
         public string PassportNo { get; set; }
         public string AadharNo { get; set; }

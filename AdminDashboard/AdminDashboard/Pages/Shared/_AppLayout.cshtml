@@ -53,7 +53,7 @@
             </a>
         </div>
         <div id="name">@userManager.GetUserAsync(User).Result.FullName</div>
-        <div id="email">@userManager.GetUserAsync(User).Result.Email</div>
+        @* <div id="email">@userManager.GetUserAsync(User).Result.Email</div> *@
 
         <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
             <button type="submit" class="k-button k-button-md k-button-rectangle k-rounded-md k-button-solid k-button-solid-base">Sign Out</button>
@@ -189,9 +189,31 @@
         color: #ff6358;
     }
 
+    .k-drawer-container {
+        height: 100vh;
+        overflow-y: auto;
+    }
+
 </style>
 
 <script>
+
+    $(document).ready(function () {
+        // Adjust the height of the drawer when the page loads
+        adjustDrawerHeight();
+
+        // Adjust the height of the drawer when the window resizes
+        $(window).resize(adjustDrawerHeight);
+    });
+
+    function adjustDrawerHeight() {
+        // Get the height of the content
+        var contentHeight = $(".content").outerHeight();
+
+        // Set the height of the drawer to the height of the content
+        $(".k-drawer-container").height(contentHeight);
+    }
+
     $(document).ready(function () {
         //highlight selected Drawer item on page load
         $('a[href="@routeUrl"]').parent().addClass('k-selected');

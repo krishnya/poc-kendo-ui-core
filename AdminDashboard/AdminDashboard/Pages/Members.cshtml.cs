@@ -65,7 +65,7 @@ namespace AdminDashboard.Pages
         }
 
         public IActionResult OnPostCreate([DataSourceRequest] DataSourceRequest request, Member member)
-        {
+        {            
             if (ModelState.IsValid)
             {
                 _context.Members.Add(member);

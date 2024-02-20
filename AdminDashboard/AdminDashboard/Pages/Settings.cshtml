@@ -107,16 +107,12 @@
                                     )
                                     .Pageable()
                                     )
-                            </text>);
-                        tabstrip.Add().Text("Users")
-                            .Content(@<text>sadf</text>);
+                            </text>);                        
                     })
                 )
         </div>
     </div>
 </div>
-
-
 
 <script>
     function forgeryToken() {
@@ -166,7 +162,10 @@
                     grid.editable.element.find("[data-valmsg-for='" + key + "']").replaceWith('<div class="k-tooltip k-tooltip-error k-validator-tooltip k-invalid-msg field-validation-error" ><span class="k-tooltip-icon k-icon k-i-warning"></span><span class="k-tooltip-content">' + message + '</span><span class="k-callout k-callout-n"></span></div>').show();
                 });
             });
+        } else if (e.xhr) {
+            alert(e.xhr.responseJSON.message);
         }
+
     }
 </script>
 
@@ -200,7 +199,7 @@
         } */
 
     #tabstrip .k-content {
-        height: 50vh !important;
+        height: 65vh !important;
         overflow: auto;
     }
 

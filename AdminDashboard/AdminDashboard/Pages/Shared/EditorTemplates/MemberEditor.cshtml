@@ -49,7 +49,7 @@
         @Html.LabelFor(model => model.DateOfBirth)
     </div>
     <div class="k-edit-field">
-        @(Html.Kendo().DatePickerFor(model => model.DateOfBirth))
+        @(Html.Kendo().DatePickerFor(model => model.DateOfBirth).Format("dd/MM/yyyy"))
     </div>
 
     <div class="k-edit-label">
@@ -69,7 +69,7 @@
         @Html.LabelFor(model => model.DateOfJoin)
     </div>
     <div class="k-edit-field">
-        @(Html.Kendo().DatePickerFor(model => model.DateOfJoin))
+        @(Html.Kendo().DatePickerFor(model => model.DateOfJoin).Format("dd/MM/yyyy"))
     </div>
 
     <div class="k-edit-label">
