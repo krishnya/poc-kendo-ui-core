@@ -49,14 +49,14 @@
                 .DataSource(ds => ds.Ajax()
                 .Read(r => r.Url("/Members?handler=Read").Data("forgeryToken"))
                 .Update(u => u.Url("/Members?handler=Update").Data("forgeryToken"))
-                .Create(c => c.Url("/Members?handler=Create").Data("forgeryToken"))
+                .Create(c => c.Url("/Members?handler=CreateAsync").Data("forgeryToken"))
                 .Destroy(d => d.Url("/Members?handler=Destroy").Data("forgeryToken"))
                 .Model(m =>
                 {
                     m.Id(id => id.Id);
                     m.Field(f => f.Id).Editable(false);
                 })
-                .Events(events => events.Error("grid_error")) 
+                .Events(events => events.Error("grid_error").RequestEnd("onRequestEnd"))
                 .PageSize(10)
                 )                
                 .Pageable()                
@@ -72,7 +72,14 @@
         return kendo.antiForgeryTokens();
     }
 
-   
+    function onRequestEnd(e) {
+        if (e.type === "create") {
+            var grid = $("#memberGrid").data("kendoGrid");
+            grid.dataSource.read();
+            grid.refresh();
+        }
+    }
+
      
     function grid_error(e) {
         var errors = e.errors;

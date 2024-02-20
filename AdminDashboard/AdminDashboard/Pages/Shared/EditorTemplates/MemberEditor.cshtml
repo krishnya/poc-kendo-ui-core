@@ -92,5 +92,15 @@
     <div class="k-edit-field">
         @Html.EditorFor(model => model.DrivingLicenseNo)
     </div>
+    <div class="k-edit-label">
+        @Html.LabelFor(model => model.Documents)
+    </div>
+    <div class="k-edit-field">
+        @(Html.Kendo().Upload()
+            .Name("files")
+            .Multiple(true)
+            )
+    </div>
+
 </div>
 

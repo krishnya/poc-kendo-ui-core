@@ -33,6 +33,6 @@ namespace AdminDashboard.Data
         public DbSet<Title> Titles { get; set; }
         public DbSet<Member> Members { get; set; }
         public DbSet<Payment> Payments { get; set; }
-
+        public DbSet<Document> Documents { get; set; }
     }
 }

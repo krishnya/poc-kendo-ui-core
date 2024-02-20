@@ -1,9 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using AdminDashboard.Data;
 using AdminDashboard.Data.Models.Members;
 using Kendo.Mvc.Extensions;
 using Kendo.Mvc.UI;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -64,10 +69,24 @@ namespace AdminDashboard.Pages
             return new JsonResult(members);
         }
 
-        public IActionResult OnPostCreate([DataSourceRequest] DataSourceRequest request, Member member)
-        {            
+        public async Task<IActionResult> OnPostCreateAsync([DataSourceRequest] DataSourceRequest request, Member member, List<IFormFile> files)
+        {
             if (ModelState.IsValid)
             {
+                if (files != null && files.Count > 0)
+                {
+                    foreach (var file in files)
+                    {
+                        var fileName = Path.GetFileName(file.FileName);
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\documents", fileName);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await file.CopyToAsync(stream);
+                        }
+
+                        member.Documents.Add(new Document { FileName = "/documents/" + fileName });
+                    }
+                }
                 _context.Members.Add(member);
                 _context.SaveChanges();
             }
@@ -75,27 +94,72 @@ namespace AdminDashboard.Pages
             return new JsonResult(new[] { member }.ToDataSourceResult(request, ModelState));
         }
 
-        public IActionResult OnPostUpdate([DataSourceRequest] DataSourceRequest request, Member member)
+
+        public async Task<IActionResult> OnPostUpdate([DataSourceRequest] DataSourceRequest request, Member member, List<IFormFile> files)
         {
-            if (ModelState.IsValid)
+            using (var transaction = _context.Database.BeginTransaction())
             {
-                _context.Members.Update(member);
-                _context.SaveChanges();
+                try
+                {
+                    if (files != null && files.Count > 0)
+                    {
+                        foreach (var file in files)
+                        {
+                            var fileName = Path.GetFileName(file.FileName);
+                            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\documents", fileName);
+                            using (var stream = new FileStream(filePath, FileMode.Create))
+                            {
+                                await file.CopyToAsync(stream);
+                            }
+
+                            member.Documents.Add(new Document { FileName = "/documents/" + fileName });
+                        }
+                    }
+
+                    _context.Members.Update(member);
+
+                    _context.SaveChanges();
+
+                    transaction.Commit();
+                }
+                catch (Exception)
+                {
+                    transaction.Rollback();
+                    throw;
+                }
             }
 
             return new JsonResult(new[] { member }.ToDataSourceResult(request, ModelState));
         }
 
-        public IActionResult OnPostDestroy([DataSourceRequest] DataSourceRequest request, Member member)
+
+
+        public Task<IActionResult> OnPostDestroy([DataSourceRequest] DataSourceRequest request, Member member)
         {
-            if (ModelState.IsValid)
+            using (var transaction = _context.Database.BeginTransaction())
             {
-                _context.Members.Remove(member);
-                _context.SaveChanges();
+                try
+                {
+                    var documentsToRemove = _context.Documents.Where(d => d.MemberId == member.Id);
+                    _context.Documents.RemoveRange(documentsToRemove);
+
+                    if (ModelState.IsValid)
+                    {
+                        _context.Members.Remove(member);
+                        _context.SaveChanges();
+                        transaction.Commit();
+                    }
+                }
+                catch (Exception)
+                {
+                    transaction.Rollback();
+                    throw;
+                }
             }
 
-            return new JsonResult(new[] { member }.ToDataSourceResult(request, ModelState));
+            return Task.FromResult<IActionResult>(new JsonResult(new[] { member }.ToDataSourceResult(request, ModelState)));
         }
+
 
         public IActionResult OnGetGetPayments(int memberId)
         {

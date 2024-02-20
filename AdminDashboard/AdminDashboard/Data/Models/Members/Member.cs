@@ -35,5 +35,6 @@ namespace AdminDashboard.Data.Models.Members
         [NotMapped]
         public double CategoryAmount => Title?.Category?.Amount ?? 0;
         public virtual ICollection<Payment> Payments { get; set; }
+        public virtual ICollection<Document> Documents { get; set; }
     }
 }

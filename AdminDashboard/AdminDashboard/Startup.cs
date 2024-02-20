@@ -9,8 +9,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -44,7 +46,7 @@ namespace AdminDashboard
             });
             services.AddRazorPages().AddJsonOptions(options =>
                 options.JsonSerializerOptions.PropertyNamingPolicy = null);
-
+            
             // Add the Kendo UI services to the services container.
             services.AddKendo();
         }
@@ -63,7 +65,7 @@ namespace AdminDashboard
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+                     
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -71,6 +73,8 @@ namespace AdminDashboard
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseSerilogRequestLogging(); 
 
             app.UseEndpoints(endpoints =>
             {
