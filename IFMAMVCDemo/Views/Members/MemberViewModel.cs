@@ -11,6 +11,7 @@ namespace IFMAMVCDemo.Data.Models
         public double CategoryAmount { get; set; }
         public double Paid { get; set; }
         public double Balance { get; set; }
+        public IList<Payment> Payments { get; set; }
     }
 
 

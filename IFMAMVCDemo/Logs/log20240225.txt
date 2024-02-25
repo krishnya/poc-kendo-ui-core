@@ -1,0 +1,1190 @@
+2024-02-25 19:03:44.353 +05:30 [INF] User profile is available. Using 'C:\Users\krishnya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-25 19:03:44.839 +05:30 [INF] Now listening on: https://localhost:7204
+2024-02-25 19:03:44.839 +05:30 [INF] Now listening on: http://localhost:5029
+2024-02-25 19:03:44.841 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-25 19:03:44.841 +05:30 [INF] Hosting environment: Development
+2024-02-25 19:03:44.842 +05:30 [INF] Content root path: C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\IFMAMVCDemo
+2024-02-25 19:03:52.978 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/ - null null
+2024-02-25 19:03:53.217 +05:30 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2024-02-25 19:03:53.252 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-02-25 19:03:53.255 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-02-25 19:03:53.257 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/ - 302 0 null 285.1414ms
+2024-02-25 19:03:53.264 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Identity/Account/Login?ReturnUrl=%2F - null null
+2024-02-25 19:03:53.318 +05:30 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2024-02-25 19:03:53.333 +05:30 [INF] Executing endpoint '/Account/Login'
+2024-02-25 19:03:53.364 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-02-25 19:03:53.538 +05:30 [INF] Executing handler method IFMAMVCDemo.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-02-25 19:03:53.542 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2024-02-25 19:03:53.542 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2024-02-25 19:03:53.544 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-25 19:03:53.544 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-25 19:03:53.659 +05:30 [INF] Executed page /Account/Login in 289.6784ms
+2024-02-25 19:03:53.663 +05:30 [INF] Executed endpoint '/Account/Login'
+2024-02-25 19:03:53.687 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Identity/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 423.2987ms
+2024-02-25 19:03:53.695 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:03:53.716 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 21.2626ms
+2024-02-25 19:03:53.720 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:03:53.795 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.3804ms
+2024-02-25 19:04:02.224 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7204/Identity/Account/Login?ReturnUrl=%2F - application/x-www-form-urlencoded 255
+2024-02-25 19:04:02.257 +05:30 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2024-02-25 19:04:02.260 +05:30 [INF] Executing endpoint '/Account/Login'
+2024-02-25 19:04:02.260 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-02-25 19:04:02.278 +05:30 [INF] Executing handler method IFMAMVCDemo.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2024-02-25 19:04:02.981 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`AccessFailedCount`, `a`.`ConcurrencyStamp`, `a`.`Email`, `a`.`EmailConfirmed`, `a`.`LockoutEnabled`, `a`.`LockoutEnd`, `a`.`NormalizedEmail`, `a`.`NormalizedUserName`, `a`.`PasswordHash`, `a`.`PhoneNumber`, `a`.`PhoneNumberConfirmed`, `a`.`SecurityStamp`, `a`.`TwoFactorEnabled`, `a`.`UserName`
+FROM `AspNetUsers` AS `a`
+WHERE `a`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1
+2024-02-25 19:04:03.161 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ClaimType`, `a`.`ClaimValue`, `a`.`UserId`
+FROM `AspNetUserClaims` AS `a`
+WHERE `a`.`UserId` = @__user_Id_0
+2024-02-25 19:04:03.165 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-02-25 19:04:03.166 +05:30 [INF] User logged in.
+2024-02-25 19:04:03.168 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2024-02-25 19:04:03.170 +05:30 [INF] Executing LocalRedirectResult, redirecting to /.
+2024-02-25 19:04:03.170 +05:30 [INF] Executed page /Account/Login in 909.8642ms
+2024-02-25 19:04:03.170 +05:30 [INF] Executed endpoint '/Account/Login'
+2024-02-25 19:04:03.175 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/ - null null
+2024-02-25 19:04:03.175 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7204/Identity/Account/Login?ReturnUrl=%2F - 302 0 null 951.0804ms
+2024-02-25 19:04:03.200 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo)'
+2024-02-25 19:04:03.205 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IFMAMVCDemo.Controllers.HomeController (IFMAMVCDemo).
+2024-02-25 19:04:03.265 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:04:03.267 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4002ms.
+2024-02-25 19:04:03.270 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:04:03.278 +05:30 [INF] Executed ViewResult - view Index executed in 8.9071ms.
+2024-02-25 19:04:03.278 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo) in 72.8562ms
+2024-02-25 19:04:03.278 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo)'
+2024-02-25 19:04:03.278 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/ - 200 null text/html; charset=utf-8 103.6704ms
+2024-02-25 19:04:03.298 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:04:03.299 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:04:03.300 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.0983ms
+2024-02-25 19:04:03.327 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.304ms
+2024-02-25 19:04:05.602 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:04:05.642 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:04:05.646 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:04:05.661 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:04:05.753 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:04:05.770 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 108.6394ms.
+2024-02-25 19:04:05.772 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:04:05.799 +05:30 [INF] Executed ViewResult - view Index executed in 27.0264ms.
+2024-02-25 19:04:05.800 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 154.3342ms
+2024-02-25 19:04:05.800 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:04:05.801 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 199.6441ms
+2024-02-25 19:04:05.815 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:04:05.815 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:04:05.817 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.4762ms
+2024-02-25 19:04:05.839 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.2564ms
+2024-02-25 19:04:09.211 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Edit/2 - null null
+2024-02-25 19:04:09.263 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:04:09.266 +05:30 [INF] Route matched with {action = "Edit", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:04:09.281 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:04:09.308 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:04:09.322 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 40.9632ms.
+2024-02-25 19:04:09.323 +05:30 [INF] Executing ViewResult, running view Edit.
+2024-02-25 19:04:09.383 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+2024-02-25 19:04:09.403 +05:30 [INF] Executed ViewResult - view Edit executed in 80.2338ms.
+2024-02-25 19:04:09.403 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) in 137.1957ms
+2024-02-25 19:04:09.403 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:04:09.404 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Edit/2 - 200 null text/html; charset=utf-8 193.712ms
+2024-02-25 19:04:09.420 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:04:09.421 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.698ms
+2024-02-25 19:04:09.429 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:04:09.458 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.8231ms
+2024-02-25 19:04:11.007 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7204/Members/Edit/2 - multipart/form-data; boundary=----WebKitFormBoundaryk4Gac1lviShdAwFl 1843
+2024-02-25 19:04:11.034 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:04:11.041 +05:30 [INF] Route matched with {action = "Edit", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32, IFMAMVCDemo.Data.Models.Member, System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:04:11.070 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) - Validation state: "Invalid"
+2024-02-25 19:04:11.141 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Members` SET `AadharNo` = @p0, `Address` = @p1, `DateOfBirth` = @p2, `DateOfJoin` = @p3, `DrivingLicenseNo` = @p4, `FirstName` = @p5, `Gender` = @p6, `LastName` = @p7, `MiddleName` = @p8, `PassportNo` = @p9, `Phone` = @p10, `TitleId` = @p11
+WHERE `Id` = @p12;
+SELECT ROW_COUNT();
+2024-02-25 19:04:11.151 +05:30 [INF] Member with id 2 updated
+2024-02-25 19:04:11.156 +05:30 [INF] Transaction committed
+2024-02-25 19:04:11.157 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 86.7001ms.
+2024-02-25 19:04:11.157 +05:30 [INF] Executing RedirectResult, redirecting to /Members.
+2024-02-25 19:04:11.158 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) in 116.7436ms
+2024-02-25 19:04:11.158 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:04:11.158 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7204/Members/Edit/2 - 302 0 null 150.9603ms
+2024-02-25 19:04:11.161 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:04:11.194 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:04:11.194 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:04:11.210 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:04:11.218 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:04:11.219 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 9.3406ms.
+2024-02-25 19:04:11.220 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:04:11.224 +05:30 [INF] Executed ViewResult - view Index executed in 4.4642ms.
+2024-02-25 19:04:11.224 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 29.5371ms
+2024-02-25 19:04:11.225 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:04:11.225 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 63.8929ms
+2024-02-25 19:04:11.241 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:04:11.245 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:04:11.254 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.5855ms
+2024-02-25 19:04:11.265 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.8697ms
+2024-02-25 19:04:16.177 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Edit/1 - null null
+2024-02-25 19:04:16.201 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:04:16.201 +05:30 [INF] Route matched with {action = "Edit", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:04:16.214 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:04:16.225 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:04:16.230 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 14.8266ms.
+2024-02-25 19:04:16.230 +05:30 [INF] Executing ViewResult, running view Edit.
+2024-02-25 19:04:16.233 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+2024-02-25 19:04:16.240 +05:30 [INF] Executed ViewResult - view Edit executed in 9.9512ms.
+2024-02-25 19:04:16.241 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) in 39.4781ms
+2024-02-25 19:04:16.241 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:04:16.241 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Edit/1 - 200 null text/html; charset=utf-8 64.0991ms
+2024-02-25 19:04:16.260 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:04:16.263 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:04:16.266 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.5404ms
+2024-02-25 19:04:16.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.8612ms
+2024-02-25 19:04:18.633 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7204/Members/Edit/1 - multipart/form-data; boundary=----WebKitFormBoundaryQASH3cAVirDMN92P 1843
+2024-02-25 19:04:18.675 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:04:18.676 +05:30 [INF] Route matched with {action = "Edit", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32, IFMAMVCDemo.Data.Models.Member, System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:04:18.693 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) - Validation state: "Invalid"
+2024-02-25 19:04:18.703 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Members` SET `AadharNo` = @p0, `Address` = @p1, `DateOfBirth` = @p2, `DateOfJoin` = @p3, `DrivingLicenseNo` = @p4, `FirstName` = @p5, `Gender` = @p6, `LastName` = @p7, `MiddleName` = @p8, `PassportNo` = @p9, `Phone` = @p10, `TitleId` = @p11
+WHERE `Id` = @p12;
+SELECT ROW_COUNT();
+2024-02-25 19:04:18.706 +05:30 [INF] Member with id 1 updated
+2024-02-25 19:04:18.707 +05:30 [INF] Transaction committed
+2024-02-25 19:04:18.707 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 13.7263ms.
+2024-02-25 19:04:18.707 +05:30 [INF] Executing RedirectResult, redirecting to /Members.
+2024-02-25 19:04:18.707 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) in 31.6549ms
+2024-02-25 19:04:18.707 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:04:18.708 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7204/Members/Edit/1 - 302 0 null 74.4439ms
+2024-02-25 19:04:18.711 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:04:18.730 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:04:18.730 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:04:18.743 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:04:18.748 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:04:18.749 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.0175ms.
+2024-02-25 19:04:18.749 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:04:18.756 +05:30 [INF] Executed ViewResult - view Index executed in 6.9555ms.
+2024-02-25 19:04:18.757 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 26.4667ms
+2024-02-25 19:04:18.757 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:04:18.757 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 46.5211ms
+2024-02-25 19:04:18.775 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:04:18.778 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:04:18.780 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.4326ms
+2024-02-25 19:04:18.798 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.6038ms
+2024-02-25 19:04:20.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Create - null null
+2024-02-25 19:04:20.484 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo)'
+2024-02-25 19:04:20.486 +05:30 [INF] Route matched with {action = "Create", controller = "Members", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:04:20.499 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:04:20.500 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2661ms.
+2024-02-25 19:04:20.500 +05:30 [INF] Executing ViewResult, running view Create.
+2024-02-25 19:04:20.522 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+2024-02-25 19:04:20.530 +05:30 [INF] Executed ViewResult - view Create executed in 29.8443ms.
+2024-02-25 19:04:20.530 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo) in 44.7344ms
+2024-02-25 19:04:20.531 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo)'
+2024-02-25 19:04:20.531 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Create - 200 null text/html; charset=utf-8 68.7647ms
+2024-02-25 19:04:20.545 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:04:20.545 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:04:20.546 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.2686ms
+2024-02-25 19:04:20.559 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.0016ms
+2024-02-25 19:04:42.259 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7204/Members/Create - multipart/form-data; boundary=----WebKitFormBoundaryHQqbmEvCVgrPFHqP 1929
+2024-02-25 19:04:42.294 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo)'
+2024-02-25 19:04:42.297 +05:30 [INF] Route matched with {action = "Create", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(IFMAMVCDemo.Data.Models.Member, System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:04:42.313 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo) - Validation state: "Invalid"
+2024-02-25 19:04:42.315 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.4826ms.
+2024-02-25 19:04:42.315 +05:30 [INF] Executing ViewResult, running view Create.
+2024-02-25 19:04:42.317 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+2024-02-25 19:04:42.320 +05:30 [INF] Executed ViewResult - view Create executed in 4.1795ms.
+2024-02-25 19:04:42.320 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo) in 23.0214ms
+2024-02-25 19:04:42.320 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo)'
+2024-02-25 19:04:42.321 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7204/Members/Create - 200 null text/html; charset=utf-8 61.5985ms
+2024-02-25 19:04:42.337 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:04:42.338 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:04:42.339 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.7254ms
+2024-02-25 19:04:42.369 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.8439ms
+2024-02-25 19:05:35.445 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7204/Members/Create - multipart/form-data; boundary=----WebKitFormBoundaryHQqbmEvCVgrPFHqP 1929
+2024-02-25 19:05:35.525 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo)'
+2024-02-25 19:05:35.531 +05:30 [INF] Route matched with {action = "Create", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(IFMAMVCDemo.Data.Models.Member, System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:05:35.563 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo) - Validation state: "Invalid"
+2024-02-25 19:05:35.637 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Members` (`AadharNo`, `Address`, `DateOfBirth`, `DateOfJoin`, `DrivingLicenseNo`, `FirstName`, `Gender`, `LastName`, `MiddleName`, `PassportNo`, `Phone`, `TitleId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT `Id`
+FROM `Members`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-02-25 19:05:35.662 +05:30 [INF] Member created with id 3
+2024-02-25 19:05:35.665 +05:30 [INF] Transaction committed
+2024-02-25 19:05:35.665 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 101.1499ms.
+2024-02-25 19:05:35.665 +05:30 [INF] Executing RedirectResult, redirecting to /Members.
+2024-02-25 19:05:35.665 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo) in 133.5183ms
+2024-02-25 19:05:35.665 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Create (IFMAMVCDemo)'
+2024-02-25 19:05:35.665 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7204/Members/Create - 302 0 null 220.5757ms
+2024-02-25 19:05:35.670 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:05:35.696 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:05:35.699 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:05:35.716 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:05:35.724 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:05:35.724 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.1339ms.
+2024-02-25 19:05:35.726 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:05:35.733 +05:30 [INF] Executed ViewResult - view Index executed in 8.9848ms.
+2024-02-25 19:05:35.734 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 34.9048ms
+2024-02-25 19:05:35.734 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:05:35.734 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 63.8974ms
+2024-02-25 19:05:35.762 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:05:35.762 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:05:35.765 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.8181ms
+2024-02-25 19:05:35.795 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.7999ms
+2024-02-25 19:05:39.217 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Edit/3 - null null
+2024-02-25 19:05:39.315 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:05:39.317 +05:30 [INF] Route matched with {action = "Edit", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:05:39.340 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:05:39.347 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:05:39.348 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.4037ms.
+2024-02-25 19:05:39.350 +05:30 [INF] Executing ViewResult, running view Edit.
+2024-02-25 19:05:39.352 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+2024-02-25 19:05:39.355 +05:30 [INF] Executed ViewResult - view Edit executed in 6.2938ms.
+2024-02-25 19:05:39.356 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) in 37.9906ms
+2024-02-25 19:05:39.356 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:05:39.356 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Edit/3 - 200 null text/html; charset=utf-8 138.8174ms
+2024-02-25 19:05:39.406 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:05:39.412 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:05:39.422 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 14.7438ms
+2024-02-25 19:05:39.453 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.7542ms
+2024-02-25 19:05:41.142 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7204/Members/Edit/3 - multipart/form-data; boundary=----WebKitFormBoundaryBtQxQK7AAFaeTSdA 1844
+2024-02-25 19:05:41.234 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:05:41.238 +05:30 [INF] Route matched with {action = "Edit", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32, IFMAMVCDemo.Data.Models.Member, System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:05:41.255 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) - Validation state: "Invalid"
+2024-02-25 19:05:41.264 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Members` SET `AadharNo` = @p0, `Address` = @p1, `DateOfBirth` = @p2, `DateOfJoin` = @p3, `DrivingLicenseNo` = @p4, `FirstName` = @p5, `Gender` = @p6, `LastName` = @p7, `MiddleName` = @p8, `PassportNo` = @p9, `Phone` = @p10, `TitleId` = @p11
+WHERE `Id` = @p12;
+SELECT ROW_COUNT();
+2024-02-25 19:05:41.265 +05:30 [INF] Member with id 3 updated
+2024-02-25 19:05:41.266 +05:30 [INF] Transaction committed
+2024-02-25 19:05:41.266 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 10.4291ms.
+2024-02-25 19:05:41.266 +05:30 [INF] Executing RedirectResult, redirecting to /Members.
+2024-02-25 19:05:41.266 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) in 27.2311ms
+2024-02-25 19:05:41.266 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:05:41.266 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7204/Members/Edit/3 - 302 0 null 125.6652ms
+2024-02-25 19:05:41.269 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:05:41.297 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:05:41.298 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:05:41.314 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:05:41.322 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:05:41.323 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.3782ms.
+2024-02-25 19:05:41.323 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:05:41.329 +05:30 [INF] Executed ViewResult - view Index executed in 6.3889ms.
+2024-02-25 19:05:41.330 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 32.0622ms
+2024-02-25 19:05:41.330 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:05:41.331 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 61.7597ms
+2024-02-25 19:05:41.360 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:05:41.371 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:05:41.401 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 30.4743ms
+2024-02-25 19:05:41.446 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.9178ms
+2024-02-25 19:05:42.853 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Details/3 - null null
+2024-02-25 19:05:42.900 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:05:42.902 +05:30 [INF] Route matched with {action = "Details", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:05:42.928 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:05:42.936 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:05:42.953 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+WHERE `t`.`Id` = @__p_0
+LIMIT 1
+2024-02-25 19:05:42.954 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 25.1362ms.
+2024-02-25 19:05:42.954 +05:30 [INF] Executing ViewResult, running view Details.
+2024-02-25 19:05:42.963 +05:30 [INF] Executed ViewResult - view Details executed in 9.3094ms.
+2024-02-25 19:05:42.963 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) in 61.0087ms
+2024-02-25 19:05:42.964 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:05:42.964 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Details/3 - 200 null text/html; charset=utf-8 111.8784ms
+2024-02-25 19:05:42.985 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:05:42.986 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:05:42.988 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.5537ms
+2024-02-25 19:05:43.017 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.0129ms
+2024-02-25 19:05:44.487 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:05:44.531 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:05:44.531 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:05:44.553 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:05:44.562 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:05:44.563 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.9777ms.
+2024-02-25 19:05:44.563 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:05:44.568 +05:30 [INF] Executed ViewResult - view Index executed in 5.2589ms.
+2024-02-25 19:05:44.569 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 37.7267ms
+2024-02-25 19:05:44.570 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:05:44.570 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 83.4743ms
+2024-02-25 19:05:44.587 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:05:44.595 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:05:44.596 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.2696ms
+2024-02-25 19:05:44.639 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.0434ms
+2024-02-25 19:05:46.454 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Edit/3 - null null
+2024-02-25 19:05:46.508 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:05:46.508 +05:30 [INF] Route matched with {action = "Edit", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:05:46.530 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:05:46.538 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:05:46.539 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.9097ms.
+2024-02-25 19:05:46.540 +05:30 [INF] Executing ViewResult, running view Edit.
+2024-02-25 19:05:46.544 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+2024-02-25 19:05:46.549 +05:30 [INF] Executed ViewResult - view Edit executed in 9.4069ms.
+2024-02-25 19:05:46.550 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) in 41.2839ms
+2024-02-25 19:05:46.550 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:05:46.550 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Edit/3 - 200 null text/html; charset=utf-8 96.6924ms
+2024-02-25 19:05:46.587 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:05:46.591 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.001ms
+2024-02-25 19:05:46.600 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:05:46.672 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.0397ms
+2024-02-25 19:05:55.533 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7204/Members/Edit/3 - multipart/form-data; boundary=----WebKitFormBoundary4qVCqbjCsNquPvFv 1844
+2024-02-25 19:05:55.595 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:05:55.595 +05:30 [INF] Route matched with {action = "Edit", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32, IFMAMVCDemo.Data.Models.Member, System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:05:55.621 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) - Validation state: "Invalid"
+2024-02-25 19:05:55.637 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Members` SET `AadharNo` = @p0, `Address` = @p1, `DateOfBirth` = @p2, `DateOfJoin` = @p3, `DrivingLicenseNo` = @p4, `FirstName` = @p5, `Gender` = @p6, `LastName` = @p7, `MiddleName` = @p8, `PassportNo` = @p9, `Phone` = @p10, `TitleId` = @p11
+WHERE `Id` = @p12;
+SELECT ROW_COUNT();
+2024-02-25 19:05:55.642 +05:30 [INF] Member with id 3 updated
+2024-02-25 19:05:55.643 +05:30 [INF] Transaction committed
+2024-02-25 19:05:55.643 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 21.8944ms.
+2024-02-25 19:05:55.643 +05:30 [INF] Executing RedirectResult, redirecting to /Members.
+2024-02-25 19:05:55.643 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo) in 47.5557ms
+2024-02-25 19:05:55.643 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Edit (IFMAMVCDemo)'
+2024-02-25 19:05:55.644 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7204/Members/Edit/3 - 302 0 null 110.6958ms
+2024-02-25 19:05:55.650 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:05:55.684 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:05:55.685 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:05:55.713 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:05:55.724 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:05:55.725 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 11.7451ms.
+2024-02-25 19:05:55.726 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:05:55.736 +05:30 [INF] Executed ViewResult - view Index executed in 10.2376ms.
+2024-02-25 19:05:55.736 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 51.4144ms
+2024-02-25 19:05:55.737 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:05:55.737 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 87.4942ms
+2024-02-25 19:05:55.772 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:05:55.779 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:05:55.787 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.3884ms
+2024-02-25 19:05:55.821 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.8333ms
+2024-02-25 19:05:59.214 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Details/3 - null null
+2024-02-25 19:05:59.252 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:05:59.253 +05:30 [INF] Route matched with {action = "Details", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:05:59.279 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:05:59.290 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:05:59.308 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+WHERE `t`.`Id` = @__p_0
+LIMIT 1
+2024-02-25 19:05:59.312 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 32.0839ms.
+2024-02-25 19:05:59.313 +05:30 [INF] Executing ViewResult, running view Details.
+2024-02-25 19:05:59.321 +05:30 [INF] Executed ViewResult - view Details executed in 8.4184ms.
+2024-02-25 19:05:59.322 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) in 68.9371ms
+2024-02-25 19:05:59.323 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:05:59.323 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Details/3 - 200 null text/html; charset=utf-8 109.7065ms
+2024-02-25 19:05:59.357 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:05:59.357 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:05:59.376 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 18.3309ms
+2024-02-25 19:05:59.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.1461ms
+2024-02-25 19:06:04.493 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:06:04.522 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:06:04.522 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:06:04.538 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:06:04.545 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:06:04.545 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.6822ms.
+2024-02-25 19:06:04.546 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:06:04.550 +05:30 [INF] Executed ViewResult - view Index executed in 4.7672ms.
+2024-02-25 19:06:04.551 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 28.5168ms
+2024-02-25 19:06:04.551 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:06:04.551 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 58.6533ms
+2024-02-25 19:06:04.572 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:06:04.572 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:06:04.573 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.7285ms
+2024-02-25 19:06:04.586 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.8956ms
+2024-02-25 19:20:23.603 +05:30 [INF] User profile is available. Using 'C:\Users\krishnya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-25 19:20:24.010 +05:30 [INF] Now listening on: https://localhost:7204
+2024-02-25 19:20:24.011 +05:30 [INF] Now listening on: http://localhost:5029
+2024-02-25 19:20:24.012 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-25 19:20:24.012 +05:30 [INF] Hosting environment: Development
+2024-02-25 19:20:24.012 +05:30 [INF] Content root path: C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\IFMAMVCDemo
+2024-02-25 19:20:34.215 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/ - null null
+2024-02-25 19:20:34.721 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo)'
+2024-02-25 19:20:34.737 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IFMAMVCDemo.Controllers.HomeController (IFMAMVCDemo).
+2024-02-25 19:20:34.850 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:20:34.853 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6785ms.
+2024-02-25 19:20:34.860 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:20:34.952 +05:30 [INF] Executed ViewResult - view Index executed in 93.9692ms.
+2024-02-25 19:20:34.953 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo) in 214.561ms
+2024-02-25 19:20:34.953 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo)'
+2024-02-25 19:20:34.961 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/ - 200 null text/html; charset=utf-8 752.9411ms
+2024-02-25 19:20:34.987 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:20:35.004 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 16.9325ms
+2024-02-25 19:20:35.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:20:35.063 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.7857ms
+2024-02-25 19:20:40.332 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:20:40.432 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:20:40.437 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:20:40.454 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:20:41.573 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:20:41.646 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1191.3751ms.
+2024-02-25 19:20:41.647 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:20:41.699 +05:30 [INF] Executed ViewResult - view Index executed in 52.2222ms.
+2024-02-25 19:20:41.748 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 1310.0878ms
+2024-02-25 19:20:41.749 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:20:41.759 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:20:41.761 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:20:41.770 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.0611ms
+2024-02-25 19:20:41.782 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 1452.5491ms
+2024-02-25 19:20:41.813 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.4878ms
+2024-02-25 19:20:46.660 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Details/1 - null null
+2024-02-25 19:20:46.716 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:20:46.724 +05:30 [INF] Route matched with {action = "Details", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:20:46.755 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:20:46.821 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:20:46.883 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+WHERE `t`.`Id` = @__p_0
+LIMIT 1
+2024-02-25 19:20:46.958 +05:30 [ERR] Error getting members
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.OrderedEnumerable`2..ctor(IEnumerable`1 source, Func`2 keySelector, IComparer`1 comparer, Boolean descending, OrderedEnumerable`1 parent)
+   at System.Linq.Enumerable.OrderByDescending[TSource,TKey](IEnumerable`1 source, Func`2 keySelector)
+   at IFMAMVCDemo.Controllers.MembersController.Details(Nullable`1 id) in C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\IFMAMVCDemo\Controllers\MembersController.cs:line 92
+2024-02-25 19:20:47.013 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) in 289.1175ms
+2024-02-25 19:20:47.014 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:20:47.016 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.OrderedEnumerable`2..ctor(IEnumerable`1 source, Func`2 keySelector, IComparer`1 comparer, Boolean descending, OrderedEnumerable`1 parent)
+   at System.Linq.Enumerable.OrderByDescending[TSource,TKey](IEnumerable`1 source, Func`2 keySelector)
+   at IFMAMVCDemo.Controllers.MembersController.Details(Nullable`1 id) in C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\IFMAMVCDemo\Controllers\MembersController.cs:line 92
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-02-25 19:20:47.019 +05:30 [ERR] Unhandled exception
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.OrderedEnumerable`2..ctor(IEnumerable`1 source, Func`2 keySelector, IComparer`1 comparer, Boolean descending, OrderedEnumerable`1 parent)
+   at System.Linq.Enumerable.OrderByDescending[TSource,TKey](IEnumerable`1 source, Func`2 keySelector)
+   at IFMAMVCDemo.Controllers.MembersController.Details(Nullable`1 id) in C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\IFMAMVCDemo\Controllers\MembersController.cs:line 92
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-02-25 19:20:47.021 +05:30 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2024-02-25 19:20:47.021 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Details/1 - 500 null text/html 362.2033ms
+2024-02-25 19:23:39.741 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:23:39.776 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:23:39.778 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:23:39.794 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:23:39.839 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:23:39.839 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 45.5244ms.
+2024-02-25 19:23:39.840 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:23:39.850 +05:30 [INF] Executed ViewResult - view Index executed in 10.1351ms.
+2024-02-25 19:23:39.851 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 72.3797ms
+2024-02-25 19:23:39.855 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:23:39.859 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 118.1177ms
+2024-02-25 19:23:39.870 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:23:39.871 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.2404ms
+2024-02-25 19:23:41.973 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:23:42.019 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:23:42.020 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:23:42.048 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:23:42.068 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:23:42.069 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 20.7029ms.
+2024-02-25 19:23:42.070 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:23:42.094 +05:30 [INF] Executed ViewResult - view Index executed in 23.5615ms.
+2024-02-25 19:23:42.094 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 74.3881ms
+2024-02-25 19:23:42.095 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:23:42.097 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 124.1829ms
+2024-02-25 19:23:42.124 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:23:42.126 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:23:42.131 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.0342ms
+2024-02-25 19:23:42.175 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.5154ms
+2024-02-25 19:23:42.406 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/favicon.ico - null null
+2024-02-25 19:23:42.411 +05:30 [INF] The file /favicon.ico was not modified
+2024-02-25 19:23:42.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/favicon.ico - 304 null image/x-icon 5.9074ms
+2024-02-25 19:23:50.355 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Details/3 - null null
+2024-02-25 19:23:50.388 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:23:50.391 +05:30 [INF] Route matched with {action = "Details", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:23:50.407 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:23:50.412 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:23:50.416 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+WHERE `t`.`Id` = @__p_0
+LIMIT 1
+2024-02-25 19:23:50.417 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10.3739ms.
+2024-02-25 19:23:50.418 +05:30 [INF] Executing ViewResult, running view Details.
+2024-02-25 19:23:50.429 +05:30 [INF] Executed ViewResult - view Details executed in 11.9541ms.
+2024-02-25 19:23:50.430 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) in 38.7556ms
+2024-02-25 19:23:50.430 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:23:50.431 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Details/3 - 200 null text/html; charset=utf-8 75.8501ms
+2024-02-25 19:23:50.451 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:23:50.454 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:23:50.456 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8826ms
+2024-02-25 19:23:50.471 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.8503ms
+2024-02-25 19:23:54.210 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:23:54.254 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:23:54.254 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:23:54.272 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:23:54.278 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:23:54.279 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.1567ms.
+2024-02-25 19:23:54.285 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:23:54.292 +05:30 [INF] Executed ViewResult - view Index executed in 6.9513ms.
+2024-02-25 19:23:54.293 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 38.4473ms
+2024-02-25 19:23:54.293 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:23:54.293 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 83.6223ms
+2024-02-25 19:23:54.313 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:23:54.316 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:23:54.318 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.9676ms
+2024-02-25 19:23:54.334 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.3807ms
+2024-02-25 19:23:56.034 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Details/2 - null null
+2024-02-25 19:23:56.079 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:23:56.079 +05:30 [INF] Route matched with {action = "Details", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:23:56.096 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:23:56.102 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:23:56.106 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+WHERE `t`.`Id` = @__p_0
+LIMIT 1
+2024-02-25 19:23:56.106 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 9.8326ms.
+2024-02-25 19:23:56.107 +05:30 [INF] Executing ViewResult, running view Details.
+2024-02-25 19:23:56.109 +05:30 [INF] Executed ViewResult - view Details executed in 2.5531ms.
+2024-02-25 19:23:56.109 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) in 30.6063ms
+2024-02-25 19:23:56.110 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:23:56.110 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Details/2 - 200 null text/html; charset=utf-8 76.2728ms
+2024-02-25 19:23:56.124 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:23:56.126 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:23:56.128 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.6802ms
+2024-02-25 19:23:56.149 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.2761ms
+2024-02-25 19:23:58.794 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:23:58.821 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:23:58.822 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:23:58.841 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:23:58.849 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:23:58.850 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 9.2135ms.
+2024-02-25 19:23:58.851 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:23:58.855 +05:30 [INF] Executed ViewResult - view Index executed in 4.4446ms.
+2024-02-25 19:23:58.855 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 33.6977ms
+2024-02-25 19:23:58.856 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:23:58.856 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 62.4237ms
+2024-02-25 19:23:58.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:23:58.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:23:58.874 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.6002ms
+2024-02-25 19:23:58.887 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.2888ms
+2024-02-25 19:24:03.158 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Details/1 - null null
+2024-02-25 19:24:03.190 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:24:03.190 +05:30 [INF] Route matched with {action = "Details", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:24:03.205 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:24:03.212 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:24:03.218 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+WHERE `t`.`Id` = @__p_0
+LIMIT 1
+2024-02-25 19:24:03.218 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.0489ms.
+2024-02-25 19:24:03.219 +05:30 [INF] Executing ViewResult, running view Details.
+2024-02-25 19:24:03.222 +05:30 [INF] Executed ViewResult - view Details executed in 3.2916ms.
+2024-02-25 19:24:03.222 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) in 31.8858ms
+2024-02-25 19:24:03.222 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:24:03.223 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Details/1 - 200 null text/html; charset=utf-8 65.6072ms
+2024-02-25 19:24:03.245 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:24:03.246 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:24:03.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.4746ms
+2024-02-25 19:24:03.266 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.3546ms
+2024-02-25 19:24:14.266 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:24:14.296 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:24:14.297 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:24:14.312 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:24:14.318 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:24:14.319 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.5041ms.
+2024-02-25 19:24:14.319 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:24:14.323 +05:30 [INF] Executed ViewResult - view Index executed in 4.2639ms.
+2024-02-25 19:24:14.324 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 26.9513ms
+2024-02-25 19:24:14.324 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:24:14.324 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 58.7792ms
+2024-02-25 19:24:14.340 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:24:14.340 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:24:14.342 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.6801ms
+2024-02-25 19:24:14.354 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.4508ms
+2024-02-25 19:25:29.146 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Details/2 - null null
+2024-02-25 19:25:29.190 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:25:29.190 +05:30 [INF] Route matched with {action = "Details", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:25:29.211 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:25:29.218 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:25:29.241 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+WHERE `t`.`Id` = @__p_0
+LIMIT 1
+2024-02-25 19:27:00.611 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 91400.0182ms.
+2024-02-25 19:27:00.611 +05:30 [INF] Executing ViewResult, running view Details.
+2024-02-25 19:27:03.122 +05:30 [INF] Executed ViewResult - view Details executed in 2510.439ms.
+2024-02-25 19:27:03.124 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) in 93933.4256ms
+2024-02-25 19:27:03.125 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:27:03.126 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Details/2 - 200 null text/html; charset=utf-8 93979.7024ms
+2024-02-25 19:27:03.152 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:27:03.152 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:27:03.156 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.6175ms
+2024-02-25 19:27:03.177 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.0411ms
+2024-02-25 19:27:05.920 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:27:05.965 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:27:05.967 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:27:05.985 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:27:05.991 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:27:05.992 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.6986ms.
+2024-02-25 19:27:05.993 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:27:06.001 +05:30 [INF] Executed ViewResult - view Index executed in 8.8487ms.
+2024-02-25 19:27:06.001 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 33.9549ms
+2024-02-25 19:27:06.002 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:27:06.002 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 82.2567ms
+2024-02-25 19:27:06.020 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:27:06.021 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:27:06.022 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.4723ms
+2024-02-25 19:27:06.042 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.3768ms
+2024-02-25 19:27:08.066 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Details/2 - null null
+2024-02-25 19:27:08.134 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:27:08.136 +05:30 [INF] Route matched with {action = "Details", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:27:08.154 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:27:08.163 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:27:08.168 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+WHERE `t`.`Id` = @__p_0
+LIMIT 1
+2024-02-25 19:27:37.681 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 29526.2792ms.
+2024-02-25 19:27:37.682 +05:30 [INF] Executing ViewResult, running view Details.
+2024-02-25 19:27:44.154 +05:30 [INF] Executed ViewResult - view Details executed in 6471.8867ms.
+2024-02-25 19:27:44.154 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) in 36017.7445ms
+2024-02-25 19:27:44.160 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:27:44.161 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Details/2 - 200 null text/html; charset=utf-8 36094.9734ms
+2024-02-25 19:27:44.190 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:27:44.191 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:27:44.191 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.6592ms
+2024-02-25 19:27:44.211 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.4271ms
+2024-02-25 19:27:48.017 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:27:48.044 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:27:48.044 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:27:48.067 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:27:48.073 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:27:48.074 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.0498ms.
+2024-02-25 19:27:48.074 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:27:48.079 +05:30 [INF] Executed ViewResult - view Index executed in 4.5953ms.
+2024-02-25 19:27:48.079 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 34.6066ms
+2024-02-25 19:27:48.079 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:27:48.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 62.9414ms
+2024-02-25 19:27:48.100 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:27:48.103 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:27:48.105 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.8263ms
+2024-02-25 19:27:48.114 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.559ms
+2024-02-25 19:27:49.538 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Payments - null null
+2024-02-25 19:27:49.571 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.PaymentsController.Index (IFMAMVCDemo)'
+2024-02-25 19:27:49.573 +05:30 [INF] Route matched with {action = "Index", controller = "Payments", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.PaymentsController (IFMAMVCDemo).
+2024-02-25 19:27:49.589 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.PaymentsController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:27:49.602 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Amount`, `p`.`MemberId`, `p`.`PaymentDate`, `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+FROM `Payments` AS `p`
+INNER JOIN `Members` AS `m` ON `p`.`MemberId` = `m`.`Id`
+2024-02-25 19:27:49.610 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.PaymentsController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 20.7146ms.
+2024-02-25 19:27:49.611 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:27:49.625 +05:30 [INF] Executed ViewResult - view Index executed in 14.3795ms.
+2024-02-25 19:27:49.625 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.PaymentsController.Index (IFMAMVCDemo) in 51.7456ms
+2024-02-25 19:27:49.625 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.PaymentsController.Index (IFMAMVCDemo)'
+2024-02-25 19:27:49.626 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Payments - 200 null text/html; charset=utf-8 88.5989ms
+2024-02-25 19:27:49.642 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:27:49.642 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:27:49.644 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8522ms
+2024-02-25 19:27:49.670 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.0148ms
+2024-02-25 19:27:51.867 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Payments/Details/2 - null null
+2024-02-25 19:27:51.922 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.PaymentsController.Details (IFMAMVCDemo)'
+2024-02-25 19:27:51.924 +05:30 [INF] Route matched with {action = "Details", controller = "Payments", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.PaymentsController (IFMAMVCDemo).
+2024-02-25 19:27:51.949 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.PaymentsController.Details (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:27:51.959 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Amount`, `p`.`MemberId`, `p`.`PaymentDate`, `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+FROM `Payments` AS `p`
+INNER JOIN `Members` AS `m` ON `p`.`MemberId` = `m`.`Id`
+WHERE `p`.`Id` = @__id_0
+LIMIT 1
+2024-02-25 19:27:51.959 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.PaymentsController.Details (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 9.9813ms.
+2024-02-25 19:27:51.960 +05:30 [INF] Executing ViewResult, running view Details.
+2024-02-25 19:27:51.970 +05:30 [INF] Executed ViewResult - view Details executed in 10.4574ms.
+2024-02-25 19:27:51.970 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.PaymentsController.Details (IFMAMVCDemo) in 46.2018ms
+2024-02-25 19:27:51.970 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.PaymentsController.Details (IFMAMVCDemo)'
+2024-02-25 19:27:51.971 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Payments/Details/2 - 200 null text/html; charset=utf-8 103.8464ms
+2024-02-25 19:27:51.983 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:27:51.986 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:27:51.987 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.3905ms
+2024-02-25 19:27:51.997 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.6407ms
+2024-02-25 19:27:55.255 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Payments - null null
+2024-02-25 19:27:55.295 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.PaymentsController.Index (IFMAMVCDemo)'
+2024-02-25 19:27:55.295 +05:30 [INF] Route matched with {action = "Index", controller = "Payments", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.PaymentsController (IFMAMVCDemo).
+2024-02-25 19:27:55.312 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.PaymentsController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:27:55.317 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Amount`, `p`.`MemberId`, `p`.`PaymentDate`, `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+FROM `Payments` AS `p`
+INNER JOIN `Members` AS `m` ON `p`.`MemberId` = `m`.`Id`
+2024-02-25 19:27:55.318 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.PaymentsController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.0216ms.
+2024-02-25 19:27:55.318 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:27:55.322 +05:30 [INF] Executed ViewResult - view Index executed in 4.1309ms.
+2024-02-25 19:27:55.323 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.PaymentsController.Index (IFMAMVCDemo) in 27.1365ms
+2024-02-25 19:27:55.323 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.PaymentsController.Index (IFMAMVCDemo)'
+2024-02-25 19:27:55.323 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Payments - 200 null text/html; charset=utf-8 68.4075ms
+2024-02-25 19:27:55.344 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:27:55.345 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:27:55.346 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.4423ms
+2024-02-25 19:27:55.360 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.0712ms
+2024-02-25 19:28:01.807 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:28:01.843 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:28:01.843 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:28:01.860 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:28:01.867 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:28:01.868 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.8552ms.
+2024-02-25 19:28:01.868 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:28:01.872 +05:30 [INF] Executed ViewResult - view Index executed in 4.443ms.
+2024-02-25 19:28:01.873 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 29.3289ms
+2024-02-25 19:28:01.873 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:28:01.873 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 66.0894ms
+2024-02-25 19:28:01.891 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:28:01.891 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:28:01.893 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.56ms
+2024-02-25 19:28:01.907 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.8713ms
+2024-02-25 19:28:07.094 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Details/1 - null null
+2024-02-25 19:28:07.123 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:28:07.123 +05:30 [INF] Route matched with {action = "Details", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:28:07.138 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:28:07.143 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:28:07.147 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+WHERE `t`.`Id` = @__p_0
+LIMIT 1
+2024-02-25 19:28:24.096 +05:30 [INF] User profile is available. Using 'C:\Users\krishnya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-25 19:28:24.538 +05:30 [INF] Now listening on: https://localhost:7204
+2024-02-25 19:28:24.538 +05:30 [INF] Now listening on: http://localhost:5029
+2024-02-25 19:28:24.539 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-25 19:28:24.539 +05:30 [INF] Hosting environment: Development
+2024-02-25 19:28:24.539 +05:30 [INF] Content root path: C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\IFMAMVCDemo
+2024-02-25 19:28:33.839 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/ - null null
+2024-02-25 19:28:34.399 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo)'
+2024-02-25 19:28:34.412 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IFMAMVCDemo.Controllers.HomeController (IFMAMVCDemo).
+2024-02-25 19:28:34.471 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:28:34.474 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.457ms.
+2024-02-25 19:28:34.479 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:28:34.585 +05:30 [INF] Executed ViewResult - view Index executed in 103.5485ms.
+2024-02-25 19:28:34.588 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo) in 175.0893ms
+2024-02-25 19:28:34.589 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.HomeController.Index (IFMAMVCDemo)'
+2024-02-25 19:28:34.607 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/ - 200 null text/html; charset=utf-8 779.673ms
+2024-02-25 19:28:34.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:28:34.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:28:34.808 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 22.5881ms
+2024-02-25 19:28:34.868 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.4009ms
+2024-02-25 19:28:56.157 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members - null null
+2024-02-25 19:28:56.208 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:28:56.212 +05:30 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:28:56.228 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:28:56.963 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`FirstName`, `m`.`LastName`, `m`.`MiddleName`, `m`.`Gender`, `m`.`Phone`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`TitleId`, `m`.`DateOfJoin`, `m`.`PassportNo`, `m`.`AadharNo`, `m`.`DrivingLicenseNo`, `t`.`TitleName`, `t`.`Id`, `c`.`Id`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`, `c`.`Amount`, CAST((
+    SELECT COALESCE(SUM(`p`.`Amount`), 0)
+    FROM `Payments` AS `p`
+    WHERE `m`.`Id` = `p`.`MemberId`) AS double), ROUND(`c`.`Amount` - CAST((
+    SELECT COALESCE(SUM(`p0`.`Amount`), 0)
+    FROM `Payments` AS `p0`
+    WHERE `m`.`Id` = `p0`.`MemberId`) AS decimal(65,30)), 2)
+FROM `Members` AS `m`
+INNER JOIN `Titles` AS `t` ON `m`.`TitleId` = `t`.`Id`
+INNER JOIN `Categories` AS `c` ON `t`.`CategoryId` = `c`.`Id`
+LEFT JOIN `Documents` AS `d` ON `m`.`Id` = `d`.`MemberId`
+ORDER BY `m`.`Id`, `t`.`Id`, `c`.`Id`
+2024-02-25 19:28:57.012 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 783.4402ms.
+2024-02-25 19:28:57.014 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 19:28:57.043 +05:30 [INF] Executed ViewResult - view Index executed in 29.8327ms.
+2024-02-25 19:28:57.048 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo) in 835.5858ms
+2024-02-25 19:28:57.048 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Index (IFMAMVCDemo)'
+2024-02-25 19:28:57.056 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members - 200 null text/html; charset=utf-8 899.3669ms
+2024-02-25 19:28:57.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:28:57.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:28:57.060 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.6322ms
+2024-02-25 19:28:57.094 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.1341ms
+2024-02-25 19:28:59.950 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/Members/Details/1 - null null
+2024-02-25 19:29:00.006 +05:30 [INF] Executing endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:29:00.011 +05:30 [INF] Route matched with {action = "Details", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller IFMAMVCDemo.Controllers.MembersController (IFMAMVCDemo).
+2024-02-25 19:29:00.038 +05:30 [INF] Executing action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) - Validation state: "Valid"
+2024-02-25 19:29:00.097 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AadharNo`, `t`.`Address`, `t`.`DateOfBirth`, `t`.`DateOfJoin`, `t`.`DrivingLicenseNo`, `t`.`FirstName`, `t`.`Gender`, `t`.`LastName`, `t`.`MiddleName`, `t`.`PassportNo`, `t`.`Phone`, `t`.`TitleId`, `d`.`Id`, `d`.`FileName`, `d`.`MemberId`
+FROM (
+    SELECT `m`.`Id`, `m`.`AadharNo`, `m`.`Address`, `m`.`DateOfBirth`, `m`.`DateOfJoin`, `m`.`DrivingLicenseNo`, `m`.`FirstName`, `m`.`Gender`, `m`.`LastName`, `m`.`MiddleName`, `m`.`PassportNo`, `m`.`Phone`, `m`.`TitleId`
+    FROM `Members` AS `m`
+    WHERE `m`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Documents` AS `d` ON `t`.`Id` = `d`.`MemberId`
+ORDER BY `t`.`Id`
+2024-02-25 19:29:00.130 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`CategoryId`, `t`.`TitleName`
+FROM `Titles` AS `t`
+WHERE `t`.`Id` = @__p_0
+LIMIT 1
+2024-02-25 19:29:20.099 +05:30 [INF] Executed action method IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 20060.5125ms.
+2024-02-25 19:29:20.100 +05:30 [INF] Executing ViewResult, running view Details.
+2024-02-25 19:29:20.113 +05:30 [INF] Executed ViewResult - view Details executed in 13.1326ms.
+2024-02-25 19:29:20.113 +05:30 [INF] Executed action IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo) in 20102.001ms
+2024-02-25 19:29:20.113 +05:30 [INF] Executed endpoint 'IFMAMVCDemo.Controllers.MembersController.Details (IFMAMVCDemo)'
+2024-02-25 19:29:20.114 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/Members/Details/1 - 200 null text/html; charset=utf-8 20165.2988ms
+2024-02-25 19:29:20.148 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-25 19:29:20.148 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - null null
+2024-02-25 19:29:20.157 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.3321ms

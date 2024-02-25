@@ -107,7 +107,9 @@ namespace IFMAMVCDemo.Controllers
                     DrivingLicenseNo = member.DrivingLicenseNo,
                     Documents = member.Documents,
                     // Set TitleName from title
-                    TitleName = title.TitleName
+                    TitleName = title.TitleName,
+                    Payments = member.Payments != null ? member.Payments.OrderByDescending(p => p.PaymentDate).ToList() : new List<Payment>()
+
                 };
 
                 return View(viewModel);
@@ -146,6 +148,7 @@ namespace IFMAMVCDemo.Controllers
             ModelState.Remove("Title");
             ModelState.Remove("Payments");
             ModelState.Remove("Documents");
+            ModelState.Remove("Files");
             if (ModelState.IsValid)
             {
                 using (var transaction = _context.Database.BeginTransaction())
