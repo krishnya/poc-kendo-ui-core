@@ -16,29 +16,30 @@
         <div class="k-card-body">
             @(
                 Html.Kendo().Grid<Member>().Name("memberGrid")
-                        .Sortable()
-                        .Editable(mode => mode.Mode(GridEditMode.PopUp).TemplateName("MemberEditor"))
-                        .Scrollable()
-                        .Filterable()
-                        .ToolBar(x =>
-                        {
-                            x.Create();
-                            x.Excel();
-                        })
-                        .Columns(columns =>
-                        {
-                            columns.Bound(p => p.Id).Hidden();
-                            columns.Bound(p => p.FirstName);
-                            columns.Bound(p => p.LastName);
-                            columns.Bound(p => p.Gender);
-                            columns.ForeignKey(p => p.TitleId, ds => ds.Read(read => read.Url(Url.Page("Settings", "GetTitles"))), "Id", "TitleName", true).Title("Title");
-                            columns.Bound(m => m.DateOfJoin);
-                            columns.Bound(p => p.CategoryAmount);
-                            columns.Bound(p => p.TotalPaid);
-                            columns.Command(column =>
+                            .Sortable()                        
+                            .Scrollable()
+                            .Filterable()
+                            .ToolBar(x =>
+                            {                            
+                                x.Custom().Text("New Member").Name("customAddButton");
+                                x.Excel();
+                            })
+                            .Columns(columns =>
                             {
-                                column.Edit();
-                                column.Destroy();                        
+                                columns.Bound(p => p.Id).Hidden();
+                                columns.Bound(p => p.FirstName);
+                                columns.Bound(p => p.LastName);
+                                columns.Bound(p => p.Gender);
+                                columns.ForeignKey(p => p.TitleId, ds => ds.Read(read => read.Url(Url.Page("Settings", "GetTitles"))), "Id", "TitleName", true).Title("Title");                                 
+                                columns.Bound(m => m.DateOfJoin);
+                                columns.Bound(p => p.CategoryAmount);
+                                columns.Bound(p => p.TotalPaid);
+                                columns.Bound(p => p.Balance);
+                                columns.Command(column =>
+                            {                                
+                                column.Custom("Edit").Click("editMember").HtmlAttributes(new { @class = "k-grid-edit-command k-button k-button-md k-rounded-md k-button-solid k-button-solid-primary" });
+                                column.Custom("Delete").Click("deleteMember").HtmlAttributes(new { @class = "k-grid-remove-command k-button k-button-md k-rounded-md k-button-solid k-button-solid-base" });
+                        
                             });
                     })
                 .Excel(excel => excel
@@ -47,11 +48,8 @@
                 .ProxyURL("/Members?handler=Save")
                 )
                 .DataSource(ds => ds.Ajax()
-                .Read(r => r.Url("/Members?handler=Read").Data("forgeryToken"))
-                .Update(u => u.Url("/Members?handler=Update").Data("forgeryToken"))
-                .Create(c => c.Url("/Members?handler=Create").Data("forgeryToken"))
-                .Destroy(d => d.Url("/Members?handler=Destroy").Data("forgeryToken"))
-                .Events(events => events.RequestEnd("onRequestEnd").Sync("onSave"))
+                .Read(r => r.Url("/Members?handler=Read").Data("forgeryToken"))                
+                .Events(events => events.RequestEnd("onRequestEnd"))
                 .Model(m =>
                 {
                     m.Id(id => id.Id);
@@ -59,13 +57,16 @@
                 })
                 .Events(events => events.Error("grid_error"))
                 .PageSize(10)
+                .ServerOperation(false)
                 )                
-                .Pageable()                
+                .Pageable()
+                .Events(events => events.DataBound("onDataBound"))
                 )
 
         </div>
     </div>
 </div>
+<div id="members-editor-window"></div>
 
 
 <script>
@@ -73,8 +74,245 @@
         return kendo.antiForgeryTokens();
     }
 
+    // $(document).on('click', '.k-grid-add', function (e) {
+    //     alert("Add button clicked...");
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     addMember(e);
+    // });
+    
+
+
+    function addMember(e) {
+        e.preventDefault(); // Prevent the default behavior
+
+        // Check if the window already exists
+        var windowElement = $("#members-editor-window");
+        var windowWidget = windowElement.data("kendoWindow");
+
+        // If the window does not exist, create it
+        if (!windowWidget) {
+            windowElement.kendoWindow({
+                title: "Add Member",
+                modal: true,
+                visible: false,
+                resizable: false,
+                width: 600,  // Increase the width
+                height: 800, // Increase the height
+            });
+
+            windowWidget = windowElement.data("kendoWindow");
+        }
+
+        // Load the MembersEditor template into the window via an AJAX request
+        $.get('/Members?handler=MembersEditor', function (data) {
+            windowWidget.content(data);
+            windowWidget.center().open();
+
+            // Get the form
+            var form = windowWidget.element.find("form");
+
+            // Remove any existing submit event handlers
+            form.off('submit');
+
+            // Handle the form submit event
+            form.on('submit', function (e) {
+                e.preventDefault();
+                // Call your saveMember function with the form and an empty data item
+                saveMember(form, {});
+                // Close the window
+                windowWidget.close();
+            });
+
+            // Bind the click event handler to the cancel button
+            $(".k-grid-cancel-command").off("click").on("click", function () {
+                windowWidget.close();
+            });
+        });
+    }
+
+    function editMember(e) {
+        e.preventDefault(); // Prevent the default behavior
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        // Check if the window already exists
+        var windowElement = $("#members-editor-window");
+        var windowWidget = windowElement.data("kendoWindow");
+
+        // If the window does not exist, create it
+        if (!windowWidget) {
+            windowElement.kendoWindow({
+                title: "Edit Member",
+                modal: true,
+                visible: false,
+                resizable: false,
+                width: 600,  // Increase the width
+                height: 800, // Increase the height
+            });
+
+            windowWidget = windowElement.data("kendoWindow");
+        }
+
+        // Load the MembersEditor template into the window via an AJAX request
+        $.get('/Members?handler=MembersEditor', function (data) {
+            windowWidget.content(data);
+            windowWidget.center().open();
+
+            // Populate the form fields with the data item values
+            var form = windowWidget.element.find("form");
+            for (var field in dataItem) {
+                var value = dataItem[field];
+                if (value instanceof Date) {
+                    value = kendo.toString(value, "yyyy-MM-dd");
+                }
+                form.find("input[name='" + field + "']").val(value);
+            }
+
+            // Remove any existing submit event handlers
+            form.off('submit');
+
+            // Handle the form submit event
+            form.on('submit', function (e) {
+                e.preventDefault();
+                // Call your saveMember function with the form and data item
+                saveMember(form, dataItem);
+                // Close the window
+                windowWidget.close();
+            });
+
+            // Bind the click event handler to the cancel button
+            $(".k-grid-cancel-command").off("click").on("click", function () {
+                windowWidget.close();
+            });
+        });
+    }
+
+
+    function onDataBound() {
+        // Attach the click event handler to the custom button
+        $(".k-grid-customaddbutton").click(function (e) {
+            e.preventDefault();
+            addMember(e);
+        });
+
+        // Get the Edit and Delete buttons
+        var editButton = $(".k-grid-edit-command");
+        var deleteButton = $(".k-grid-remove-command");
+
+        // Add the SVG icons and the button text
+        editButton.html('<span class="k-svg-icon k-svg-i-pencil k-button-icon" aria-hidden="true"><svg viewBox="0 0 512 512" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="m334.9 86.6 45.3-45.3c12.4-12.4 32.8-12.4 45.3 0l45.3 45.3c12.4 12.4 12.4 32.8 0 45.3l-45.3 45.3-90.6-90.6zm-22.6 22.6L32 389.5V480h90.5l280.3-280.3-90.5-90.5zM99.9 412.1l-22.6-22.6 235-235 22.6 22.6-235 235z"></path></svg></span><span class="k-button-text">Edit</span>');
+        deleteButton.html('<span class="k-svg-icon k-svg-i-x k-button-icon" aria-hidden="true"><svg viewBox="0 0 512 512" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96l45.3 45.3z"></path></svg></span><span class="k-button-text">Delete</span>');
+    }
+
+    function saveMember(form, dataItem) {
+        var isNew = dataItem.Id == null;
+       // alert("saveMember called from parent..." + dataItem.Id + " isNew =" + (isNew ? "Create" : "Update"));
+
+        var formData = new FormData();
+        $(form).find('input, select, textarea').each(function () {
+            if ($(this).attr('type') === 'file') {
+                var files = $(this)[0].files;
+                for (var i = 0; i < files.length; i++) {
+                    formData.append($(this).attr('name'), files[i]);
+                }
+            } else {
+                formData.append($(this).attr('name'), $(this).val());
+            }
+        });
+
+        $.ajax({
+            url: "/Members?handler=" + (isNew ? "Create" : "Update"),
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (result) {
+                console.log("saveMember called from parent and success..." + result);
+                // Refresh the grid
+                $("#memberGrid").data("kendoGrid").dataSource.read();
+                $("#memberGrid").data("kendoGrid").refresh();
+            },
+            error: function (result) {
+                console.log("saveMember called from parent and errored..." + result);
+                // Handle the error
+            }
+        });
+    }
+
+    // function editMember(e) {
+
+    //     e.preventDefault(); // Prevent the default behavior
+    //     var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+    //     // Create a new Kendo UI Window
+    //     var window = $("<div class='members-editor-window' />").kendoWindow({
+    //         title: "Edit Member",
+    //         modal: true,
+    //         visible: false,
+    //         resizable: false,
+    //         width: 600,  // Increase the width
+    //         height: 800, // Increase the height
+    //     }).data("kendoWindow");
+
+    //     // Load the MembersEditor template into the window via an AJAX request
+    //     $.get('/Members?handler=MembersEditor', function (data) {
+    //         window.content(data);
+    //         window.center().open();
+
+    //         // Populate the form fields with the data item values
+    //         var form = window.element.find("form");
+    //         for (var field in dataItem) {
+    //             var value = dataItem[field];
+    //             if (value instanceof Date) {
+    //                 value = kendo.toString(value, "yyyy-MM-dd");
+    //             }
+    //             form.find("input[name='" + field + "']").val(value);
+    //         }
+
+    //         // Remove any existing submit event handlers
+    //         form.off('submit');
+
+    //         // Handle the form submit event
+    //         form.on('submit', function (e) {
+    //             e.preventDefault();                
+    //             // Call your saveMember function with the form and data item
+    //             saveMember(form, dataItem);
+    //             // Close the window                
+    //             window.close();                
+    //         });
+
+    //     });
+    // }
+
+
+
+
+
+    function deleteMember(e) {
+        e.preventDefault(); // Prevent the default behavior
+
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        $.ajax({
+            url: "/Members?handler=Destroy",
+            type: "POST",
+            data: { id: dataItem.Id },
+            success: function (result) {
+                console.log("deleteMember called from parent and success..." + result);
+                // Refresh the grid
+                $("#memberGrid").data("kendoGrid").dataSource.read();
+                $("#memberGrid").data("kendoGrid").refresh();
+            },
+            error: function (result) {
+                console.log("deleteMember called from parent and errored..." + result);
+                // Handle the error
+            }
+        });
+    }
+
+
+
     function onRequestEnd(e) {
-        if (e.type === "create") {
+        if (e.type === "create" || e.type === "update") {
             var grid = $("#memberGrid").data("kendoGrid");
             grid.dataSource.read();
             grid.refresh();

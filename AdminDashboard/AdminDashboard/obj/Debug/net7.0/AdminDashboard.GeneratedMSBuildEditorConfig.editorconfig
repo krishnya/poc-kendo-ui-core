@@ -62,6 +62,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/mylearning/kendo-ui-poc/poc-kendo-ui-core/AdminDashboard/AdminDashboard/Pages/MemberMaster/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyTWFzdGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mylearning/kendo-ui-poc/poc-kendo-ui-core/AdminDashboard/AdminDashboard/Pages/MemberMaster/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyTWFzdGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mylearning/kendo-ui-poc/poc-kendo-ui-core/AdminDashboard/AdminDashboard/Pages/MemberMaster/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyTWFzdGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mylearning/kendo-ui-poc/poc-kendo-ui-core/AdminDashboard/AdminDashboard/Pages/MemberMaster/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyTWFzdGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mylearning/kendo-ui-poc/poc-kendo-ui-core/AdminDashboard/AdminDashboard/Pages/MemberMaster/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyTWFzdGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/mylearning/kendo-ui-poc/poc-kendo-ui-core/AdminDashboard/AdminDashboard/Pages/Members.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -104,6 +124,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/mylearning/kendo-ui-poc/poc-kendo-ui-core/AdminDashboard/AdminDashboard/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mylearning/kendo-ui-poc/poc-kendo-ui-core/AdminDashboard/AdminDashboard/Pages/Shared/_MembersEditor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9NZW1iZXJzRWRpdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/mylearning/kendo-ui-poc/poc-kendo-ui-core/AdminDashboard/AdminDashboard/Pages/Shared/_ValidationScriptsPartial.cshtml]

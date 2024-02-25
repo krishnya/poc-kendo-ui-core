@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -47,6 +48,18 @@ namespace AdminDashboard
             });
             services.AddRazorPages().AddJsonOptions(options =>
                 options.JsonSerializerOptions.PropertyNamingPolicy = null);
+
+            //services.AddControllersWithViews(options =>
+            //{
+            //    options.ModelBinderProviders.Insert(0, new CustomDateTimeModelBinderProvider());
+            //});
+
+            //services.AddControllers().AddJsonOptions(options =>
+            //{
+            //    options.JsonSerializerOptions.Converters.Add(new DateTimeConverter());
+            //});
+
+
 
             services.Configure<RequestLocalizationOptions>(options =>
             {

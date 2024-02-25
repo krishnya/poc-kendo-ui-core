@@ -19,6 +19,7 @@ namespace AdminDashboard.Data.Models.Members
         public string MiddleName { get; set; }
         [Required]
         public string Gender { get; set; }
+        [NotMapped]
         public string FullName => $"{LastName}, {FirstName}";
         public string Phone { get; set; }
         public string Address { get; set; }
@@ -33,11 +34,17 @@ namespace AdminDashboard.Data.Models.Members
         public string DrivingLicenseNo { get; set; }
         public virtual Title Title { get; set; }
         [NotMapped]
-        public double TotalPaid => Payments?.Sum(p => p.Amount) ?? 0;
-        [NotMapped]        
-        public double CategoryAmount => Title?.Category?.Amount ?? 0;
+        public string TitleName { get; set; }
         [NotMapped]
-        public double Balance => CategoryAmount - TotalPaid;
+        public double TotalPaid { get; set;}
+        //public double TotalPaid => Payments?.Sum(p => p.Amount) ?? 0;
+        [NotMapped]
+        public double CategoryAmount { get; set; }
+        //public double CategoryAmount => Title?.Category?.Amount ?? 0;
+        [NotMapped]
+        public double Balance { get; set; }
+        //public double Balance => CategoryAmount - TotalPaid;
+        
         public virtual ICollection<Payment> Payments { get; set; }
         public virtual ICollection<Document> Documents { get; set; }
         

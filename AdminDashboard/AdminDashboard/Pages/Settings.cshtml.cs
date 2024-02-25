@@ -66,6 +66,7 @@ namespace AdminDashboard.Pages
 
         public JsonResult OnPostCreate([DataSourceRequest] DataSourceRequest request, Category category)
         {
+            ModelState.Clear();
             if (ModelState.IsValid)
             {
                 _context.Categories.Add(category);
@@ -77,6 +78,7 @@ namespace AdminDashboard.Pages
 
         public JsonResult OnPostUpdate([DataSourceRequest] DataSourceRequest request, Category category)
         {
+            ModelState.Clear();
             if (ModelState.IsValid)
             {
                 _context.Categories.Update(category);
@@ -88,6 +90,7 @@ namespace AdminDashboard.Pages
 
         public JsonResult OnPostDestroy([DataSourceRequest] DataSourceRequest request, Category category)
         {
+            ModelState.Clear();
             if (ModelState.IsValid)
             {
                 _context.Categories.Remove(category);
@@ -113,6 +116,7 @@ namespace AdminDashboard.Pages
 
         public JsonResult OnPostCreateTitle([DataSourceRequest] DataSourceRequest request, Title title)
         {
+            ModelState.Clear();
             if (ModelState.IsValid)
             {
                 _context.Titles.Add(title);
@@ -124,6 +128,7 @@ namespace AdminDashboard.Pages
 
         public JsonResult OnPostUpdateTitle([DataSourceRequest] DataSourceRequest request, Title title)
         {
+            ModelState.Clear();
             if (ModelState.IsValid)
             {
                 _context.Titles.Update(title);

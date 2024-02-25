@@ -1,0 +1,162 @@
+﻿@using System.Collections
+@model AdminDashboard.Data.Models.Members.Member
+
+<form id="memberForm" method='post' enctype='multipart/form-data'>
+    @Html.HiddenFor(model => model.Id)
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="k-edit-form-container">
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.FirstName)
+        </div>
+        <div class="k-edit-field">            
+            <input type="text" asp-for="FirstName" class="k-input k-textbox" name="FirstName" data-bind="value:FirstName" required>
+        </div>
+
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.LastName)
+        </div>
+        <div class="k-edit-field">
+            <input type="text" class="k-input k-textbox" name="LastName" data-bind="value:LastName" asp-for="LastName" required>
+        </div>
+
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.MiddleName)
+        </div>
+        <div class="k-edit-field">
+            <input type="text" class="k-input k-textbox" name="MiddleName" data-bind="value:MiddleName">
+        </div>
+
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.Gender)
+        </div>
+        <div class="k-edit-field">
+            <input type="text" class="k-input k-textbox" name="Gender" data-bind="value:Gender" required>
+        </div>
+
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.Phone)
+        </div>
+        <div class="k-edit-field">
+            <input type="text" class="k-input k-textbox" name="Phone" data-bind="value:Phone">
+        </div>
+
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.Address)
+        </div>
+        <div class="k-edit-field">
+            <input type="text" class="k-input k-textbox" name="Address" data-bind="value:Address">
+        </div>
+
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.DateOfBirth)
+        </div>
+        <div class="k-edit-field">
+            <input type="date" class="k-input k-textbox" name="DateOfBirth" data-bind="value:DateOfBirth" required>
+        </div>
+
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.TitleId)
+        </div>
+   @*      <div class="k-edit-field">
+            <select asp-for="TitleId" asp-items="@(new SelectList(Model.Titles,"Id","TitleName"))" class="k-input k-textbox" name="TitleId" data-bind="value:TitleId">
+                <option value="">Select Title</option>
+            </select>
+        </div> *@
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.DateOfJoin)
+        </div>
+        <div class="k-edit-field">
+            <input type="date" class="k-input k-textbox" name="DateOfJoin" data-bind="value:DateOfJoin" required>
+        </div>
+
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.PassportNo)
+        </div>
+        <div class="k-edit-field">
+            <input type="text" class="k-input k-textbox" name="PassportNo" data-bind="value:PassportNo">
+        </div>
+
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.AadharNo)
+        </div>
+        <div class="k-edit-field">
+            <input type="text" class="k-input k-textbox" name="AadharNo" data-bind="value:AadharNo">
+        </div>
+
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.DrivingLicenseNo)
+        </div>
+        <div class="k-edit-field">
+            <input type="text" class="k-input k-textbox" name="DrivingLicenseNo" data-bind="value:DrivingLicenseNo">
+        </div>
+
+        <div class="k-edit-label">
+            @Html.LabelFor(model => model.Documents)
+        </div>
+        <div class="k-edit-field">
+            <input type="file" name="files" multiple>
+        </div>
+
+        <div class="k-edit-buttons k-state-default">
+            <button type="submit" class="k-grid-save-command k-button k-button-md k-rounded-md k-button-solid k-button-solid-primary">
+                <span class="k-svg-icon k-svg-i-save k-button-icon" aria-hidden="true">
+                    <svg viewBox="0 0 512 512" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M384 32H64c-17.6 0-32 14.4-32 32v384c0 17.6 14.4 32 32 32h384c17.6 0 32-14.4 32-32V128l-96-96zm-64 32v128h-64V64h64zm128 384-383.9.1-.1-.1V64.1l.1-.1H96v160h256V64h18.7l77.3 77.3V448z"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Save</span>
+            </button>
+                        
+            <button type="button" onclick="cancelMember()" class="k-grid-cancel-command k-button k-button-md k-rounded-md k-button-solid k-button-solid-base">
+                <span class="k-svg-icon k-svg-i-cancel-outline k-button-icon" aria-hidden="true">
+                    <svg viewBox="0 0 512 512" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 32c-56.1 0-107.4 20.6-146.7 54.7-8.1 7-15.6 14.6-22.6 22.6C52.6 148.6 32 199.9 32 256c0 123.7 100.3 224 224 224 56.1 0 107.4-20.6 146.7-54.7 8.1-7 15.6-14.6 22.6-22.6C459.4 363.4 480 312.1 480 256c0-123.7-100.3-224-224-224zm0 416c-106 0-192-86-192-192 0-47.2 17.1-90.5 45.4-124L380 402.6c-33.5 28.3-76.8 45.4-124 45.4zm146.6-68L132 109.4C165.5 81.1 208.8 64 256 64c106 0 192 86 192 192 0 47.2-17.1 90.5-45.4 124z"></path>
+                    </svg>
+                </span><span class="k-button-text">Cancel</span>
+            </button>
+
+        </div>
+
+    </div>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+
+<script>
+    function cancelMember() {        
+        // Close the window
+        $(".members-editor-window").data("kendoWindow").close();
+        // Unbind the click event handler
+        $("#customAddButton").off("click");
+        // Unbind the click event handler from the cancel button
+        $(".k-grid-cancel-command").off("click");
+        // Refresh the grid
+        $("#memberGrid").data("kendoGrid").refresh();
+    }
+
+  
+
+  
+
+</script>
+
+<style>
+    .k-button {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .k-primary {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .k-state-default {
+        background-color: #f8f9fa;
+        color: #343a40;
+    }
+
+</style>

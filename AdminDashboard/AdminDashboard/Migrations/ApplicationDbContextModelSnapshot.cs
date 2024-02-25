@@ -210,6 +210,25 @@ namespace AdminDashboard.Migrations
                     b.ToTable("Titles");
                 });
 
+            modelBuilder.Entity("Document", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("FileName")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("MemberId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MemberId");
+
+                    b.ToTable("Documents");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -375,6 +394,17 @@ namespace AdminDashboard.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("Document", b =>
+                {
+                    b.HasOne("AdminDashboard.Data.Models.Members.Member", "Member")
+                        .WithMany("Documents")
+                        .HasForeignKey("MemberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Member");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -428,6 +458,8 @@ namespace AdminDashboard.Migrations
 
             modelBuilder.Entity("AdminDashboard.Data.Models.Members.Member", b =>
                 {
+                    b.Navigation("Documents");
+
                     b.Navigation("Payments");
                 });
 #pragma warning restore 612, 618

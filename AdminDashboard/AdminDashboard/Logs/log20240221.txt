@@ -1,0 +1,1400 @@
+2024-02-21 06:55:26.447 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 06:55:26.740 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 06:55:26.741 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 06:55:26.742 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 06:55:26.743 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 06:55:26.743 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 06:55:26.754 +05:30 [INF] Executed page /Settings in 13.1034ms
+2024-02-21 06:55:26.755 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 06:55:26.755 +05:30 [INF] HTTP GET /Settings responded 200 in 14.5393 ms
+2024-02-21 06:55:26.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 308.4688ms
+2024-02-21 06:55:39.609 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Update application/x-www-form-urlencoded;+charset=UTF-8 749
+2024-02-21 06:55:39.612 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 06:55:39.613 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 06:55:39.621 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostUpdate - ModelState is "Invalid"
+2024-02-21 06:56:46.839 +05:30 [INF] User profile is available. Using 'C:\Users\krishnya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-21 06:56:48.581 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-21 06:56:48.584 +05:30 [INF] Hosting environment: Development
+2024-02-21 06:56:48.585 +05:30 [INF] Content root path: C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\AdminDashboard\AdminDashboard
+2024-02-21 06:56:48.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 06:56:48.842 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 06:56:48.884 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 06:56:48.895 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 06:56:48.896 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 06:56:49.612 +05:30 [INF] Executed page /Members in 722.964ms
+2024-02-21 06:56:49.613 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 06:56:49.616 +05:30 [INF] HTTP GET / responded 200 in 773.0856 ms
+2024-02-21 06:56:49.691 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 06:56:49.705 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 1083.7510ms
+2024-02-21 06:56:49.707 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 14.1643ms
+2024-02-21 06:56:49.747 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 06:56:49.826 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.9530ms
+2024-02-21 06:56:50.061 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 06:56:50.074 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 06:56:50.087 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 06:56:50.131 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 06:56:50.179 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 06:56:50.181 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 06:56:50.281 +05:30 [INF] Executed page /Settings in 193.6121ms
+2024-02-21 06:56:50.283 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 06:56:50.284 +05:30 [INF] HTTP GET /Settings responded 200 in 210.8081 ms
+2024-02-21 06:56:50.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 235.0690ms
+2024-02-21 06:56:50.339 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 06:56:50.363 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 06:56:50.364 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 06:56:50.391 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 06:56:50.664 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 06:56:50.664 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 06:56:50.691 +05:30 [INF] Executed page /Members in 327.1347ms
+2024-02-21 06:56:50.692 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 06:56:50.692 +05:30 [INF] HTTP POST /Members responded 200 in 328.3617 ms
+2024-02-21 06:56:50.692 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 353.6878ms
+2024-02-21 06:56:56.377 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 06:56:56.379 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 06:56:56.379 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 06:56:56.379 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 06:56:56.380 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 06:56:56.381 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 06:56:56.392 +05:30 [INF] Executed page /Settings in 12.6071ms
+2024-02-21 06:56:56.392 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 06:56:56.392 +05:30 [INF] HTTP GET /Settings responded 200 in 13.4591 ms
+2024-02-21 06:56:56.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 15.2702ms
+2024-02-21 06:57:08.195 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Update application/x-www-form-urlencoded;+charset=UTF-8 749
+2024-02-21 06:57:08.196 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 06:57:08.196 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 06:57:08.218 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostUpdate - ModelState is "Invalid"
+2024-02-21 06:58:28.722 +05:30 [INF] Executed handler method OnPostUpdate, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 06:58:28.722 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 06:58:28.722 +05:30 [INF] Executed page /Members in 80526.1299ms
+2024-02-21 06:58:28.723 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 06:58:28.723 +05:30 [INF] HTTP POST /Members responded 200 in 80527.0731 ms
+2024-02-21 06:58:28.723 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Update application/x-www-form-urlencoded;+charset=UTF-8 749 - 200 - application/json;+charset=utf-8 80528.5251ms
+2024-02-21 06:58:28.806 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/ multipart/form-data;+boundary=----WebKitFormBoundaryJ0mCH2sSlTiLOapT 44
+2024-02-21 06:58:28.807 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 06:58:28.808 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 06:58:28.815 +05:30 [INF] Antiforgery token validation failed. The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2024-02-21 06:58:28.851 +05:30 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2024-02-21 06:58:28.853 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2024-02-21 06:58:28.853 +05:30 [INF] Executed page /Members in 44.9878ms
+2024-02-21 06:58:28.853 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 06:58:28.853 +05:30 [INF] HTTP POST / responded 400 in 46.5169 ms
+2024-02-21 06:58:28.854 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/ multipart/form-data;+boundary=----WebKitFormBoundaryJ0mCH2sSlTiLOapT 44 - 400 - - 48.5250ms
+2024-02-21 06:58:29.347 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 06:58:29.407 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 06:58:29.414 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 06:58:29.415 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 06:58:29.415 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 06:58:29.472 +05:30 [INF] Executed page /Members in 57.2865ms
+2024-02-21 06:58:29.472 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 06:58:29.473 +05:30 [INF] HTTP GET / responded 200 in 65.3423 ms
+2024-02-21 06:58:29.474 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 127.0199ms
+2024-02-21 06:58:29.511 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 06:58:29.512 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 1.3659ms
+2024-02-21 06:58:29.558 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 06:58:29.577 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.3225ms
+2024-02-21 06:58:29.753 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 06:58:29.754 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 06:58:29.759 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 06:58:29.766 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 06:58:29.766 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 06:58:29.767 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 06:58:29.775 +05:30 [INF] Executed page /Settings in 15.9366ms
+2024-02-21 06:58:29.776 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 06:58:29.776 +05:30 [INF] HTTP GET /Settings responded 200 in 21.5744 ms
+2024-02-21 06:58:29.777 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 23.3130ms
+2024-02-21 06:58:29.914 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 06:58:29.916 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 06:58:29.917 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 06:58:29.917 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 06:58:29.927 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 06:58:29.927 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 06:58:29.939 +05:30 [INF] Executed page /Members in 22.6357ms
+2024-02-21 06:58:29.940 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 06:58:29.940 +05:30 [INF] HTTP POST /Members responded 200 in 24.2629 ms
+2024-02-21 06:58:29.942 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 27.5437ms
+2024-02-21 06:58:33.039 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 06:58:33.039 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 06:58:33.039 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 06:58:33.040 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 06:58:33.040 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 06:58:33.040 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 06:58:33.051 +05:30 [INF] Executed page /Settings in 10.9607ms
+2024-02-21 06:58:33.051 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 06:58:33.051 +05:30 [INF] HTTP GET /Settings responded 200 in 11.8948 ms
+2024-02-21 06:58:33.052 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 12.9359ms
+2024-02-21 06:58:50.947 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Create application/x-www-form-urlencoded;+charset=UTF-8 530
+2024-02-21 06:58:50.948 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 06:58:50.949 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 06:58:50.952 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostCreate - ModelState is "Invalid"
+2024-02-21 06:58:50.998 +05:30 [INF] Executed handler method OnPostCreate, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 06:58:50.998 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 06:58:50.999 +05:30 [INF] Executed page /Members in 49.659ms
+2024-02-21 06:58:50.999 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 06:58:50.999 +05:30 [INF] HTTP POST /Members responded 200 in 51.1510 ms
+2024-02-21 06:58:50.999 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Create application/x-www-form-urlencoded;+charset=UTF-8 530 - 200 - application/json;+charset=utf-8 52.7140ms
+2024-02-21 06:59:13.864 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 06:59:13.921 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 06:59:13.922 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 06:59:13.922 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 06:59:13.922 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 06:59:13.959 +05:30 [INF] Executed page /Members in 37.1783ms
+2024-02-21 06:59:13.959 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 06:59:13.959 +05:30 [INF] HTTP GET / responded 200 in 37.9575 ms
+2024-02-21 06:59:13.967 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 103.0167ms
+2024-02-21 06:59:13.998 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 06:59:13.999 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 1.1490ms
+2024-02-21 06:59:14.028 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 06:59:14.040 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.1047ms
+2024-02-21 06:59:14.194 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 06:59:14.195 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 06:59:14.195 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 06:59:14.195 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 06:59:14.196 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 06:59:14.196 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 06:59:14.209 +05:30 [INF] Executed page /Settings in 13.8407ms
+2024-02-21 06:59:14.210 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 06:59:14.210 +05:30 [INF] HTTP GET /Settings responded 200 in 15.3214 ms
+2024-02-21 06:59:14.210 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 16.4777ms
+2024-02-21 06:59:14.294 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 06:59:14.295 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 06:59:14.296 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 06:59:14.296 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 06:59:14.310 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 06:59:14.310 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 06:59:14.312 +05:30 [INF] Executed page /Members in 15.7987ms
+2024-02-21 06:59:14.312 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 06:59:14.313 +05:30 [INF] HTTP POST /Members responded 200 in 17.3348 ms
+2024-02-21 06:59:14.314 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 19.2925ms
+2024-02-21 07:00:12.209 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 07:00:12.247 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:00:12.255 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:00:12.255 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 07:00:12.256 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 07:00:12.285 +05:30 [INF] Executed page /Members in 29.2506ms
+2024-02-21 07:00:12.285 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:00:12.285 +05:30 [INF] HTTP GET / responded 200 in 38.5138 ms
+2024-02-21 07:00:12.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 89.9350ms
+2024-02-21 07:00:12.329 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 07:00:12.330 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 1.4761ms
+2024-02-21 07:00:12.376 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 07:00:12.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.3317ms
+2024-02-21 07:00:12.515 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 07:00:12.516 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:00:12.529 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:00:12.535 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 07:00:12.536 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:00:12.537 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:00:12.550 +05:30 [INF] Executed page /Settings in 19.9589ms
+2024-02-21 07:00:12.550 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:00:12.550 +05:30 [INF] HTTP GET /Settings responded 200 in 34.2470 ms
+2024-02-21 07:00:12.551 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 36.1791ms
+2024-02-21 07:00:12.665 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 07:00:12.668 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:00:12.669 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:00:12.670 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 07:00:12.695 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:00:12.696 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 07:00:12.717 +05:30 [INF] Executed page /Members in 47.9452ms
+2024-02-21 07:00:12.718 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:00:12.718 +05:30 [INF] HTTP POST /Members responded 200 in 49.4785 ms
+2024-02-21 07:00:12.719 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 53.7033ms
+2024-02-21 07:00:13.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 07:00:13.621 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:00:13.621 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:00:13.622 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 07:00:13.623 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:00:13.623 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:00:13.633 +05:30 [INF] Executed page /Settings in 11.4566ms
+2024-02-21 07:00:13.633 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:00:13.634 +05:30 [INF] HTTP GET /Settings responded 200 in 13.0856 ms
+2024-02-21 07:00:13.634 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 14.8490ms
+2024-02-21 07:00:33.653 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Create application/x-www-form-urlencoded;+charset=UTF-8 531
+2024-02-21 07:00:33.654 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:00:33.654 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:00:33.657 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostCreate - ModelState is "Invalid"
+2024-02-21 07:00:33.664 +05:30 [INF] Executed handler method OnPostCreate, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:00:33.665 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 07:00:33.665 +05:30 [INF] Executed page /Members in 11.233ms
+2024-02-21 07:00:33.665 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:00:33.666 +05:30 [INF] HTTP POST /Members responded 200 in 11.9773 ms
+2024-02-21 07:00:33.666 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Create application/x-www-form-urlencoded;+charset=UTF-8 531 - 200 - application/json;+charset=utf-8 13.0846ms
+2024-02-21 07:00:33.677 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 07:00:33.678 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:00:33.678 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:00:33.678 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 07:00:33.685 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:00:33.685 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 07:00:33.686 +05:30 [INF] Executed page /Members in 7.749ms
+2024-02-21 07:00:33.686 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:00:33.686 +05:30 [INF] HTTP POST /Members responded 200 in 8.5360 ms
+2024-02-21 07:00:33.687 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 9.5971ms
+2024-02-21 07:00:33.702 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/ multipart/form-data;+boundary=----WebKitFormBoundaryoSlpjcmv02ICg7P6 44
+2024-02-21 07:00:33.707 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:00:33.708 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:00:33.709 +05:30 [INF] Antiforgery token validation failed. The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2024-02-21 07:00:33.709 +05:30 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2024-02-21 07:00:33.710 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2024-02-21 07:00:33.710 +05:30 [INF] Executed page /Members in 2.2465ms
+2024-02-21 07:00:33.711 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:00:33.711 +05:30 [INF] HTTP POST / responded 400 in 3.4142 ms
+2024-02-21 07:00:33.712 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/ multipart/form-data;+boundary=----WebKitFormBoundaryoSlpjcmv02ICg7P6 44 - 400 - - 9.8431ms
+2024-02-21 07:01:03.899 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 07:01:03.900 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:01:03.900 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:01:03.901 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 07:01:03.901 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:01:03.902 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:01:03.941 +05:30 [INF] Executed page /Settings in 40.9182ms
+2024-02-21 07:01:03.942 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:01:03.942 +05:30 [INF] HTTP GET /Settings responded 200 in 42.1676 ms
+2024-02-21 07:01:03.943 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 43.5652ms
+2024-02-21 07:01:08.209 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/ multipart/form-data;+boundary=----WebKitFormBoundaryYuzKGvOAKtYatVYS 44
+2024-02-21 07:01:08.210 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:01:08.211 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:01:08.212 +05:30 [INF] Antiforgery token validation failed. The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2024-02-21 07:01:08.212 +05:30 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2024-02-21 07:01:08.213 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2024-02-21 07:01:08.213 +05:30 [INF] Executed page /Members in 1.7509ms
+2024-02-21 07:01:08.213 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:01:08.213 +05:30 [INF] HTTP POST / responded 400 in 2.9228 ms
+2024-02-21 07:01:08.214 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/ multipart/form-data;+boundary=----WebKitFormBoundaryYuzKGvOAKtYatVYS 44 - 400 - - 4.9807ms
+2024-02-21 07:01:31.913 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 07:01:31.926 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:01:31.926 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:01:31.926 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 07:01:31.927 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:01:31.927 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:01:31.958 +05:30 [INF] Executed page /Settings in 32.3382ms
+2024-02-21 07:01:31.959 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:01:31.959 +05:30 [INF] HTTP GET /Settings responded 200 in 33.3573 ms
+2024-02-21 07:01:31.960 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 47.0581ms
+2024-02-21 07:01:44.377 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Update application/x-www-form-urlencoded;+charset=UTF-8 705
+2024-02-21 07:01:44.378 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:01:44.378 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:01:44.381 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostUpdate - ModelState is "Valid"
+2024-02-21 07:02:04.031 +05:30 [INF] Executed handler method OnPostUpdate, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:02:04.031 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 07:02:04.032 +05:30 [INF] Executed page /Members in 19653.7499ms
+2024-02-21 07:02:04.032 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:02:04.032 +05:30 [INF] HTTP POST /Members responded 200 in 19654.6600 ms
+2024-02-21 07:02:04.033 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Update application/x-www-form-urlencoded;+charset=UTF-8 705 - 200 - application/json;+charset=utf-8 19655.9117ms
+2024-02-21 07:02:04.122 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/ multipart/form-data;+boundary=----WebKitFormBoundary6vEoGzhFsWIvWNAG 44
+2024-02-21 07:02:04.123 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:02:04.123 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:02:04.124 +05:30 [INF] Antiforgery token validation failed. The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2024-02-21 07:02:04.124 +05:30 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2024-02-21 07:02:04.125 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2024-02-21 07:02:04.125 +05:30 [INF] Executed page /Members in 1.5611ms
+2024-02-21 07:02:04.125 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:02:04.125 +05:30 [INF] HTTP POST / responded 400 in 2.3284 ms
+2024-02-21 07:02:04.126 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/ multipart/form-data;+boundary=----WebKitFormBoundary6vEoGzhFsWIvWNAG 44 - 400 - - 3.9524ms
+2024-02-21 07:02:16.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 07:02:16.190 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:02:16.190 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:02:16.191 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 07:02:16.191 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:02:16.191 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:02:16.213 +05:30 [INF] Executed page /Settings in 22.3944ms
+2024-02-21 07:02:16.213 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:02:16.213 +05:30 [INF] HTTP GET /Settings responded 200 in 23.3841 ms
+2024-02-21 07:02:16.214 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 25.0382ms
+2024-02-21 07:02:30.649 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 07:02:30.696 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:02:30.696 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:02:30.697 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 07:02:30.697 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 07:02:30.712 +05:30 [INF] Executed page /Members in 15.263ms
+2024-02-21 07:02:30.712 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:02:30.712 +05:30 [INF] HTTP GET / responded 200 in 16.2352 ms
+2024-02-21 07:02:30.713 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 63.5086ms
+2024-02-21 07:02:30.756 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 07:02:30.757 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 1.2422ms
+2024-02-21 07:02:30.792 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 07:02:30.804 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.8461ms
+2024-02-21 07:02:30.910 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 07:02:30.912 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:02:30.912 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:02:30.912 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 07:02:30.912 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:02:30.913 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:02:30.922 +05:30 [INF] Executed page /Settings in 10.451ms
+2024-02-21 07:02:30.923 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:02:30.923 +05:30 [INF] HTTP GET /Settings responded 200 in 11.3572 ms
+2024-02-21 07:02:30.923 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 13.0799ms
+2024-02-21 07:02:31.069 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 07:02:31.070 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:02:31.070 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:02:31.071 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 07:02:31.079 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:02:31.080 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 07:02:31.080 +05:30 [INF] Executed page /Members in 10.0545ms
+2024-02-21 07:02:31.081 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:02:31.081 +05:30 [INF] HTTP POST /Members responded 200 in 11.1491 ms
+2024-02-21 07:02:31.081 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 12.4288ms
+2024-02-21 07:04:12.561 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 07:04:12.598 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:04:12.606 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:04:12.606 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 07:04:12.607 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 07:04:12.644 +05:30 [INF] Executed page /Members in 37.4177ms
+2024-02-21 07:04:12.644 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:04:12.644 +05:30 [INF] HTTP GET / responded 200 in 46.4732 ms
+2024-02-21 07:04:12.645 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 83.6646ms
+2024-02-21 07:04:12.702 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 07:04:12.703 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 0.8743ms
+2024-02-21 07:04:12.741 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 07:04:12.749 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.7462ms
+2024-02-21 07:04:13.009 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 07:04:13.011 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:04:13.021 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:04:13.023 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 07:04:13.024 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:04:13.024 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:04:13.033 +05:30 [INF] Executed page /Settings in 12.0865ms
+2024-02-21 07:04:13.033 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:04:13.033 +05:30 [INF] HTTP GET /Settings responded 200 in 21.8008 ms
+2024-02-21 07:04:13.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 24.9941ms
+2024-02-21 07:04:13.427 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 07:04:13.429 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:04:13.430 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:04:13.430 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 07:04:13.437 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:04:13.437 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 07:04:13.450 +05:30 [INF] Executed page /Members in 20.4269ms
+2024-02-21 07:04:13.451 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:04:13.451 +05:30 [INF] HTTP POST /Members responded 200 in 21.4194 ms
+2024-02-21 07:04:13.451 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 23.5214ms
+2024-02-21 07:04:19.507 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 07:04:19.508 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:04:19.508 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:04:19.508 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 07:04:19.510 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:04:19.510 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:04:19.532 +05:30 [INF] Executed page /Settings in 23.7411ms
+2024-02-21 07:04:19.532 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:04:19.533 +05:30 [INF] HTTP GET /Settings responded 200 in 24.5757 ms
+2024-02-21 07:04:19.535 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 27.9950ms
+2024-02-21 07:04:28.514 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Destroy application/x-www-form-urlencoded;+charset=UTF-8 747
+2024-02-21 07:04:28.515 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:04:28.515 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:04:28.519 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostDestroy - ModelState is "Valid"
+2024-02-21 07:04:58.254 +05:30 [INF] Executed page /Members in 29738.6469ms
+2024-02-21 07:04:58.255 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:04:58.255 +05:30 [ERR] HTTP POST /Members responded 500 in 29740.7014 ms
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'mypoc1.documents' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at MySql.EntityFrameworkCore.Storage.Internal.MySQLExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.RemoveRange(IEnumerable`1 entities)
+   at AdminDashboard.Pages.MembersModel.OnPostDestroy(DataSourceRequest request, Member member)
+   at lambda_method616(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-02-21 07:04:58.260 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'mypoc1.documents' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at MySql.EntityFrameworkCore.Storage.Internal.MySQLExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.RemoveRange(IEnumerable`1 entities)
+   at AdminDashboard.Pages.MembersModel.OnPostDestroy(DataSourceRequest request, Member member)
+   at lambda_method616(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-21 07:04:58.481 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Destroy application/x-www-form-urlencoded;+charset=UTF-8 747 - 500 - text/html;+charset=utf-8 29966.9892ms
+2024-02-21 07:05:30.372 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Members - -
+2024-02-21 07:05:30.415 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:05:30.415 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:05:30.415 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 07:05:30.416 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 07:05:30.485 +05:30 [INF] Executed page /Members in 69.5191ms
+2024-02-21 07:05:30.485 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:05:30.485 +05:30 [INF] HTTP GET /Members responded 200 in 70.2994 ms
+2024-02-21 07:05:30.486 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Members - - - 200 - text/html;+charset=utf-8 113.7078ms
+2024-02-21 07:05:30.537 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 07:05:30.538 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 0.9691ms
+2024-02-21 07:05:30.558 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 07:05:30.567 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.1819ms
+2024-02-21 07:05:30.691 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 07:05:30.692 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:05:30.692 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:05:30.692 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 07:05:30.693 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:05:30.693 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:05:30.704 +05:30 [INF] Executed page /Settings in 11.5819ms
+2024-02-21 07:05:30.705 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:05:30.705 +05:30 [INF] HTTP GET /Settings responded 200 in 13.6341 ms
+2024-02-21 07:05:30.706 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 15.1181ms
+2024-02-21 07:05:30.836 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 07:05:30.836 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:05:30.836 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:05:30.837 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 07:05:30.844 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:05:30.845 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 07:05:30.846 +05:30 [INF] Executed page /Members in 9.2208ms
+2024-02-21 07:05:30.846 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:05:30.847 +05:30 [INF] HTTP POST /Members responded 200 in 10.3836 ms
+2024-02-21 07:05:30.847 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 11.2415ms
+2024-02-21 07:05:31.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Payments - -
+2024-02-21 07:05:31.084 +05:30 [INF] Executing endpoint '/Payments'
+2024-02-21 07:05:31.087 +05:30 [INF] Route matched with {page = "/Payments", area = ""}. Executing page /Payments
+2024-02-21 07:05:31.087 +05:30 [INF] Executing handler method AdminDashboard.Pages.PaymentsModel.OnGet - ModelState is "Valid"
+2024-02-21 07:05:31.088 +05:30 [INF] Executed handler method OnGet, returned result .
+2024-02-21 07:05:31.088 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 07:05:31.088 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 07:05:31.126 +05:30 [INF] Executed page /Payments in 38.352ms
+2024-02-21 07:05:31.126 +05:30 [INF] Executed endpoint '/Payments'
+2024-02-21 07:05:31.126 +05:30 [INF] HTTP GET /Payments responded 200 in 41.8286 ms
+2024-02-21 07:05:31.126 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Payments - - - 200 - text/html;+charset=utf-8 68.4870ms
+2024-02-21 07:05:31.156 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 07:05:31.160 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 07:05:31.162 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 1.9757ms
+2024-02-21 07:05:31.166 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.2849ms
+2024-02-21 07:05:31.228 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Members?handler=GetMembers - -
+2024-02-21 07:05:31.229 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:05:31.229 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:05:31.229 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnGetGetMembers - ModelState is "Valid"
+2024-02-21 07:05:31.241 +05:30 [INF] Executed handler method OnGetGetMembers, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:05:31.241 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType15`5[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:05:31.248 +05:30 [INF] Executed page /Members in 18.6805ms
+2024-02-21 07:05:31.248 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:05:31.248 +05:30 [INF] HTTP GET /Members responded 200 in 19.4955 ms
+2024-02-21 07:05:31.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Members?handler=GetMembers - - - 200 - application/json;+charset=utf-8 20.2716ms
+2024-02-21 07:05:31.308 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Payments?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 07:05:31.309 +05:30 [INF] Executing endpoint '/Payments'
+2024-02-21 07:05:31.309 +05:30 [INF] Route matched with {page = "/Payments", area = ""}. Executing page /Payments
+2024-02-21 07:05:31.310 +05:30 [INF] Executing handler method AdminDashboard.Pages.PaymentsModel.OnPostRead - ModelState is "Valid"
+2024-02-21 07:05:31.328 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:05:31.328 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 07:05:31.329 +05:30 [INF] Executed page /Payments in 19.9746ms
+2024-02-21 07:05:31.330 +05:30 [INF] Executed endpoint '/Payments'
+2024-02-21 07:05:31.330 +05:30 [INF] HTTP POST /Payments responded 200 in 21.3791 ms
+2024-02-21 07:05:31.331 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Payments?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 22.6730ms
+2024-02-21 07:05:33.498 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Members?handler=GetMembers - -
+2024-02-21 07:05:33.499 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 07:05:33.499 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 07:05:33.499 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnGetGetMembers - ModelState is "Valid"
+2024-02-21 07:05:33.501 +05:30 [INF] Executed handler method OnGetGetMembers, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:05:33.501 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType15`5[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:05:33.502 +05:30 [INF] Executed page /Members in 2.8333ms
+2024-02-21 07:05:33.502 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 07:05:33.502 +05:30 [INF] HTTP GET /Members responded 200 in 3.6044 ms
+2024-02-21 07:05:33.502 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Members?handler=GetMembers - - - 200 - application/json;+charset=utf-8 4.4034ms
+2024-02-21 07:05:58.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings - -
+2024-02-21 07:05:58.301 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:05:58.302 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:05:58.302 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGet - ModelState is "Valid"
+2024-02-21 07:05:58.318 +05:30 [INF] Executed handler method OnGet, returned result .
+2024-02-21 07:05:58.318 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 07:05:58.318 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 07:05:58.390 +05:30 [INF] Executed page /Settings in 88.1546ms
+2024-02-21 07:05:58.390 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:05:58.390 +05:30 [INF] HTTP GET /Settings responded 200 in 88.9277 ms
+2024-02-21 07:05:58.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings - - - 200 - text/html;+charset=utf-8 119.7508ms
+2024-02-21 07:05:58.429 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 07:05:58.432 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 07:05:58.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 1.1076ms
+2024-02-21 07:05:58.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.2328ms
+2024-02-21 07:05:58.500 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Settings?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 07:05:58.501 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:05:58.501 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:05:58.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetCategories - -
+2024-02-21 07:05:58.502 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnPostRead - ModelState is "Valid"
+2024-02-21 07:05:58.503 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:05:58.503 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:05:58.503 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetCategories - ModelState is "Valid"
+2024-02-21 07:05:58.506 +05:30 [INF] Executed handler method OnGetGetCategories, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:05:58.506 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType16`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 07:05:58.517 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:05:58.518 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 07:05:58.528 +05:30 [INF] Executed page /Settings in 25.9801ms
+2024-02-21 07:05:58.528 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:05:58.529 +05:30 [INF] HTTP POST /Settings responded 200 in 27.6602 ms
+2024-02-21 07:05:58.530 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Settings?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 29.6333ms
+2024-02-21 07:05:58.572 +05:30 [INF] Executed page /Settings in 68.822ms
+2024-02-21 07:05:58.572 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:05:58.573 +05:30 [INF] HTTP GET /Settings responded 200 in 69.8847 ms
+2024-02-21 07:05:58.573 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetCategories - - - 200 - application/json;+charset=utf-8 70.9216ms
+2024-02-21 07:05:58.631 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Settings?handler=ReadTitle application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 07:05:58.633 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 07:05:58.633 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 07:05:58.634 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnPostReadTitle - ModelState is "Valid"
+2024-02-21 07:05:58.649 +05:30 [INF] Executed handler method OnPostReadTitle, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 07:05:58.649 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 07:05:58.651 +05:30 [INF] Executed page /Settings in 16.9054ms
+2024-02-21 07:05:58.651 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 07:05:58.652 +05:30 [INF] HTTP POST /Settings responded 200 in 19.1262 ms
+2024-02-21 07:05:58.653 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Settings?handler=ReadTitle application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 22.3732ms
+2024-02-21 07:06:04.853 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Profile - -
+2024-02-21 07:06:04.880 +05:30 [INF] Executing endpoint '/Profile'
+2024-02-21 07:06:04.887 +05:30 [INF] Route matched with {page = "/Profile", area = ""}. Executing page /Profile
+2024-02-21 07:06:04.888 +05:30 [INF] Executing handler method AdminDashboard.Pages.ProfileModel.OnGetAsync - ModelState is "Valid"
+2024-02-21 07:06:04.907 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2024-02-21 07:06:04.908 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 07:06:04.908 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 07:06:05.095 +05:30 [INF] Executed page /Profile in 208.0718ms
+2024-02-21 07:06:05.095 +05:30 [INF] Executed endpoint '/Profile'
+2024-02-21 07:06:05.096 +05:30 [INF] HTTP GET /Profile responded 200 in 215.9647 ms
+2024-02-21 07:06:05.096 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Profile - - - 200 - text/html;+charset=utf-8 242.6170ms
+2024-02-21 07:06:05.123 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 07:06:05.126 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 07:06:05.127 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 0.7659ms
+2024-02-21 07:06:05.133 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.7022ms
+2024-02-21 07:06:05.226 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/assets/settings/cloud.svg - -
+2024-02-21 07:06:05.232 +05:30 [INF] The file /assets/settings/cloud.svg was not modified
+2024-02-21 07:06:05.233 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/assets/settings/cloud.svg - - - 304 - image/svg+xml 7.4559ms
+2024-02-21 10:50:53.472 +05:30 [INF] User profile is available. Using 'C:\Users\krishnya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-21 10:50:55.440 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-21 10:50:55.441 +05:30 [INF] Hosting environment: Development
+2024-02-21 10:50:55.441 +05:30 [INF] Content root path: C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\AdminDashboard\AdminDashboard
+2024-02-21 10:50:55.488 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 10:50:56.220 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 10:50:56.253 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 10:50:56.261 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 10:50:56.262 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 10:50:56.672 +05:30 [INF] Executed page /Members in 414.6844ms
+2024-02-21 10:50:56.673 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 10:50:56.676 +05:30 [INF] HTTP GET / responded 200 in 456.0463 ms
+2024-02-21 10:50:56.701 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 10:50:56.710 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 1225.8918ms
+2024-02-21 10:50:56.710 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 7.1031ms
+2024-02-21 10:50:56.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 10:50:56.805 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.8433ms
+2024-02-21 10:50:56.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 10:50:56.885 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 10:50:56.900 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 10:50:56.956 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 10:50:57.025 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 10:50:57.028 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType17`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 10:50:57.126 +05:30 [INF] Executed page /Settings in 225.5784ms
+2024-02-21 10:50:57.126 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 10:50:57.127 +05:30 [INF] HTTP GET /Settings responded 200 in 241.5386 ms
+2024-02-21 10:50:57.136 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 256.7123ms
+2024-02-21 10:50:57.154 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 10:50:57.171 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 10:50:57.172 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 10:50:57.195 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 10:50:57.400 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 10:50:57.401 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 10:50:57.440 +05:30 [INF] Executed page /Members in 268.0047ms
+2024-02-21 10:50:57.440 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 10:50:57.441 +05:30 [INF] HTTP POST /Members responded 200 in 269.5972 ms
+2024-02-21 10:50:57.441 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 287.6580ms
+2024-02-21 10:56:05.893 +05:30 [INF] User profile is available. Using 'C:\Users\krishnya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-21 10:56:08.533 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-21 10:56:08.536 +05:30 [INF] Hosting environment: Development
+2024-02-21 10:56:08.536 +05:30 [INF] Content root path: C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\AdminDashboard\AdminDashboard
+2024-02-21 10:56:08.576 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 10:56:08.890 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 10:56:08.944 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 10:56:08.959 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 10:56:08.961 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 10:56:09.764 +05:30 [INF] Executed page /Members in 814.1142ms
+2024-02-21 10:56:09.765 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 10:56:09.768 +05:30 [INF] HTTP GET / responded 200 in 888.0092 ms
+2024-02-21 10:56:09.805 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 1231.1498ms
+2024-02-21 10:56:09.989 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 10:56:09.989 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 10:56:10.010 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 12.2524ms
+2024-02-21 10:56:10.086 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 96.9607ms
+2024-02-21 10:56:10.330 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 10:56:10.356 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 10:56:10.376 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 10:56:10.421 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 10:56:10.485 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 10:56:10.487 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 10:56:10.598 +05:30 [INF] Executed page /Settings in 221.3297ms
+2024-02-21 10:56:10.599 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 10:56:10.600 +05:30 [INF] HTTP GET /Settings responded 200 in 244.3113 ms
+2024-02-21 10:56:10.603 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 273.4453ms
+2024-02-21 10:56:10.981 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 10:56:11.004 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 10:56:11.004 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 10:56:11.034 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 10:56:11.399 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 10:56:11.399 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 10:56:11.462 +05:30 [INF] Executed page /Members in 457.5642ms
+2024-02-21 10:56:11.463 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 10:56:11.463 +05:30 [INF] HTTP POST /Members responded 200 in 459.7686 ms
+2024-02-21 10:56:11.466 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 484.9356ms
+2024-02-21 11:54:57.300 +05:30 [INF] User profile is available. Using 'C:\Users\krishnya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-21 11:54:58.891 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-21 11:54:58.899 +05:30 [INF] Hosting environment: Development
+2024-02-21 11:54:58.899 +05:30 [INF] Content root path: C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\AdminDashboard\AdminDashboard
+2024-02-21 11:54:58.929 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 11:54:59.567 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:54:59.599 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:54:59.606 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 11:54:59.608 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 11:54:59.914 +05:30 [INF] Executed page /Members in 311.2836ms
+2024-02-21 11:54:59.915 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:54:59.917 +05:30 [INF] HTTP GET / responded 200 in 350.2439 ms
+2024-02-21 11:54:59.935 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 1007.9146ms
+2024-02-21 11:55:00.046 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 11:55:00.050 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 3.7641ms
+2024-02-21 11:55:00.061 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 11:55:00.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.8728ms
+2024-02-21 11:55:00.305 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 11:55:00.315 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 11:55:00.325 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 11:55:00.354 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 11:55:00.398 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:00.400 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 11:55:00.534 +05:30 [INF] Executed page /Settings in 208.241ms
+2024-02-21 11:55:00.535 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 11:55:00.536 +05:30 [INF] HTTP GET /Settings responded 200 in 221.0375 ms
+2024-02-21 11:55:00.538 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 232.3710ms
+2024-02-21 11:55:00.641 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 11:55:00.662 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:55:00.663 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:55:00.690 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 11:55:00.970 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:00.971 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 11:55:01.001 +05:30 [INF] Executed page /Members in 338.2121ms
+2024-02-21 11:55:01.002 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:55:01.002 +05:30 [INF] HTTP POST /Members responded 200 in 339.7013 ms
+2024-02-21 11:55:01.004 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 362.6235ms
+2024-02-21 11:55:07.856 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Destroy application/x-www-form-urlencoded;+charset=UTF-8 747
+2024-02-21 11:55:07.858 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:55:07.858 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:55:07.893 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostDestroy - ModelState is "Valid"
+2024-02-21 11:55:08.160 +05:30 [INF] Executed handler method OnPostDestroy, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:08.160 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 11:55:08.162 +05:30 [INF] Executed page /Members in 303.3441ms
+2024-02-21 11:55:08.162 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:55:08.162 +05:30 [INF] HTTP POST /Members responded 200 in 304.5253 ms
+2024-02-21 11:55:08.163 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Destroy application/x-www-form-urlencoded;+charset=UTF-8 747 - 200 - application/json;+charset=utf-8 307.3734ms
+2024-02-21 11:55:13.437 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Destroy application/x-www-form-urlencoded;+charset=UTF-8 746
+2024-02-21 11:55:13.438 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:55:13.439 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:55:13.440 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostDestroy - ModelState is "Valid"
+2024-02-21 11:55:13.467 +05:30 [INF] Executed handler method OnPostDestroy, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:13.467 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 11:55:13.468 +05:30 [INF] Executed page /Members in 28.6133ms
+2024-02-21 11:55:13.468 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:55:13.468 +05:30 [INF] HTTP POST /Members responded 200 in 29.5122 ms
+2024-02-21 11:55:13.468 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Destroy application/x-www-form-urlencoded;+charset=UTF-8 746 - 200 - application/json;+charset=utf-8 30.6965ms
+2024-02-21 11:55:16.329 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Destroy application/x-www-form-urlencoded;+charset=UTF-8 721
+2024-02-21 11:55:16.330 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:55:16.330 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:55:16.331 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostDestroy - ModelState is "Valid"
+2024-02-21 11:55:16.343 +05:30 [INF] Executed handler method OnPostDestroy, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:16.344 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 11:55:16.345 +05:30 [INF] Executed page /Members in 13.9804ms
+2024-02-21 11:55:16.345 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:55:16.345 +05:30 [INF] HTTP POST /Members responded 200 in 15.0838 ms
+2024-02-21 11:55:16.345 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Destroy application/x-www-form-urlencoded;+charset=UTF-8 721 - 200 - application/json;+charset=utf-8 16.6739ms
+2024-02-21 11:55:21.473 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Destroy application/x-www-form-urlencoded;+charset=UTF-8 722
+2024-02-21 11:55:21.474 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:55:21.474 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:55:21.476 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostDestroy - ModelState is "Valid"
+2024-02-21 11:55:21.484 +05:30 [INF] Executed handler method OnPostDestroy, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:21.484 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 11:55:21.485 +05:30 [INF] Executed page /Members in 9.9164ms
+2024-02-21 11:55:21.485 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:55:21.485 +05:30 [INF] HTTP POST /Members responded 200 in 10.9302 ms
+2024-02-21 11:55:21.485 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Destroy application/x-www-form-urlencoded;+charset=UTF-8 722 - 200 - application/json;+charset=utf-8 12.6825ms
+2024-02-21 11:55:25.155 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Payments - -
+2024-02-21 11:55:25.203 +05:30 [INF] Executing endpoint '/Payments'
+2024-02-21 11:55:25.207 +05:30 [INF] Route matched with {page = "/Payments", area = ""}. Executing page /Payments
+2024-02-21 11:55:25.208 +05:30 [INF] Executing handler method AdminDashboard.Pages.PaymentsModel.OnGet - ModelState is "Valid"
+2024-02-21 11:55:25.208 +05:30 [INF] Executed handler method OnGet, returned result .
+2024-02-21 11:55:25.208 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 11:55:25.208 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 11:55:25.264 +05:30 [INF] Executed page /Payments in 56.373ms
+2024-02-21 11:55:25.264 +05:30 [INF] Executed endpoint '/Payments'
+2024-02-21 11:55:25.264 +05:30 [INF] HTTP GET /Payments responded 200 in 60.9064 ms
+2024-02-21 11:55:25.265 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Payments - - - 200 - text/html;+charset=utf-8 109.9754ms
+2024-02-21 11:55:25.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 11:55:25.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 0.9189ms
+2024-02-21 11:55:25.323 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 11:55:25.352 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.6178ms
+2024-02-21 11:55:25.389 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Members?handler=GetMembers - -
+2024-02-21 11:55:25.390 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:55:25.390 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:55:25.390 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnGetGetMembers - ModelState is "Valid"
+2024-02-21 11:55:25.397 +05:30 [INF] Executed handler method OnGetGetMembers, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:25.398 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType16`5[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 11:55:25.404 +05:30 [INF] Executed page /Members in 13.8527ms
+2024-02-21 11:55:25.404 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:55:25.405 +05:30 [INF] HTTP GET /Members responded 200 in 14.8139 ms
+2024-02-21 11:55:25.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Members?handler=GetMembers - - - 200 - application/json;+charset=utf-8 15.8548ms
+2024-02-21 11:55:25.454 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Payments?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 11:55:25.455 +05:30 [INF] Executing endpoint '/Payments'
+2024-02-21 11:55:25.455 +05:30 [INF] Route matched with {page = "/Payments", area = ""}. Executing page /Payments
+2024-02-21 11:55:25.456 +05:30 [INF] Executing handler method AdminDashboard.Pages.PaymentsModel.OnPostRead - ModelState is "Valid"
+2024-02-21 11:55:25.467 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:25.467 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 11:55:25.468 +05:30 [INF] Executed page /Payments in 13.2892ms
+2024-02-21 11:55:25.469 +05:30 [INF] Executed endpoint '/Payments'
+2024-02-21 11:55:25.470 +05:30 [INF] HTTP POST /Payments responded 200 in 15.0514 ms
+2024-02-21 11:55:25.470 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Payments?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 16.3717ms
+2024-02-21 11:55:26.382 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Members - -
+2024-02-21 11:55:26.408 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:55:26.409 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:55:26.409 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 11:55:26.409 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 11:55:26.424 +05:30 [INF] Executed page /Members in 15.0139ms
+2024-02-21 11:55:26.424 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:55:26.424 +05:30 [INF] HTTP GET /Members responded 200 in 16.1445 ms
+2024-02-21 11:55:26.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Members - - - 200 - text/html;+charset=utf-8 43.1884ms
+2024-02-21 11:55:26.455 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 11:55:26.456 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 0.9206ms
+2024-02-21 11:55:26.465 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 11:55:26.479 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.7800ms
+2024-02-21 11:55:26.537 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 11:55:26.538 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 11:55:26.538 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 11:55:26.538 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 11:55:26.539 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:26.539 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 11:55:26.548 +05:30 [INF] Executed page /Settings in 9.7529ms
+2024-02-21 11:55:26.548 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 11:55:26.548 +05:30 [INF] HTTP GET /Settings responded 200 in 10.5906 ms
+2024-02-21 11:55:26.549 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 11.7100ms
+2024-02-21 11:55:26.598 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 11:55:26.599 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:55:26.600 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:55:26.600 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 11:55:26.609 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:26.610 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 11:55:26.611 +05:30 [INF] Executed page /Members in 10.6692ms
+2024-02-21 11:55:26.611 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:55:26.612 +05:30 [INF] HTTP POST /Members responded 200 in 12.2295 ms
+2024-02-21 11:55:26.612 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 13.6844ms
+2024-02-21 11:55:28.191 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Members - -
+2024-02-21 11:55:28.214 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:55:28.214 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:55:28.214 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 11:55:28.214 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 11:55:28.229 +05:30 [INF] Executed page /Members in 14.4583ms
+2024-02-21 11:55:28.229 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:55:28.229 +05:30 [INF] HTTP GET /Members responded 200 in 15.2776 ms
+2024-02-21 11:55:28.230 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Members - - - 200 - text/html;+charset=utf-8 38.1186ms
+2024-02-21 11:55:28.254 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 11:55:28.255 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 0.9204ms
+2024-02-21 11:55:28.272 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 11:55:28.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.1314ms
+2024-02-21 11:55:28.328 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 11:55:28.329 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 11:55:28.329 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 11:55:28.329 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 11:55:28.330 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:28.330 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 11:55:28.341 +05:30 [INF] Executed page /Settings in 11.7353ms
+2024-02-21 11:55:28.341 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 11:55:28.341 +05:30 [INF] HTTP GET /Settings responded 200 in 12.8901 ms
+2024-02-21 11:55:28.342 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 14.3163ms
+2024-02-21 11:55:28.391 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 11:55:28.392 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:55:28.393 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:55:28.393 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 11:55:28.403 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:55:28.403 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 11:55:28.404 +05:30 [INF] Executed page /Members in 11.679ms
+2024-02-21 11:55:28.405 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:55:28.405 +05:30 [INF] HTTP POST /Members responded 200 in 12.7086 ms
+2024-02-21 11:55:28.405 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 14.0291ms
+2024-02-21 11:56:03.002 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members application/x-www-form-urlencoded;+charset=UTF-8 308
+2024-02-21 11:56:03.004 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:56:03.004 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:56:03.008 +05:30 [INF] Antiforgery token validation failed. The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2024-02-21 11:56:03.025 +05:30 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2024-02-21 11:56:03.027 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2024-02-21 11:56:03.028 +05:30 [INF] Executed page /Members in 23.4812ms
+2024-02-21 11:56:03.028 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:56:03.028 +05:30 [INF] HTTP POST /Members responded 400 in 24.3556 ms
+2024-02-21 11:56:03.030 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members application/x-www-form-urlencoded;+charset=UTF-8 308 - 400 - - 27.4165ms
+2024-02-21 11:56:33.620 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members application/x-www-form-urlencoded;+charset=UTF-8 308
+2024-02-21 11:56:33.620 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:56:33.621 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:56:33.621 +05:30 [INF] Antiforgery token validation failed. The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2024-02-21 11:56:33.622 +05:30 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2024-02-21 11:56:33.622 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2024-02-21 11:56:33.623 +05:30 [INF] Executed page /Members in 2.2351ms
+2024-02-21 11:56:33.623 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:56:33.623 +05:30 [INF] HTTP POST /Members responded 400 in 2.9993 ms
+2024-02-21 11:56:33.624 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members application/x-www-form-urlencoded;+charset=UTF-8 308 - 400 - - 4.2953ms
+2024-02-21 11:58:25.413 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Members - -
+2024-02-21 11:58:25.455 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:58:25.461 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:58:25.461 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 11:58:25.461 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 11:58:25.491 +05:30 [INF] Executed page /Members in 30.0306ms
+2024-02-21 11:58:25.491 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:58:25.492 +05:30 [INF] HTTP GET /Members responded 200 in 36.7137 ms
+2024-02-21 11:58:25.493 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Members - - - 200 - text/html;+charset=utf-8 79.4065ms
+2024-02-21 11:58:25.528 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 11:58:25.531 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 11:58:25.532 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 1.1544ms
+2024-02-21 11:58:25.537 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.0258ms
+2024-02-21 11:58:25.636 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 11:58:25.638 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 11:58:25.644 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 11:58:25.647 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 11:58:25.647 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:58:25.648 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 11:58:25.658 +05:30 [INF] Executed page /Settings in 13.692ms
+2024-02-21 11:58:25.658 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 11:58:25.659 +05:30 [INF] HTTP GET /Settings responded 200 in 20.6785 ms
+2024-02-21 11:58:25.659 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 22.7180ms
+2024-02-21 11:58:25.801 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 11:58:25.801 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 11:58:25.801 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 11:58:25.802 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 11:58:25.809 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 11:58:25.810 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 11:58:25.816 +05:30 [INF] Executed page /Members in 14.1097ms
+2024-02-21 11:58:25.816 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 11:58:25.816 +05:30 [INF] HTTP POST /Members responded 200 in 15.0397 ms
+2024-02-21 11:58:25.817 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 16.0221ms
+2024-02-21 12:04:40.992 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Members - -
+2024-02-21 12:04:41.020 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:04:41.025 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:04:41.026 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 12:04:41.026 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 12:04:41.109 +05:30 [INF] Executed page /Members in 82.8179ms
+2024-02-21 12:04:41.109 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:04:41.109 +05:30 [INF] HTTP GET /Members responded 200 in 89.0876 ms
+2024-02-21 12:04:41.110 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Members - - - 200 - text/html;+charset=utf-8 117.5024ms
+2024-02-21 12:04:41.158 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 12:04:41.159 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 0.8660ms
+2024-02-21 12:04:41.176 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 12:04:41.184 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.6313ms
+2024-02-21 12:04:41.629 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 12:04:41.631 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 12:04:41.636 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 12:04:41.638 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 12:04:41.638 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:04:41.638 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 12:04:41.650 +05:30 [INF] Executed page /Settings in 13.8072ms
+2024-02-21 12:04:41.650 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 12:04:41.650 +05:30 [INF] HTTP GET /Settings responded 200 in 19.5648 ms
+2024-02-21 12:04:41.650 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 21.2843ms
+2024-02-21 12:04:41.911 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 12:04:41.912 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:04:41.912 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:04:41.912 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 12:04:41.919 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:04:41.919 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 12:04:41.928 +05:30 [INF] Executed page /Members in 15.9469ms
+2024-02-21 12:04:41.928 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:04:41.928 +05:30 [INF] HTTP POST /Members responded 200 in 16.6995 ms
+2024-02-21 12:04:41.928 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 17.5844ms
+2024-02-21 12:05:12.787 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members application/x-www-form-urlencoded;+charset=UTF-8 306
+2024-02-21 12:05:12.787 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:05:12.788 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:05:12.788 +05:30 [INF] Antiforgery token validation failed. The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2024-02-21 12:05:12.789 +05:30 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2024-02-21 12:05:12.789 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2024-02-21 12:05:12.789 +05:30 [INF] Executed page /Members in 1.1644ms
+2024-02-21 12:05:12.789 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:05:12.789 +05:30 [INF] HTTP POST /Members responded 400 in 1.7811 ms
+2024-02-21 12:05:12.790 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members application/x-www-form-urlencoded;+charset=UTF-8 306 - 400 - - 3.0765ms
+2024-02-21 12:07:03.379 +05:30 [INF] User profile is available. Using 'C:\Users\krishnya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-21 12:07:05.113 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-21 12:07:05.121 +05:30 [INF] Hosting environment: Development
+2024-02-21 12:07:05.121 +05:30 [INF] Content root path: C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\AdminDashboard\AdminDashboard
+2024-02-21 12:07:05.151 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 12:07:05.395 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:07:05.437 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:07:05.447 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 12:07:05.449 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 12:07:06.094 +05:30 [INF] Executed page /Members in 653.0689ms
+2024-02-21 12:07:06.095 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:07:06.098 +05:30 [INF] HTTP GET / responded 200 in 704.5290 ms
+2024-02-21 12:07:06.126 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 977.3133ms
+2024-02-21 12:07:06.128 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 12:07:06.135 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 6.2622ms
+2024-02-21 12:07:06.199 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 12:07:06.244 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.9758ms
+2024-02-21 12:07:06.564 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 12:07:06.578 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 12:07:06.593 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 12:07:06.619 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 12:07:06.666 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:07:06.668 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 12:07:06.766 +05:30 [INF] Executed page /Settings in 172.6638ms
+2024-02-21 12:07:06.766 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 12:07:06.767 +05:30 [INF] HTTP GET /Settings responded 200 in 188.6668 ms
+2024-02-21 12:07:06.769 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 204.3241ms
+2024-02-21 12:07:06.826 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 12:07:06.845 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:07:06.845 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:07:06.865 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 12:07:07.140 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:07:07.140 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 12:07:07.180 +05:30 [INF] Executed page /Members in 334.7008ms
+2024-02-21 12:07:07.180 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:07:07.181 +05:30 [INF] HTTP POST /Members responded 200 in 335.7674 ms
+2024-02-21 12:07:07.182 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 356.5867ms
+2024-02-21 12:11:08.797 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 12:11:08.844 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:11:08.851 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:11:08.851 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 12:11:08.851 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 12:11:08.936 +05:30 [INF] Executed page /Members in 85.1734ms
+2024-02-21 12:11:08.936 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:11:08.936 +05:30 [INF] HTTP GET / responded 200 in 92.1725 ms
+2024-02-21 12:11:08.937 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 140.5004ms
+2024-02-21 12:11:08.985 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 12:11:08.986 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 0.9692ms
+2024-02-21 12:11:09.011 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 12:11:09.033 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.0749ms
+2024-02-21 12:11:09.347 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 12:11:09.348 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 12:11:09.352 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 12:11:09.354 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 12:11:09.355 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:11:09.356 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 12:11:09.369 +05:30 [INF] Executed page /Settings in 17.022ms
+2024-02-21 12:11:09.369 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 12:11:09.369 +05:30 [INF] HTTP GET /Settings responded 200 in 21.8625 ms
+2024-02-21 12:11:09.370 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 23.0762ms
+2024-02-21 12:11:09.602 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 12:11:09.604 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:11:09.604 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:11:09.607 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 12:11:09.620 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:11:09.620 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 12:11:09.627 +05:30 [INF] Executed page /Members in 22.8244ms
+2024-02-21 12:11:09.627 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:11:09.627 +05:30 [INF] HTTP POST /Members responded 200 in 23.8803 ms
+2024-02-21 12:11:09.628 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 25.7673ms
+2024-02-21 12:22:03.855 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 12:22:03.896 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:22:03.902 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:22:03.902 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 12:22:03.902 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 12:22:03.977 +05:30 [INF] Executed page /Members in 75.5717ms
+2024-02-21 12:22:03.978 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:22:03.978 +05:30 [INF] HTTP GET / responded 200 in 81.3368 ms
+2024-02-21 12:22:03.978 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 123.1217ms
+2024-02-21 12:22:04.044 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 12:22:04.045 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 0.7869ms
+2024-02-21 12:22:04.068 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 12:22:04.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.8083ms
+2024-02-21 12:22:04.445 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 12:22:04.447 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 12:22:04.456 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 12:22:04.458 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 12:22:04.459 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:22:04.459 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 12:22:04.468 +05:30 [INF] Executed page /Settings in 11.8574ms
+2024-02-21 12:22:04.468 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 12:22:04.468 +05:30 [INF] HTTP GET /Settings responded 200 in 21.2251 ms
+2024-02-21 12:22:04.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 22.9821ms
+2024-02-21 12:22:04.704 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 12:22:04.706 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:22:04.707 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:22:04.708 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 12:22:04.717 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:22:04.718 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 12:22:04.729 +05:30 [INF] Executed page /Members in 21.9124ms
+2024-02-21 12:22:04.729 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:22:04.729 +05:30 [INF] HTTP POST /Members responded 200 in 23.0425 ms
+2024-02-21 12:22:04.730 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 25.5696ms
+2024-02-21 12:22:09.834 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 12:22:09.865 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:22:09.866 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:22:09.866 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 12:22:09.866 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 12:22:09.882 +05:30 [INF] Executed page /Members in 15.8887ms
+2024-02-21 12:22:09.882 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:22:09.882 +05:30 [INF] HTTP GET / responded 200 in 16.7681 ms
+2024-02-21 12:22:09.883 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 48.1497ms
+2024-02-21 12:22:09.910 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 12:22:09.911 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 0.8814ms
+2024-02-21 12:22:09.922 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 12:22:09.941 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.9098ms
+2024-02-21 12:22:10.055 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 12:22:10.055 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 12:22:10.056 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 12:22:10.056 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 12:22:10.056 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:22:10.057 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 12:22:10.066 +05:30 [INF] Executed page /Settings in 10.3233ms
+2024-02-21 12:22:10.067 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 12:22:10.067 +05:30 [INF] HTTP GET /Settings responded 200 in 11.5693 ms
+2024-02-21 12:22:10.068 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 13.5655ms
+2024-02-21 12:22:10.140 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 12:22:10.141 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:22:10.142 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:22:10.143 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 12:22:10.150 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:22:10.150 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 12:22:10.152 +05:30 [INF] Executed page /Members in 9.8837ms
+2024-02-21 12:22:10.152 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:22:10.153 +05:30 [INF] HTTP POST /Members responded 200 in 11.6949 ms
+2024-02-21 12:22:10.153 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 12.9754ms
+2024-02-21 12:22:27.745 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/ application/x-www-form-urlencoded;+charset=UTF-8 264
+2024-02-21 12:22:27.746 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:22:27.747 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:22:27.748 +05:30 [INF] Antiforgery token validation failed. The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2024-02-21 12:22:27.761 +05:30 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2024-02-21 12:22:27.764 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2024-02-21 12:22:27.764 +05:30 [INF] Executed page /Members in 17.0193ms
+2024-02-21 12:22:27.764 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:22:27.764 +05:30 [INF] HTTP POST / responded 400 in 17.6899 ms
+2024-02-21 12:22:27.765 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/ application/x-www-form-urlencoded;+charset=UTF-8 264 - 400 - - 19.7664ms
+2024-02-21 12:22:29.490 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/ application/x-www-form-urlencoded;+charset=UTF-8 264
+2024-02-21 12:22:29.491 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:22:29.491 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:22:29.493 +05:30 [INF] Antiforgery token validation failed. The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2024-02-21 12:22:29.493 +05:30 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2024-02-21 12:22:29.494 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2024-02-21 12:22:29.494 +05:30 [INF] Executed page /Members in 2.3399ms
+2024-02-21 12:22:29.494 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:22:29.494 +05:30 [INF] HTTP POST / responded 400 in 3.3418 ms
+2024-02-21 12:22:29.501 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/ application/x-www-form-urlencoded;+charset=UTF-8 264 - 400 - - 10.9631ms
+2024-02-21 12:36:39.222 +05:30 [INF] User profile is available. Using 'C:\Users\krishnya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-21 12:36:40.778 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-21 12:36:40.780 +05:30 [INF] Hosting environment: Development
+2024-02-21 12:36:40.781 +05:30 [INF] Content root path: C:\mylearning\kendo-ui-poc\poc-kendo-ui-core\AdminDashboard\AdminDashboard
+2024-02-21 12:36:40.820 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 12:36:41.261 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:36:41.300 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:36:41.311 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 12:36:41.313 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 12:36:41.641 +05:30 [INF] Executed page /Members in 338.3607ms
+2024-02-21 12:36:41.641 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:36:41.643 +05:30 [INF] HTTP GET / responded 200 in 382.5417 ms
+2024-02-21 12:36:41.662 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 845.8111ms
+2024-02-21 12:36:41.672 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 12:36:41.677 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 4.7863ms
+2024-02-21 12:36:41.742 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 12:36:41.797 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.3946ms
+2024-02-21 12:36:41.832 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 12:36:41.845 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 12:36:41.857 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 12:36:41.884 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 12:36:41.929 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:36:41.932 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 12:36:42.030 +05:30 [INF] Executed page /Settings in 172.1563ms
+2024-02-21 12:36:42.031 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 12:36:42.031 +05:30 [INF] HTTP GET /Settings responded 200 in 186.3768 ms
+2024-02-21 12:36:42.032 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 200.0847ms
+2024-02-21 12:36:42.080 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 12:36:42.105 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:36:42.105 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:36:42.134 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 12:36:42.313 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:36:42.314 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 12:36:42.340 +05:30 [INF] Executed page /Members in 234.9657ms
+2024-02-21 12:36:42.340 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:36:42.341 +05:30 [INF] HTTP POST /Members responded 200 in 236.1071 ms
+2024-02-21 12:36:42.341 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 260.7608ms
+2024-02-21 12:37:06.679 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ManageMembers - -
+2024-02-21 12:37:06.737 +05:30 [INF] Executing endpoint '/ManageMembers'
+2024-02-21 12:37:06.740 +05:30 [INF] Route matched with {page = "/ManageMembers", area = ""}. Executing page /ManageMembers
+2024-02-21 12:37:06.740 +05:30 [INF] Executing handler method AdminDashboard.Pages.ManageMembersModel.OnGet - ModelState is "Valid"
+2024-02-21 12:37:06.740 +05:30 [INF] Executed handler method OnGet, returned result .
+2024-02-21 12:37:06.741 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 12:37:06.741 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 12:37:06.759 +05:30 [INF] Executed page /ManageMembers in 19.5121ms
+2024-02-21 12:37:06.761 +05:30 [INF] Executed endpoint '/ManageMembers'
+2024-02-21 12:37:06.762 +05:30 [ERR] HTTP GET /ManageMembers responded 500 in 25.1791 ms
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Pages/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-02-21 12:37:06.779 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Pages/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-21 12:37:06.809 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ManageMembers - - - 500 - text/html;+charset=utf-8 130.5703ms
+2024-02-21 12:37:06.841 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 12:37:06.844 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 12:37:06.847 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 3.3027ms
+2024-02-21 12:37:06.892 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.7535ms
+2024-02-21 12:43:17.554 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 12:43:17.683 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:43:17.684 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:43:17.684 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 12:43:17.684 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 12:43:17.851 +05:30 [INF] Executed page /Members in 166.7357ms
+2024-02-21 12:43:17.851 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:43:17.851 +05:30 [INF] HTTP GET / responded 200 in 168.0606 ms
+2024-02-21 12:43:17.873 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 319.6274ms
+2024-02-21 12:43:17.890 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 12:43:17.891 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 1.0698ms
+2024-02-21 12:43:18.155 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 12:43:18.157 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:43:18.157 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:43:18.160 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 12:43:18.171 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:43:18.171 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 12:43:18.172 +05:30 [INF] Executed page /Members in 14.6742ms
+2024-02-21 12:43:18.172 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:43:18.173 +05:30 [INF] HTTP POST /Members responded 200 in 16.0357 ms
+2024-02-21 12:43:18.173 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 18.1482ms
+2024-02-21 12:43:19.026 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ - -
+2024-02-21 12:43:19.126 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:43:19.127 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:43:19.127 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 12:43:19.127 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 12:43:19.142 +05:30 [INF] Executed page /Members in 15.5477ms
+2024-02-21 12:43:19.143 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:43:19.143 +05:30 [INF] HTTP GET / responded 200 in 16.4901 ms
+2024-02-21 12:43:19.166 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ - - - 200 - text/html;+charset=utf-8 140.2529ms
+2024-02-21 12:43:19.172 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 12:43:19.172 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 12:43:19.173 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 1.3663ms
+2024-02-21 12:43:19.192 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.0776ms
+2024-02-21 12:43:19.247 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - -
+2024-02-21 12:43:19.248 +05:30 [INF] Executing endpoint '/Settings'
+2024-02-21 12:43:19.248 +05:30 [INF] Route matched with {page = "/Settings", area = ""}. Executing page /Settings
+2024-02-21 12:43:19.248 +05:30 [INF] Executing handler method AdminDashboard.Pages.SettingsModel.OnGetGetTitles - ModelState is "Valid"
+2024-02-21 12:43:19.249 +05:30 [INF] Executed handler method OnGetGetTitles, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:43:19.249 +05:30 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[<>f__AnonymousType18`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-21 12:43:19.261 +05:30 [INF] Executed page /Settings in 12.5991ms
+2024-02-21 12:43:19.261 +05:30 [INF] Executed endpoint '/Settings'
+2024-02-21 12:43:19.261 +05:30 [INF] HTTP GET /Settings responded 200 in 13.5946 ms
+2024-02-21 12:43:19.262 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/Settings?handler=GetTitles - - - 200 - application/json;+charset=utf-8 15.0291ms
+2024-02-21 12:43:19.342 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265
+2024-02-21 12:43:19.343 +05:30 [INF] Executing endpoint '/Members'
+2024-02-21 12:43:19.344 +05:30 [INF] Route matched with {page = "/Members", area = ""}. Executing page /Members
+2024-02-21 12:43:19.344 +05:30 [INF] Executing handler method AdminDashboard.Pages.MembersModel.OnPostRead - ModelState is "Valid"
+2024-02-21 12:43:19.356 +05:30 [INF] Executed handler method OnPostRead, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2024-02-21 12:43:19.357 +05:30 [INF] Executing JsonResult, writing value of type 'Kendo.Mvc.UI.DataSourceResult'.
+2024-02-21 12:43:19.358 +05:30 [INF] Executed page /Members in 13.7298ms
+2024-02-21 12:43:19.358 +05:30 [INF] Executed endpoint '/Members'
+2024-02-21 12:43:19.358 +05:30 [INF] HTTP POST /Members responded 200 in 14.7770 ms
+2024-02-21 12:43:19.359 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44302/Members?handler=Read application/x-www-form-urlencoded;+charset=UTF-8 265 - 200 - application/json;+charset=utf-8 16.4283ms
+2024-02-21 12:43:20.305 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ManageMembers - -
+2024-02-21 12:43:20.339 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/ManageMembers - -
+2024-02-21 12:43:20.393 +05:30 [INF] Executing endpoint '/ManageMembers'
+2024-02-21 12:43:20.394 +05:30 [INF] Route matched with {page = "/ManageMembers", area = ""}. Executing page /ManageMembers
+2024-02-21 12:43:20.426 +05:30 [INF] Executing handler method AdminDashboard.Pages.ManageMembersModel.OnGet - ModelState is "Valid"
+2024-02-21 12:43:20.426 +05:30 [INF] Executed handler method OnGet, returned result .
+2024-02-21 12:43:20.426 +05:30 [INF] Executing endpoint '/ManageMembers'
+2024-02-21 12:43:20.426 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 12:43:20.445 +05:30 [INF] Route matched with {page = "/ManageMembers", area = ""}. Executing page /ManageMembers
+2024-02-21 12:43:20.445 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 12:43:20.445 +05:30 [INF] Executing handler method AdminDashboard.Pages.ManageMembersModel.OnGet - ModelState is "Valid"
+2024-02-21 12:43:20.446 +05:30 [INF] Executed handler method OnGet, returned result .
+2024-02-21 12:43:20.446 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-02-21 12:43:20.446 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-02-21 12:43:20.450 +05:30 [INF] Executed page /ManageMembers in 25.5353ms
+2024-02-21 12:43:20.451 +05:30 [INF] Executed endpoint '/ManageMembers'
+2024-02-21 12:43:20.451 +05:30 [INF] Executed page /ManageMembers in 5.4227ms
+2024-02-21 12:43:20.451 +05:30 [ERR] HTTP GET /ManageMembers responded 500 in 58.1150 ms
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Pages/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-02-21 12:43:20.452 +05:30 [INF] Executed endpoint '/ManageMembers'
+2024-02-21 12:43:20.453 +05:30 [ERR] HTTP GET /ManageMembers responded 500 in 26.8192 ms
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Pages/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-02-21 12:43:20.454 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Pages/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-21 12:43:20.455 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Pages/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-21 12:43:20.460 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ManageMembers - - - 500 - text/html;+charset=utf-8 121.3848ms
+2024-02-21 12:43:20.465 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/ManageMembers - - - 500 - text/html;+charset=utf-8 159.6865ms
+2024-02-21 12:43:20.498 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2024-02-21 12:43:20.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2024-02-21 12:43:20.503 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 1.9192ms
+2024-02-21 12:43:20.513 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.8988ms
