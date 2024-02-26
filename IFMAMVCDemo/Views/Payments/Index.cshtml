@@ -30,8 +30,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.PaymentDate)
             </td>
-            <td>
+            @* <td>
                 @Html.DisplayFor(modelItem => item.Member.FirstName)
+            </td> *@
+            <td>
+                    <a asp-action="Details" asp-controller="Members" asp-route-id="@item.Member.Id">@Html.DisplayFor(modelItem => item.Member.FirstName) @Html.DisplayFor(modelItem => item.Member.LastName)</a>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Amount)

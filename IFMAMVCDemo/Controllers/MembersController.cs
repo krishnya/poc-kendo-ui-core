@@ -77,7 +77,9 @@ namespace IFMAMVCDemo.Controllers
                     return NotFound();
                 }
 
-                var member = await _context.Members.Include(m => m.Documents).FirstOrDefaultAsync(m => m.Id == id);
+                var member = await _context.Members
+                    .Include(p=>p.Payments)
+                    .Include(m => m.Documents).FirstOrDefaultAsync(m => m.Id == id);
                 if (member == null)
                 {
                     return NotFound();

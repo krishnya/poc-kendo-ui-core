@@ -1,5 +1,7 @@
 ﻿using IFMAMVCDemo.Data.Models;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace IFMAMVCDemo.Data.Models
 {
@@ -8,8 +10,14 @@ namespace IFMAMVCDemo.Data.Models
         [DisplayName("Title")]
         public string TitleName { get; set; }
         [DisplayName("Category Amount")]
+        [DataType(DataType.Currency)]
+        [Column(TypeName = "decimal(18, 2)")]
         public double CategoryAmount { get; set; }
+        [DataType(DataType.Currency)]
+        [Column(TypeName = "decimal(18, 2)")]
         public double Paid { get; set; }
+        [DataType(DataType.Currency)]
+        [Column(TypeName = "decimal(18, 2)")]
         public double Balance { get; set; }
         public IList<Payment> Payments { get; set; }
     }

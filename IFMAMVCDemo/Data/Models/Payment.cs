@@ -23,7 +23,9 @@ namespace IFMAMVCDemo.Data.Models
         
         public virtual Member Member { get; set; }
         [Required]
-        public int Amount { get; set; }
+        [DataType(DataType.Currency)]
+        [Column(TypeName = "decimal(18, 2)")]
+        public double Amount { get; set; }
         
     }
 }
