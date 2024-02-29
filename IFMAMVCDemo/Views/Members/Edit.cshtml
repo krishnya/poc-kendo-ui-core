@@ -6,9 +6,136 @@
 
 <h1>Edit</h1>
 
-<h4>Member</h4>
+<h4>
+    <a title="Back to List" class="backtoLink" asp-action="Index">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+        </svg>
+    </a>
+    Member
+</h4>
 <hr />
 <div class="row">
+    <form id="editForm" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="formWrapper">
+                    <div class="formContent">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="FirstName" class="control-label"></label>
+                                    <input asp-for="FirstName" class="form-control" />
+                                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="LastName" class="control-label"></label>
+                                    <input asp-for="LastName" class="form-control" />
+                                    <span asp-validation-for="LastName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="MiddleName" class="control-label"></label>
+                                <input asp-for="MiddleName" class="form-control" />
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="Gender" class="control-label"></label>
+                                <input asp-for="Gender" class="form-control" />
+                                <span asp-validation-for="Gender" class="text-danger"></span>
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="Phone" class="control-label"></label>
+                                <input asp-for="Phone" class="form-control" />
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="Address" class="control-label"></label>
+                                <input asp-for="Address" class="form-control" />
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="DateOfBirth" class="control-label"></label>
+                                <input asp-for="DateOfBirth" class="form-control" />
+                                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="TitleId" class="control-label"></label>
+                                <select asp-for="TitleId" class="form-control" asp-items="ViewBag.TitleId"></select>
+                                <span asp-validation-for="TitleId" class="text-danger"></span>
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="DateOfJoin" class="control-label"></label>
+                                <input asp-for="DateOfJoin" class="form-control" />
+                                <span asp-validation-for="DateOfJoin" class="text-danger"></span>
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="PassportNo" class="control-label"></label>
+                                <input asp-for="PassportNo" class="form-control" />
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="AadharNo" class="control-label"></label>
+                                <input asp-for="AadharNo" class="form-control" />
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="DrivingLicenseNo" class="control-label"></label>
+                                <input asp-for="DrivingLicenseNo" class="form-control" />
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label" asp-for="Files"></label>
+                                <ol type="number">
+                                @if (Model.Documents != null)
+                                {
+                                    foreach (var document in Model.Documents)
+                                    {
+                                        <li>
+                                            <a href="~/uploads/@document.FileName">@document.FileName</a>
+                                        </li>
+                                    }
+                                }
+                                </ol>
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="files">Files</label>
+                                <input type="file" multiple class="form-control" />
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formAction">
+                        <a asp-action="Index" class="cancelBtn">Back to List</a>
+                        <input type="submit" value="Save" class="formActionBtn" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+@* <div class="row">
     <div class="col-md-4">
         <form id="editForm" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -69,15 +196,17 @@
             </div>
             <div class="form-group">
                 <label class="control-label" asp-for="Files"></label>
+                <ol type="number">
                 @if (Model.Documents != null)
                 {
                     foreach (var document in Model.Documents)
                     {
-                        <div>
+                        <li>
                             <a href="~/uploads/@document.FileName">@document.FileName</a>
-                        </div>
+                        </li>
                     }
                 }
+                </ol>
             </div>
             <div class="form-group">
                 <label for="files">Files</label>
@@ -93,7 +222,7 @@
 
 <div>
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

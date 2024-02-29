@@ -18,5 +18,246 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
+}
+a {
+    color: #055ce5;
+}
+a:hover {
+    color: #044AB7;
+}
+.loginForm {
+    background: #fff;
+    width: 500px;
+    margin: 65px auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+.loginForm .loginFormTitle {
+    padding: 35px 35px 0 35px;
+    font-weight: 300;
+}
+.loginForm .content {
+    padding: 35px;
+    text-align: center;
+}
+.loginForm .action {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+}
+    .loginForm .action .loginBtn {
+        text-decoration: none;
+        width: 100%;
+        border: none;
+        padding: 18px;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        text-transform: uppercase;
+        background: #055ce5;
+        color: #fff;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        letter-spacing: 0.2px;
+        outline: 0;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        text-align: center;
+    }
+.loginForm .action .loginBtn:nth-child(2) {
+    background: #2d3b55;
+    color: #fff;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 4px;
+}
+
+.dashboardWrapper{
+
+}
+.dashboardWrapper .dashNav {
+}
+.dashboardWrapper .dashNav {
+}
+
+.dashboardWrapper .dashContent {
+}
+    .dashboardWrapper .dashContent .sideBar {
+        background: #3c4b64;
+        width: 250px;
+        position: fixed;
+        top: 0px;
+        bottom: 0;
+        z-index: 1030;
+        box-shadow: 0 2px 2px 0 rgba(var(--cui-elevation-base-color, 60, 75, 100), .14), 0 3px 1px -2px rgba(var(--cui-elevation-base-color, 60, 75, 100), .12), 0 1px 5px 0 rgba(var(--cui-elevation-base-color, 60, 75, 100), .20);
+    }
+.dashboardWrapper .dashContent .sideBar ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.dashboardWrapper .dashContent .sideBar li {
+    display: block;
+}
+.dashboardWrapper .dashContent .sideBar a {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 10px;
+    color: #afb5c0;
+    text-decoration: none;
+    white-space: nowrap;
+    background: #3c4b64;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+.dashboardWrapper .dashContent .sideBar a:hover {
+    background-color: #46546c;
+    color:#fff;
+}
+.dashboardWrapper .dashContent .sideBar a.navbar-brand {
+    color:#fff;
+    margin:0px;
+}
+.dashboardWrapper .dashContent .sideBar li.active {
+}
+.dashboardWrapper .dashContent .sideBar li.active a {
+    background-color: #46546c;
+    color: #fff;
+}
+
+.dashboardWrapper .dashContent .rightContent {
+    padding-left:250px
+}
+.dashboardWrapper .dashContent .rightContent {
+}
+.mainDashboard{
+    min-height:calc(100vh - 160px);
+}
+footer.dashFooter{
+    position:unset;
+    padding:20px 0px;
+    margin-top:20px;
+}
+.formWrapper{
+    padding:24px 24px 16px;
+    border:1px solid #e2e2e2;
+    background:#fbfbfb;
+    border-radius:12px;
+}
+.backtoLink {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+    width: 40px;
+    height: 40px;
+    border-radius:100%;
+    background-color:#e6effc;
+    color:#4e4e4e;
+}
+.formWrapper .formContent {
+}
+.formWrapper .formAction {
+    border-top:1px solid #e2e2e2;
+    padding-top:16px;
+    text-align:right;
+}
+.deleteBtn {
+    min-width: 84px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #fff;
+    background: #c43333;
+    border-radius: 100px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-out;
+}
+    .deleteBtn:hover {
+        background: #952727;
+    }
+    .formActionBtn {
+    min-width: 84px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #fff;
+    background: #055ce5;
+    border-radius: 100px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    transition:all 0.3s ease-out;
+}
+.formActionBtn:hover {
+    background:#044AB7
+}
+.cancelBtn {
+    min-width: 84px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #055ce5;
+    border-radius: 100px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    margin-right: 8px;
+    transition: all 0.3s ease-out;
+}
+    .cancelBtn:hover{
+        background:#e6effc
+    }
+    .formWrapper .form-group {
+        margin-bottom: 16px;
+    }
+.detailCard {
+    padding: 24px 24px 16px;
+    border: 1px solid #e2e2e2;
+    background: #fbfbfb;
+    border-radius: 12px;
+}
+.detailCard .detailCardContent {
+}
+.detailCard .detailCardAction {
+    border-top: 1px solid #e2e2e2;
+    padding-top: 16px;
+    text-align: right;
+}
+.alertCard{
+    display:flex;
+    align-items:center;
+    max-width:400px;
+    padding:12px;
+    gap:16px;
+    border-radius:8px;
+    border:1px solid #fab3b3;
+    background:#feecec;
+    margin-bottom:16px;
+}
+.alertCard .alertIcon {
+    color:#f24040
+}
+.alertCard .alertContent {
+    color:#1f1f1f;
+    font-size:18px;
+    font-weight:bold;
 }

@@ -12,7 +12,63 @@
     <link rel="stylesheet" href="~/IFMAMVCDemo.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
+    <main class="dashboardWrapper">
+        
+        <div class="dashContent">
+            <div class="sideBar">
+                <ul>
+                    <li>
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IFMAMVCDemo</a>
+                    </li>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Members" asp-action="Index">Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Payments" asp-action="Index">Payments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Titles" asp-action="Index">Titles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Categories" asp-action="Index">Categories</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <section class="rightContent">
+                <div class="dashNav">
+                    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                        <div class="container-fluid">
+                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                                <partial name="_LoginPartial" />
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="mainDashboard">
+                    <div class="container">
+                        <main role="main" class="pb-3">
+                            @RenderBody()
+                        </main>
+                    </div>
+                </div>
+                <footer class="dashFooter">
+                    <div class="container">
+                        &copy; 2024 - IFMAMVCDemo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </div>
+                </footer>
+            </section>
+        </div>
+    </main>
+   @*  <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IFMAMVCDemo</a>
@@ -43,18 +99,14 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    </header> *@
+    
 
-    <footer class="border-top footer text-muted">
+   @*  <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - IFMAMVCDemo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer> *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

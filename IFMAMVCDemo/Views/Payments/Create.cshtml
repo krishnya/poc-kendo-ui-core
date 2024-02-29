@@ -6,9 +6,61 @@
 
 <h1>Create</h1>
 
-<h4>Payment</h4>
+<h4>
+    <a title="Back to List" class="backtoLink" asp-action="Index">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+        </svg>
+    </a>
+    Payment
+</h4>
 <hr />
 <div class="row">
+    <form asp-action="Create">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="formWrapper">
+                    <div class="formContent">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="row">
+                            
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                <label asp-for="PaymentDate" class="control-label"></label>
+                                <input asp-for="PaymentDate" class="form-control" />
+                                <span asp-validation-for="PaymentDate" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="MemberId" class="control-label"></label>
+                                    <select asp-for="MemberId" class="form-control" asp-items="ViewBag.MemberId"></select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="Amount" class="control-label"></label>
+                                    <input asp-for="Amount" class="form-control" />
+                                    <span asp-validation-for="Amount" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formAction">
+                        <a asp-action="Index" class="cancelBtn">Back to List</a>
+                        <input type="submit" value="Create" class="formActionBtn" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+@* <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -36,7 +88,7 @@
 
 <div>
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
