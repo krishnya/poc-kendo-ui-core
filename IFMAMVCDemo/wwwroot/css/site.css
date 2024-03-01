@@ -163,7 +163,56 @@ a:hover {
     border-bottom: 1px solid rgba(38,185,154,0.11);
 }
 .dashboardWrapper .dashContent .rightContent table tbody td a{
-    display:inline-block;
+   
+}
+p.createNew a {
+    background: #29693F;
+    min-width: 84px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 7px 18px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 100px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #29693F;
+    transition: all 0.3s ease-out;
+}
+.dashboardWrapper .dashContent .rightContent table tbody td a.editAction {
+    background-color: #E6EFfC;
+    border-color: #B4CEF7;
+    display: inline-block;
+    border-radius: 4px;
+    color: #1f1f1f;
+    padding: 3px 6px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 14px;
+}
+.dashboardWrapper .dashContent .rightContent table tbody td a.detailsAction {
+    background-color: #FEF8ED;
+    border-color: #F8CCB1;
+    display: inline-block;
+    border-radius: 4px;
+    color: #1f1f1f;
+    padding: 3px 6px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 14px;
+}
+.dashboardWrapper .dashContent .rightContent table tbody td a.deleteAction {
+    background-color: #feecec;
+    border-color: #fab3b3;
+    display: inline-block;
+    border-radius: 4px;
+    color: #1f1f1f;
+    padding: 3px 6px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 14px;
 }
 .dashboardWrapper .dashContent .rightContent h1, h2, h3, h4, h5 {
     color: #73879C;
@@ -194,8 +243,12 @@ footer.dashFooter{
     border-radius:100%;
     background-color:#e6effc;
     color:#4e4e4e;
+    transition: all 0.3s ease-out;
 }
-.formWrapper .formContent {
+.backtoLink:hover {
+    background-color: #CDDEFA;
+}
+    .formWrapper .formContent {
 }
 .formWrapper .formAction {
     border-top:1px solid #e2e2e2;
@@ -215,30 +268,31 @@ footer.dashFooter{
     border-radius: 100px;
     box-shadow: none;
     outline: none;
-    border: none;
+    border: 1px solid #c43333;
     transition: all 0.3s ease-out;
 }
     .deleteBtn:hover {
         background: #952727;
     }
-    .formActionBtn {
+.formActionBtn {
     min-width: 84px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 8px 18px;
+    padding: 7px 18px;
     text-decoration: none;
     color: #fff;
     background: #055ce5;
     border-radius: 100px;
     box-shadow: none;
     outline: none;
-    border: none;
-    transition:all 0.3s ease-out;
+    border: 1px solid #055ce5;
+    transition: all 0.3s ease-out;
 }
 .formActionBtn:hover {
-    background:#044AB7
+    background: #044AB7;
+    color: #fff;
 }
 .cancelBtn {
     min-width: 84px;
@@ -246,22 +300,23 @@ footer.dashFooter{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 8px 18px;
+    padding: 7px 18px;
     text-decoration: none;
     color: #055ce5;
     border-radius: 100px;
     box-shadow: none;
     outline: none;
-    border: none;
+    border: 1px solid transparent;
     margin-right: 8px;
     transition: all 0.3s ease-out;
 }
-    .cancelBtn:hover{
-        background:#e6effc
-    }
-    .formWrapper .form-group {
-        margin-bottom: 16px;
-    }
+.cancelBtn:hover {
+    background: #e6effc;
+    border-color: #e6effc;
+}
+.formWrapper .form-group {
+    margin-bottom: 16px;
+}
 .detailCard {
     padding: 24px 24px 16px;
     border: 1px solid #e2e2e2;
@@ -304,4 +359,7 @@ footer.dashFooter{
     align-items:center;
     justify-content:center;
     padding:2px;
+}
+.loginPageWrapper .mainDashboard {
+    min-height: calc(100vh - 117px);
 }

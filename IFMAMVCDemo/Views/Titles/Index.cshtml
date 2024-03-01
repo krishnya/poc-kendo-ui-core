@@ -6,7 +6,7 @@
 
 <h1>Titles</h1>
 
-<p>
+<p class="createNew">
     <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
@@ -31,9 +31,9 @@
                 @Html.DisplayFor(modelItem => item.Category.CategoryName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="editAction" asp-action="Edit" asp-route-id="@item.Id">Edit</a> 
+                <a class="detailsAction" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                <a class="deleteAction" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }
