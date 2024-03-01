@@ -94,6 +94,55 @@
                             @Html.DisplayFor(model => model.TitleName)
                         </dd>
                         <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.CategoryAmount)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.CategoryAmount)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.Paid)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.Paid)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.Balance)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.Balance)
+                        </dd>
+                        <dt class="col-sm-5 paymentDetailsCol">
+                            Payment Details
+                        </dt>
+                        <dd class="col-sm-7">
+                            @if (Model.Payments != null && Model.Payments.Any())
+                            {
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Payment Date</th>
+                                            <th>Amount</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var payment in Model.Payments)
+                                        {
+                                            <tr>
+                                                <td>@payment.PaymentDate.ToString("d")</td>
+                                                <td>@payment.Amount</td>
+                                                <td>@payment.Description</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            }
+                            else
+                            {
+                                <div>No payments found.</div>
+                            }
+                        </dd>
+                        <dt class="col-sm-5">
                             Files
                         </dt>
                         <dd class="col-sm-7">
@@ -105,35 +154,6 @@
                                         <a href="~/uploads/@document.FileName">@document.FileName</a>
                                     </div>
                                 }
-                            }
-                        </dd>
-                        <dt class="col-sm-5 paymentDetailsCol">
-                            Payments
-                        </dt>
-                        <dd class="col-sm-7">
-                            @if (Model.Payments != null && Model.Payments.Any())
-                            {
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Payment Date</th>
-                                            <th>Amount</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach (var payment in Model.Payments)
-                                        {
-                                            <tr>
-                                                <td>@payment.PaymentDate.ToString("d")</td>
-                                                <td>@payment.Amount</td>
-                                            </tr>
-                                        }
-                                    </tbody>
-                                </table>
-                            }
-                            else
-                            {
-                                <div>No payments found.</div>
                             }
                         </dd>
                     </div>

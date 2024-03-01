@@ -76,8 +76,10 @@ namespace IFMAMVCDemo.Controllers
                 {
                     return NotFound();
                 }
-
+                                
                 var member = await _context.Members
+                    .Include(m => m.Title)
+                        .ThenInclude(t => t.Category)
                     .Include(p=>p.Payments)
                     .Include(m => m.Documents).FirstOrDefaultAsync(m => m.Id == id);
                 if (member == null)
@@ -110,6 +112,9 @@ namespace IFMAMVCDemo.Controllers
                     Documents = member.Documents,
                     // Set TitleName from title
                     TitleName = title.TitleName,
+                    CategoryAmount = member.Title.Category.Amount,
+                    Paid = member.Payments.Sum(p => p.Amount),
+                    Balance = Math.Round(member.Title.Category.Amount - member.Payments.Sum(p => p.Amount), 2),
                     Payments = member.Payments != null ? member.Payments.OrderByDescending(p => p.PaymentDate).ToList() : new List<Payment>()
 
                 };
