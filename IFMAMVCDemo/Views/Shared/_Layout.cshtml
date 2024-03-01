@@ -6,24 +6,24 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - IFMAMVCDemo</title>
+    <title>@ViewData["Title"] - IFMA</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/IFMAMVCDemo.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <main class="dashboardWrapper">
+    <main class="dashboardWrapper" id="dashMainWrapper">
         
         <div class="dashContent">
             <div class="sideBar">
                 <ul>
                     <li>
-                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IFMAMVCDemo</a>
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IFMA</a>
                     </li>
                     @if (SignInManager.IsSignedIn(User))
                     {
 
-                        <li class="nav-item">
+                        <li class="nav-item active"> @*add sctive class if its current page*@
                             <a class="nav-link" asp-area="" asp-controller="Members" asp-action="Index">Members</a>
                         </li>
                         <li class="nav-item">
@@ -40,9 +40,13 @@
             </div>
             <section class="rightContent">
                 <div class="dashNav">
-                    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                    <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-3">
                         <div class="container-fluid">
-                            
+                            <a href="#" id="sibeBarCollapseBtn" class="sibeBarCollapseBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                                </svg>
+                            </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -62,7 +66,7 @@
                 </div>
                 <footer class="dashFooter">
                     <div class="container">
-                        &copy; 2024 - IFMAMVCDemo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        &copy; 2024 - IFMA - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                     </div>
                 </footer>
             </section>

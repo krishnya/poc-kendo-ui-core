@@ -167,7 +167,7 @@ namespace IFMAMVCDemo.Controllers
                             foreach (var file in files)
                             {
                                 var fileName = $"{member.Id}_{Path.GetFileName(file.FileName)}";
-                                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\files", fileName);
+                                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\uploads", fileName);
                                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                                 {
                                     await file.CopyToAsync(fileStream);

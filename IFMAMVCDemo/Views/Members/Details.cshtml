@@ -7,127 +7,142 @@
 <h1>Details</h1>
 
 <div>
-    <h4>Member</h4>
+    <h4>
+        <a title="Back to List" class="backtoLink" asp-action="Index">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+        </a>
+        Member
+    </h4>
     <hr />
     <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.FirstName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MiddleName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MiddleName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Gender)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Gender)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Phone)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Phone)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Address)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Address)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DateOfBirth)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DateOfBirth)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DateOfJoin)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DateOfJoin)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.PassportNo)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.PassportNo)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.AadharNo)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.AadharNo)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DrivingLicenseNo)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DrivingLicenseNo)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TitleName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TitleName)
-        </dd>
-        <dt class="col-sm-2">
-            Files
-        </dt>
-        <dd class="col-sm-10">
-            @if (Model.Documents != null)
-            {
-                foreach (var document in Model.Documents)
-                {
-                    <div>
-                        <a href="~/uploads/@document.FileName">@document.FileName</a>
+        <div class="col-md-7">
+            <div class="detailCard">
+                <div class="detailCardContent">
+                    <div class="row">
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.FirstName)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.FirstName)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.LastName)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.LastName)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.MiddleName)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.MiddleName)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.Gender)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.Gender)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.Phone)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.Phone)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.Address)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.Address)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.DateOfBirth)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.DateOfBirth)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.DateOfJoin)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.DateOfJoin)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.PassportNo)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.PassportNo)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.AadharNo)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.AadharNo)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.DrivingLicenseNo)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.DrivingLicenseNo)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.TitleName)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.TitleName)
+                        </dd>
+                        <dt class="col-sm-5">
+                            Files
+                        </dt>
+                        <dd class="col-sm-7">
+                            @if (Model.Documents != null)
+                            {
+                                foreach (var document in Model.Documents)
+                                {
+                                    <div>
+                                        <a href="~/uploads/@document.FileName">@document.FileName</a>
+                                    </div>
+                                }
+                            }
+                        </dd>
+                        <dt class="col-sm-5 paymentDetailsCol">
+                            Payments
+                        </dt>
+                        <dd class="col-sm-7">
+                            @if (Model.Payments != null && Model.Payments.Any())
+                            {
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Payment Date</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var payment in Model.Payments)
+                                        {
+                                            <tr>
+                                                <td>@payment.PaymentDate.ToString("d")</td>
+                                                <td>@payment.Amount</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            }
+                            else
+                            {
+                                <div>No payments found.</div>
+                            }
+                        </dd>
                     </div>
-                }
-            }
-        </dd>
-        <dt class="col-sm-2">
-            Payments
-        </dt>
-        <dd class="col-sm-10">
-            @if (Model.Payments != null && Model.Payments.Any())
-            {
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Payment Date</th>
-                            <th>Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var payment in Model.Payments)
-                        {
-                            <tr>
-                                <td>@payment.PaymentDate.ToString("d")</td>
-                                <td>@payment.Amount</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-            }
-            else
-            {
-                <div>No payments found.</div>
-            }
-        </dd>
+                </div>
+                <div class="detailCardAction">
+                    <a class="cancelBtn" asp-action="Index">Back to List</a>
+                    <a class="formActionBtn" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>
+                </div>
+            </div>
+        </div>
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
 </div>

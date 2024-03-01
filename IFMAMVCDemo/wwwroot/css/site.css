@@ -53,24 +53,24 @@ a:hover {
     -webkit-box-direction: normal;
     flex-direction: row;
 }
-    .loginForm .action .loginBtn {
-        text-decoration: none;
-        width: 100%;
-        border: none;
-        padding: 18px;
-        font-family: 'Rubik', sans-serif;
-        cursor: pointer;
-        text-transform: uppercase;
-        background: #055ce5;
-        color: #fff;
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
-        letter-spacing: 0.2px;
-        outline: 0;
-        -webkit-transition: all .3s;
-        transition: all .3s;
-        text-align: center;
-    }
+.loginForm .action .loginBtn {
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    padding: 18px;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #055ce5;
+    color: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    letter-spacing: 0.2px;
+    outline: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    text-align: center;
+}
 .loginForm .action .loginBtn:nth-child(2) {
     background: #2d3b55;
     color: #fff;
@@ -78,25 +78,34 @@ a:hover {
     border-bottom-right-radius: 4px;
 }
 
-.dashboardWrapper{
-
+.dashboardWrapper.sidebarCollapse {
+}
+.dashboardWrapper.sidebarCollapse .dashContent .sideBar {
+    left:-250px;
+}
+.dashboardWrapper.sidebarCollapse .dashContent .rightContent {
+    padding-left:0px;
 }
 .dashboardWrapper .dashNav {
 }
-.dashboardWrapper .dashNav {
+.dashboardWrapper .dashNav > .navbar {
+    background: #EDEDED;
+    border-bottom: 1px solid #D9DEE4;
 }
 
 .dashboardWrapper .dashContent {
 }
-    .dashboardWrapper .dashContent .sideBar {
-        background: #3c4b64;
-        width: 250px;
-        position: fixed;
-        top: 0px;
-        bottom: 0;
-        z-index: 1030;
-        box-shadow: 0 2px 2px 0 rgba(var(--cui-elevation-base-color, 60, 75, 100), .14), 0 3px 1px -2px rgba(var(--cui-elevation-base-color, 60, 75, 100), .12), 0 1px 5px 0 rgba(var(--cui-elevation-base-color, 60, 75, 100), .20);
-    }
+.dashboardWrapper .dashContent .sideBar {
+    background: #2A3F54;
+    width: 250px;
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    z-index: 1030;
+    left:0;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 2px 2px 0 rgba(var(--cui-elevation-base-color, 60, 75, 100), .14), 0 3px 1px -2px rgba(var(--cui-elevation-base-color, 60, 75, 100), .12), 0 1px 5px 0 rgba(var(--cui-elevation-base-color, 60, 75, 100), .20);
+}
 .dashboardWrapper .dashContent .sideBar ul {
     padding: 0px;
     margin: 0px;
@@ -113,7 +122,6 @@ a:hover {
     color: #afb5c0;
     text-decoration: none;
     white-space: nowrap;
-    background: #3c4b64;
     transition: background 0.15s ease, color 0.15s ease;
 }
 .dashboardWrapper .dashContent .sideBar a:hover {
@@ -132,9 +140,33 @@ a:hover {
 }
 
 .dashboardWrapper .dashContent .rightContent {
-    padding-left:250px
+    padding-left:250px;
+    background: #F7F7F7;
+    transition:all 0.3s ease-out;
 }
-.dashboardWrapper .dashContent .rightContent {
+.dashboardWrapper .dashContent .rightContent table{
+    font-size:14px;
+    background:#fff;
+}
+.dashboardWrapper .dashContent .rightContent table > thead {
+    background: rgba(52,73,94,0.94);
+    color: #ECF0F1;
+}
+.dashboardWrapper .dashContent .rightContent table > thead th {
+}
+.dashboardWrapper .dashContent .rightContent table > tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+.dashboardWrapper .dashContent .rightContent table tbody tr:hover td {
+    background: rgba(38,185,154,0.07);
+    border-top: 1px solid rgba(38,185,154,0.11);
+    border-bottom: 1px solid rgba(38,185,154,0.11);
+}
+.dashboardWrapper .dashContent .rightContent table tbody td a{
+    display:inline-block;
+}
+.dashboardWrapper .dashContent .rightContent h1, h2, h3, h4, h5 {
+    color: #73879C;
 }
 .mainDashboard{
     min-height:calc(100vh - 160px);
@@ -143,6 +175,7 @@ footer.dashFooter{
     position:unset;
     padding:20px 0px;
     margin-top:20px;
+    background:#fff;
 }
 .formWrapper{
     padding:24px 24px 16px;
@@ -235,7 +268,12 @@ footer.dashFooter{
     background: #fbfbfb;
     border-radius: 12px;
 }
-.detailCard .detailCardContent {
+.detailCard .detailCardContent dt{
+    margin-bottom:0.5rem;
+}
+.paymentDetailsCol {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 .detailCard .detailCardAction {
     border-top: 1px solid #e2e2e2;
@@ -260,4 +298,10 @@ footer.dashFooter{
     color:#1f1f1f;
     font-size:18px;
     font-weight:bold;
+}
+.sibeBarCollapseBtn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:2px;
 }
