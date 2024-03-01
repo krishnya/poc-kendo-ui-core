@@ -24,7 +24,11 @@ namespace IFMAMVCDemo.Controllers
         // GET: Payments
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Payments.Include(p => p.Member);
+            //var applicationDbContext = _context.Payments.Include(p => p.Member);
+            //return View(await applicationDbContext.ToListAsync());
+            var applicationDbContext = _context.Payments.Include(p => p.Member)
+                                                .ThenInclude(m => m.Title)
+                                                .ThenInclude(t => t.Category);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -37,8 +41,10 @@ namespace IFMAMVCDemo.Controllers
             }
 
             var payment = await _context.Payments
-                .Include(p => p.Member)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                            .Include(p => p.Member)
+                            .ThenInclude(m => m.Title)
+                            .ThenInclude(t => t.Category)
+                            .FirstOrDefaultAsync(m => m.Id == id);
             if (payment == null)
             {
                 return NotFound();
@@ -59,7 +65,7 @@ namespace IFMAMVCDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,PaymentDate,MemberId,Amount")] Payment payment)
+        public async Task<IActionResult> Create([Bind("Id,PaymentDate,MemberId,Amount,Description")] Payment payment)
         {
             ModelState.Remove("Member");
             if (ModelState.IsValid)
@@ -94,7 +100,7 @@ namespace IFMAMVCDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,PaymentDate,MemberId,Amount,Balance")] Payment payment)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,PaymentDate,MemberId,Amount,Balance,Description")] Payment payment)
         {
             if (id != payment.Id)
             {

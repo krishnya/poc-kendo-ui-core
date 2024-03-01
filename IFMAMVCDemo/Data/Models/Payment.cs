@@ -28,7 +28,18 @@ namespace IFMAMVCDemo.Data.Models
         public double Amount { get; set; }
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
-        public double Balance { get; set; }
+        [NotMapped]
+        public double? Balance
+        {
+            get
+            {
+                if (Member?.Title?.Category != null)
+                {
+                    return Member.Title.Category.Amount - Amount;
+                }
+                return null;
+            }
+        }
 
         public string? Description { get; set; }
         

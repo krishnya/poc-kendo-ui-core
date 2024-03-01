@@ -48,9 +48,14 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label asp-for="Gender" class="control-label"></label>
-                                    <input asp-for="Gender" class="form-control" />
+                                    <div>
+                                        <input asp-for="Gender" type="radio" value="Male" /> Male
+                                        <input asp-for="Gender" type="radio" value="Female" /> Female
+                                        <input asp-for="Gender" type="radio" value="Unknown" /> Unknown
+                                    </div>
                                     <span asp-validation-for="Gender" class="text-danger"></span>
                                 </div>
+
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">

@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Details";
+
 }
 
 <h1>Details</h1>
@@ -129,23 +130,25 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @{
+                                            var balance = Model.CategoryAmount;
+                                        }
                                         <tr>
                                             <td>@Model.DateOfJoin.ToString("d")</td>
                                             <td>@Model.CategoryName</td>
                                             <td>@Model.CategoryAmount</td>
                                             <td>&nbsp;</td>
-                                            <td>@Model.CategoryAmount</td>
-
+                                            <td>@balance</td>
                                         </tr>
                                         @foreach (var payment in Model.Payments)
                                         {
+                                            balance -= payment.Amount;
                                             <tr>
                                                 <td>@payment.PaymentDate.ToString("d")</td>
                                                 <td>@payment.Description</td>
                                                 <td>&nbsp;</td>
                                                 <td>@payment.Amount</td>
-                                                <td>@(Model.CategoryAmount - payment.Amount)</td>
-                                                
+                                                <td>@balance</td>
                                             </tr>
                                         }
                                         <tr>
@@ -154,7 +157,6 @@
                                             <td>@Model.CategoryAmount</td>
                                             <td>@Model.Paid</td>
                                             <td>@Model.Balance</td>
-
                                         </tr>
                                     </tbody>
                                 </table>
