@@ -100,7 +100,8 @@
                             @Html.DisplayFor(model => model.CategoryAmount)
                         </dd>
                         <dt class="col-sm-5">
-                            @Html.DisplayNameFor(model => model.Paid)
+                            @* @Html.DisplayNameFor(model => model.Paid) *@
+                            Receipt
                         </dt>
                         <dd class="col-sm-7">
                             @Html.DisplayFor(model => model.Paid)
@@ -120,20 +121,41 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>Payment Date</th>
-                                            <th>Amount</th>
+                                            <th>Date</th>
                                             <th>Description</th>
+                                            <th>Payment</th>
+                                            <th>Receipt</th>
+                                            <th>Balance</th>                                            
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <tr>
+                                            <td>@Model.DateOfJoin.ToString("d")</td>
+                                            <td>@Model.CategoryName</td>
+                                            <td>@Model.CategoryAmount</td>
+                                            <td>&nbsp;</td>
+                                            <td>@Model.CategoryAmount</td>
+
+                                        </tr>
                                         @foreach (var payment in Model.Payments)
                                         {
                                             <tr>
                                                 <td>@payment.PaymentDate.ToString("d")</td>
-                                                <td>@payment.Amount</td>
                                                 <td>@payment.Description</td>
+                                                <td>&nbsp;</td>
+                                                <td>@payment.Amount</td>
+                                                <td>@(Model.CategoryAmount - payment.Amount)</td>
+                                                
                                             </tr>
                                         }
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>Total:</td>
+                                            <td>@Model.CategoryAmount</td>
+                                            <td>@Model.Paid</td>
+                                            <td>@Model.Balance</td>
+
+                                        </tr>
                                     </tbody>
                                 </table>
                             }

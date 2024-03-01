@@ -113,6 +113,7 @@ namespace IFMAMVCDemo.Controllers
                     // Set TitleName from title
                     TitleName = title.TitleName,
                     CategoryAmount = member.Title.Category.Amount,
+                    CategoryName = member.Title.Category.CategoryName,
                     Paid = member.Payments.Sum(p => p.Amount),
                     Balance = Math.Round(member.Title.Category.Amount - member.Payments.Sum(p => p.Amount), 2),
                     Payments = member.Payments != null ? member.Payments.OrderByDescending(p => p.PaymentDate).ToList() : new List<Payment>()

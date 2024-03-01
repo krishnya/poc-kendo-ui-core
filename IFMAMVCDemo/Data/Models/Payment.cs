@@ -26,6 +26,9 @@ namespace IFMAMVCDemo.Data.Models
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
         public double Amount { get; set; }
+        [DataType(DataType.Currency)]
+        [Column(TypeName = "decimal(18, 2)")]
+        public double Balance { get; set; }
 
         public string? Description { get; set; }
         

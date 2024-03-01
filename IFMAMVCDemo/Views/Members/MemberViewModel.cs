@@ -8,11 +8,13 @@ namespace IFMAMVCDemo.Data.Models
     public class MemberViewModel : Member
     {
         [DisplayName("Title")]
-        public string TitleName { get; set; }
+        public string? TitleName { get; set; }
         [DisplayName("Category Amount")]
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
         public double CategoryAmount { get; set; }
+        [DisplayName("Category Name")]
+        public string? CategoryName { get; set; }
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
         public double Paid { get; set; }

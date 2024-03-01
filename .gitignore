@@ -40,4 +40,4 @@ FormI9VulnerabilitiesScan.csproj
 Warnings.txt
 FI9CoverageReport/
 FI9CoverageReport.html
-/IFMAMVCDemo/Logs/log20240301.txt
+/IFMAMVCDemo/Logs/*.*
