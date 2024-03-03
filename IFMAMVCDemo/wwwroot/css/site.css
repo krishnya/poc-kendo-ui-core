@@ -43,7 +43,7 @@ a:hover {
     font-weight: 300;
 }
 .loginForm .content {
-    padding: 35px;
+    padding: 35px 35px 0px;
     text-align: center;
 }
 .loginForm .action {
@@ -115,6 +115,7 @@ a:hover {
     display: block;
 }
 .dashboardWrapper .dashContent .sideBar a {
+    cursor:pointer;
     display: flex;
     flex: 1;
     align-items: center;
@@ -132,9 +133,9 @@ a:hover {
     color:#fff;
     margin:0px;
 }
-.dashboardWrapper .dashContent .sideBar li.active {
+.dashboardWrapper .dashContent .sideBar li a.active {
 }
-.dashboardWrapper .dashContent .sideBar li.active a {
+.dashboardWrapper .dashContent .sideBar li a.active {
     background-color: #46546c;
     color: #fff;
 }
@@ -187,10 +188,11 @@ p.createNew a {
     display: inline-block;
     border-radius: 4px;
     color: #1f1f1f;
-    padding: 3px 6px;
+    padding: 5px 8px;
     text-decoration: none;
     font-size: 13px;
     line-height: 14px;
+    font-weight:600;
 }
 .dashboardWrapper .dashContent .rightContent table tbody td a.detailsAction {
     background-color: #FEF8ED;
@@ -198,10 +200,11 @@ p.createNew a {
     display: inline-block;
     border-radius: 4px;
     color: #1f1f1f;
-    padding: 3px 6px;
+    padding: 5px 8px;
     text-decoration: none;
     font-size: 13px;
     line-height: 14px;
+    font-weight:600;
 }
 .dashboardWrapper .dashContent .rightContent table tbody td a.deleteAction {
     background-color: #feecec;
@@ -209,10 +212,11 @@ p.createNew a {
     display: inline-block;
     border-radius: 4px;
     color: #1f1f1f;
-    padding: 3px 6px;
+    padding: 5px 8px;
     text-decoration: none;
     font-size: 13px;
     line-height: 14px;
+    font-weight: 600;
 }
 .dashboardWrapper .dashContent .rightContent h1, h2, h3, h4, h5 {
     color: #73879C;
@@ -302,17 +306,19 @@ footer.dashFooter{
     text-align: center;
     padding: 7px 18px;
     text-decoration: none;
-    color: #055ce5;
+    color: #fff;
     border-radius: 100px;
     box-shadow: none;
     outline: none;
-    border: 1px solid transparent;
+    border: 1px solid #82868b;
     margin-right: 8px;
     transition: all 0.3s ease-out;
+    background: #969ba2;
 }
 .cancelBtn:hover {
-    background: #e6effc;
-    border-color: #e6effc;
+    background: #6a6c6e;
+    border-color: #6a6c6e;
+    color: #fff;
 }
 .formWrapper .form-group {
     margin-bottom: 16px;
@@ -363,3 +369,31 @@ footer.dashFooter{
 .loginPageWrapper .mainDashboard {
     min-height: calc(100vh - 117px);
 }
+.loginPageWrapper .dashFooter{
+    border-top:1px solid #ddd;
+    text-align:center;
+    background:#f5f5f5;
+}
+/*input[type=file]::file-selector-button {
+    margin-right: 10px;
+    border: none;
+    min-width: 84px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 7px 18px;
+    text-decoration: none;
+    color: #fff;
+    background: #055ce5;
+    border-radius: 100px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #055ce5;
+    transition: all 0.3s ease-out;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+}*/

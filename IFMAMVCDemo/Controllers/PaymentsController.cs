@@ -72,10 +72,12 @@ namespace IFMAMVCDemo.Controllers
             {
                 _context.Add(payment);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                //return RedirectToAction(nameof(Index));
+                //return RedirectToAction("Index", "Members", new { id = payment.MemberId });
             }
             ViewData["MemberId"] = new SelectList(_context.Members, "Id", "FirstName", payment.MemberId);
-            return View(payment);
+            //return View(payment);
+            return RedirectToAction("Index", "Members", new { id = payment.MemberId });
         }
 
         // GET: Payments/Edit/5

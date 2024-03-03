@@ -8,10 +8,14 @@
 
 <p class="createNew">
     <a asp-action="Create">Add New Member</a>
+    <a asp-action="Create" asp-controller="Payments">Add Payment</a>
 </p>
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MembershipId)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.FirstName)
             </th>
@@ -46,6 +50,9 @@
         @foreach (var item in Model)
         {
             <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MembershipId)
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.FirstName)
                 </td>

@@ -11,6 +11,8 @@ namespace IFMAMVCDemo.Data.Models
     {
         [Key]
         public int Id { get; set; }
+        [DisplayName("Membership ID")]
+        public string? MembershipId { get; set; }
         [Required]
         [DisplayName("First Name")]
         public string FirstName { get; set; }
@@ -23,9 +25,15 @@ namespace IFMAMVCDemo.Data.Models
         public string Gender { get; set; }                
         public string? Phone { get; set; }
         public string? Address { get; set; }
+        public string? City { get; set; }
+        public string? State { get; set; }
+        [DisplayName("Pin Code")]
+        public string? PinCode { get; set; }
         [DataType(DataType.Date)]
         [DisplayName("Date of Birth")]
         public DateTime DateOfBirth { get; set; }
+        [DisplayName("Blood Group")]
+        public string? BloodGroup { get; set; }
         [Required]
         [ForeignKey("Title")]
         [DisplayName("Title")]
@@ -39,6 +47,11 @@ namespace IFMAMVCDemo.Data.Models
         public string? AadharNo { get; set; }
         [DisplayName("Driving License No")]
         public string? DrivingLicenseNo { get; set; }
+        [DisplayName("Father Name")]
+        public string? FatherName { get; set; }
+        public string? Email { get; set; }
+        [DisplayName("PAN Number")]
+        public string? PanNumber { get; set; }
         public virtual Title Title { get; set; }
         public virtual ICollection<Payment> Payments { get; set; }
         public virtual ICollection<Document> Documents { get; set; }

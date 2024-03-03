@@ -7,6 +7,8 @@ namespace IFMAMVCDemo.Data.Models
 {
     public class MemberViewModel : Member
     {
+        [DisplayName("Membership ID")]
+        public string MembershipId => $"IFMA0{Id}";
         [DisplayName("Title")]
         public string? TitleName { get; set; }
         [DisplayName("Category Amount")]

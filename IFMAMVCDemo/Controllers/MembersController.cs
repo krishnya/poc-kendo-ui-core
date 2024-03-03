@@ -100,15 +100,22 @@ namespace IFMAMVCDemo.Controllers
                     FirstName = member.FirstName,
                     LastName = member.LastName,
                     MiddleName = member.MiddleName,
-                    Gender = member.Gender,
-                    Phone = member.Phone,
-                    Address = member.Address,
                     DateOfBirth = member.DateOfBirth,
+                    Gender = member.Gender,
+                    BloodGroup = member.BloodGroup,
+                    FatherName = member.FatherName,
+                    Address = member.Address,
+                    City = member.City,
+                    State = member.State,
+                    PinCode = member.PinCode,
+                    Phone = member.Phone,
+                    Email = member.Email,                    
                     TitleId = member.TitleId,
                     DateOfJoin = member.DateOfJoin,
                     PassportNo = member.PassportNo,
                     AadharNo = member.AadharNo,
                     DrivingLicenseNo = member.DrivingLicenseNo,
+                    PanNumber = member.PanNumber,
                     Documents = member.Documents,
                     // Set TitleName from title
                     TitleName = title.TitleName,
@@ -151,7 +158,7 @@ namespace IFMAMVCDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,Gender,DateOfBirth,TitleId,DateOfJoin")] Member member, List<IFormFile> files)
+        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,Gender,DateOfBirth,TitleId,DateOfJoin,MiddleName,BloodGroup,FatherName,Address,City,State,PinCode,Phone,Email,PanNumber,PassportNo,AadharNo,DrivingLicenseNo")] Member member, List<IFormFile> files)
         {
             ModelState.Remove("Title");
             ModelState.Remove("Payments");
@@ -242,7 +249,7 @@ namespace IFMAMVCDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Gender,DateOfBirth,TitleId,DateOfJoin")] Member member, List<IFormFile> files)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Gender,DateOfBirth,TitleId,DateOfJoin,MiddleName,BloodGroup,FatherName,Address,City,State,PinCode,Phone,Email,PanNumber,PassportNo,AadharNo,DrivingLicenseNo")] Member member, List<IFormFile> files)
         {
             if (id != member.Id)
             {

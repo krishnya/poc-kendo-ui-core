@@ -22,6 +22,12 @@
                 <div class="detailCardContent">
                     <div class="row">
                         <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.MembershipId)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.MembershipId)
+                        </dd>
+                        <dt class="col-sm-5">
                             @Html.DisplayNameFor(model => model.FirstName)
                         </dt>
                         <dd class="col-sm-7">
@@ -46,10 +52,22 @@
                             @Html.DisplayFor(model => model.Gender)
                         </dd>
                         <dt class="col-sm-5">
-                            @Html.DisplayNameFor(model => model.Phone)
+                            @Html.DisplayNameFor(model => model.DateOfBirth)
                         </dt>
                         <dd class="col-sm-7">
-                            @Html.DisplayFor(model => model.Phone)
+                            @Html.DisplayFor(model => model.DateOfBirth)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.BloodGroup)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.BloodGroup)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.FatherName)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.FatherName)
                         </dd>
                         <dt class="col-sm-5">
                             @Html.DisplayNameFor(model => model.Address)
@@ -58,10 +76,40 @@
                             @Html.DisplayFor(model => model.Address)
                         </dd>
                         <dt class="col-sm-5">
-                            @Html.DisplayNameFor(model => model.DateOfBirth)
+                            @Html.DisplayNameFor(model => model.City)
                         </dt>
                         <dd class="col-sm-7">
-                            @Html.DisplayFor(model => model.DateOfBirth)
+                            @Html.DisplayFor(model => model.City)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.State)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.State)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.PinCode)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.PinCode)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.Phone)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.Phone)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.Email)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+                        <dt class="col-sm-5">
+                            @Html.DisplayNameFor(model => model.TitleName)
+                        </dt>
+                        <dd class="col-sm-7">
+                            @Html.DisplayFor(model => model.TitleName)
                         </dd>
                         <dt class="col-sm-5">
                             @Html.DisplayNameFor(model => model.DateOfJoin)
@@ -88,10 +136,10 @@
                             @Html.DisplayFor(model => model.DrivingLicenseNo)
                         </dd>
                         <dt class="col-sm-5">
-                            @Html.DisplayNameFor(model => model.TitleName)
+                            @Html.DisplayNameFor(model => model.PanNumber)
                         </dt>
                         <dd class="col-sm-7">
-                            @Html.DisplayFor(model => model.TitleName)
+                            @Html.DisplayFor(model => model.PanNumber)
                         </dd>
                         <dt class="col-sm-5">
                             @Html.DisplayNameFor(model => model.CategoryAmount)
@@ -100,7 +148,7 @@
                             @Html.DisplayFor(model => model.CategoryAmount)
                         </dd>
                         <dt class="col-sm-5">
-                            @* @Html.DisplayNameFor(model => model.Paid) *@
+                            
                             Receipt
                         </dt>
                         <dd class="col-sm-7">
@@ -115,7 +163,7 @@
                         <dt class="col-sm-5 paymentDetailsCol">
                             Payment Details
                         </dt>
-                        <dd class="col-sm-7">
+                        <dd class="col-sm-12">
                             @if (Model.Payments != null && Model.Payments.Any())
                             {
                                 <table class="table">
