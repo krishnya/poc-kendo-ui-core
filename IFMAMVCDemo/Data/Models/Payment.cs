@@ -27,6 +27,7 @@ namespace IFMAMVCDemo.Data.Models
         [Required]
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
+        [Range(1, Member.Title.Category.Amount, ErrorMessage = "Amount cannot exceed Category Amount")]
         public double Amount { get; set; }
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
