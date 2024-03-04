@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+﻿using IFMAMVCDemo.Models;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -17,7 +18,8 @@ namespace IFMAMVCDemo.Data.Models
         [DisplayName("Payment Date")]
         public DateTime PaymentDate { get; set; }
         [DisplayName("Member")]
-        [Required]
+        [Required(ErrorMessage = "Please select a member")]
+        [ValidMemberId]
         [ForeignKey("Member")]
         public int MemberId { get; set; }
         

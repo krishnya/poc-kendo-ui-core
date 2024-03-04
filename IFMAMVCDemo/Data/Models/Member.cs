@@ -21,6 +21,8 @@ namespace IFMAMVCDemo.Data.Models
         public string LastName { get; set; }
         [DisplayName("Middle Name")]
         public string? MiddleName { get; set; }
+        [NotMapped]
+        public string FullName => $"{FirstName} {LastName}";
         [Required]
         public string Gender { get; set; }                
         public string? Phone { get; set; }

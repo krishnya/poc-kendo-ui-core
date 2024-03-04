@@ -54,9 +54,12 @@ namespace IFMAMVCDemo.Controllers
         }
 
         // GET: Payments/Create
-        public IActionResult Create()
+        public IActionResult Create(int? memberId)
         {
-            ViewData["MemberId"] = new SelectList(_context.Members, "Id", "FirstName");
+            var emptyItem = new { Id = 0, FullName = "Select Member..." };
+            var memberList = _context.Members.ToList().Concat(new List<object>() { emptyItem });
+
+            ViewData["MemberId"] = new SelectList(memberList, "Id", "FullName", memberId);
             return View();
         }
 
@@ -75,9 +78,9 @@ namespace IFMAMVCDemo.Controllers
                 //return RedirectToAction(nameof(Index));
                 //return RedirectToAction("Index", "Members", new { id = payment.MemberId });
             }
-            ViewData["MemberId"] = new SelectList(_context.Members, "Id", "FirstName", payment.MemberId);
+            ViewData["MemberId"] = new SelectList(_context.Members, "Id", "FullName", payment.MemberId);
             //return View(payment);
-            return RedirectToAction("Index", "Members", new { id = payment.MemberId });
+            return RedirectToAction("Details", "Members", new { id = payment.MemberId });
         }
 
         // GET: Payments/Edit/5
@@ -93,7 +96,7 @@ namespace IFMAMVCDemo.Controllers
             {
                 return NotFound();
             }
-            ViewData["MemberId"] = new SelectList(_context.Members, "Id", "FirstName", payment.MemberId);
+            ViewData["MemberId"] = new SelectList(_context.Members, "Id", "FullName", payment.MemberId);
             return View(payment);
         }
 
@@ -129,7 +132,7 @@ namespace IFMAMVCDemo.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MemberId"] = new SelectList(_context.Members, "Id", "FirstName", payment.MemberId);
+            ViewData["MemberId"] = new SelectList(_context.Members, "Id", "FullName", payment.MemberId);
             return View(payment);
         }
 

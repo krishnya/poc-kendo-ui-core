@@ -163,6 +163,9 @@
                         <dt class="col-sm-5 paymentDetailsCol">
                             Payment Details
                         </dt>
+                        <dd class="col-sm-7">
+                            <a asp-action="Create" asp-controller="Payments" asp-route-memberId="@Model.Id">Add Payment</a>
+                        </dd>
                         <dd class="col-sm-12">
                             @if (Model.Payments != null && Model.Payments.Any())
                             {
