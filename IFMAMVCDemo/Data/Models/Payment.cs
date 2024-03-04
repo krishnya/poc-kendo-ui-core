@@ -17,17 +17,16 @@ namespace IFMAMVCDemo.Data.Models
         [DataType(DataType.Date)]
         [DisplayName("Payment Date")]
         public DateTime PaymentDate { get; set; }
-        [DisplayName("Member")]
-        [Required(ErrorMessage = "Please select a member")]
-        [ValidMemberId]
+
+        [Required]
+        [DisplayName("Member")]        
         [ForeignKey("Member")]
         public int MemberId { get; set; }
         
         public virtual Member Member { get; set; }
         [Required]
         [DataType(DataType.Currency)]
-        [Column(TypeName = "decimal(18, 2)")]
-        [Range(1, Member.Title.Category.Amount, ErrorMessage = "Amount cannot exceed Category Amount")]
+        [Column(TypeName = "decimal(18, 2)")]        
         public double Amount { get; set; }
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]

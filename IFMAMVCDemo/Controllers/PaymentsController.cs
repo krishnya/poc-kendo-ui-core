@@ -69,7 +69,25 @@ namespace IFMAMVCDemo.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,PaymentDate,MemberId,Amount,Description")] Payment payment)
-        {
+        {            
+            var member = _context.Members.Include(m => m.Title.Category).FirstOrDefault(m => m.Id == payment.MemberId);
+
+            if(payment.MemberId <= 0)
+            {
+                ModelState.AddModelError("MemberId", "Please select a member.");
+            }else if (member?.Title?.Category != null && payment.Amount > member.Title.Category.Amount)
+            {
+                ModelState.Remove("Member");
+                ModelState.AddModelError("Amount", "Amount cannot exceed Category Amount");
+            }            
+
+            if (!ModelState.IsValid)
+            {
+                var emptyItem = new { Id = 0, FullName = "Select Member..." };
+                var memberList = _context.Members.ToList().Concat(new List<object>() { emptyItem });
+                ViewData["MemberId"] = new SelectList(memberList, "Id", "FullName", payment.MemberId);
+                return View(payment);
+            }
             ModelState.Remove("Member");
             if (ModelState.IsValid)
             {
@@ -96,7 +114,9 @@ namespace IFMAMVCDemo.Controllers
             {
                 return NotFound();
             }
-            ViewData["MemberId"] = new SelectList(_context.Members, "Id", "FullName", payment.MemberId);
+            var emptyItem = new { Id = 0, FullName = "Select Member..." };
+            var memberList = _context.Members.ToList().Concat(new List<object>() { emptyItem });
+            ViewData["MemberId"] = new SelectList(memberList, "Id", "FullName", payment.MemberId);
             return View(payment);
         }
 
@@ -132,7 +152,9 @@ namespace IFMAMVCDemo.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MemberId"] = new SelectList(_context.Members, "Id", "FullName", payment.MemberId);
+            var emptyItem = new { Id = 0, FullName = "Select Member..." };
+            var memberList = _context.Members.ToList().Concat(new List<object>() { emptyItem });
+            ViewData["MemberId"] = new SelectList(memberList, "Id", "FullName", payment.MemberId);
             return View(payment);
         }
 
