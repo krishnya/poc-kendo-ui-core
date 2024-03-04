@@ -33,6 +33,7 @@ namespace IFMAMVCDemo.Data.Models
         public string? PinCode { get; set; }
         [DataType(DataType.Date)]
         [DisplayName("Date of Birth")]
+     //   [Range(typeof(DateTime), "1/1/1900", "Today", ErrorMessage = "Date of Birth cannot be in the future.")]
         public DateTime DateOfBirth { get; set; }
         [DisplayName("Blood Group")]
         public string? BloodGroup { get; set; }
@@ -42,6 +43,7 @@ namespace IFMAMVCDemo.Data.Models
         public int TitleId { get; set; }
         [DataType(DataType.Date)]
         [DisplayName("Date of Join")]
+     //   [Range(typeof(DateTime), "1/1/1900", "Today", ErrorMessage = "Date of Join cannot be in the future.")]
         public DateTime DateOfJoin { get; set; }
         [DisplayName("Passport No")]
         public string? PassportNo { get; set; }

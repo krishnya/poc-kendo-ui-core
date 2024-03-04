@@ -159,10 +159,26 @@ namespace IFMAMVCDemo.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,Gender,DateOfBirth,TitleId,DateOfJoin,MiddleName,BloodGroup,FatherName,Address,City,State,PinCode,Phone,Email,PanNumber,PassportNo,AadharNo,DrivingLicenseNo")] Member member, List<IFormFile> files)
         {
+            if(member.DateOfBirth > DateTime.Today)
+            {
+                ModelState.AddModelError("DateOfBirth", "Date of Birth cannot be in the future.");
+            }
+            if(member.DateOfJoin > DateTime.Today)
+            {
+                ModelState.AddModelError("DateOfJoin", "Date of Join cannot be in the future.");
+            }
+
             ModelState.Remove("Title");
             ModelState.Remove("Payments");
             ModelState.Remove("Documents");
             ModelState.Remove("Files");
+            if (!ModelState.IsValid)
+            {                
+                ViewData["TitleId"] = new SelectList(_context.Titles, "Id", "TitleName");
+                return View(member);
+            }
+
+          
             if (ModelState.IsValid)
             {
                 using (var transaction = _context.Database.BeginTransaction())
@@ -255,10 +271,26 @@ namespace IFMAMVCDemo.Controllers
                 return NotFound();
             }
 
+            if (member.DateOfBirth > DateTime.Today)
+            {
+                ModelState.AddModelError("DateOfBirth", "Date of Birth cannot be in the future.");
+            }
+            if (member.DateOfJoin > DateTime.Today)
+            {
+                ModelState.AddModelError("DateOfJoin", "Date of Join cannot be in the future.");
+            }
+
             ModelState.Remove("Title");
             ModelState.Remove("Payments");
             ModelState.Remove("Documents");
             ModelState.Remove("Files");
+
+            if (!ModelState.IsValid)
+            {
+                ViewData["TitleId"] = new SelectList(_context.Titles, "Id", "TitleName");
+                return View(member);
+            }
+
             if (ModelState.IsValid)
             {
                 using (var transaction = _context.Database.BeginTransaction())

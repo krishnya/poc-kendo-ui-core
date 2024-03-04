@@ -71,15 +71,36 @@ namespace IFMAMVCDemo.Controllers
         public async Task<IActionResult> Create([Bind("Id,PaymentDate,MemberId,Amount,Description")] Payment payment)
         {            
             var member = _context.Members.Include(m => m.Title.Category).FirstOrDefault(m => m.Id == payment.MemberId);
-
+                        
             if(payment.MemberId <= 0)
             {
                 ModelState.AddModelError("MemberId", "Please select a member.");
-            }else if (member?.Title?.Category != null && payment.Amount > member.Title.Category.Amount)
+            }
+
+            if(payment.PaymentDate > DateTime.Today)
             {
+                ModelState.AddModelError("PaymentDate", "Payment date cannot be in the future.");
+            }
+            
+            if(payment.Amount <= 0)
+            {
+                ModelState.AddModelError("Amount", "Payment amount must be greater than 0.");                                
+            }
+            else 
+            {
+                var totalPayments = _context.Payments.Where(p => p.MemberId == payment.MemberId).Sum(p => p.Amount);
+
+                if (member?.Title?.Category != null && payment.Amount > (member.Title.Category.Amount - totalPayments))
+                {
+                    var balance = member.Title.Category.Amount - totalPayments;
+                    //var message = $"Total payments so far: {totalPayments}, Balance: {balance}, Attempted Payment: {payment.Amount}, Category Amount: {member.Title.Category.Amount}. Total payments cannot exceed Category Amount.";
+                    var message = $"Payment amount can't be more than outstanding balance ({balance}).";                   
+                    ModelState.AddModelError("Amount", message);
+                }               
+            } 
+            
+            if(payment.MemberId >0)
                 ModelState.Remove("Member");
-                ModelState.AddModelError("Amount", "Amount cannot exceed Category Amount");
-            }            
 
             if (!ModelState.IsValid)
             {
@@ -88,6 +109,7 @@ namespace IFMAMVCDemo.Controllers
                 ViewData["MemberId"] = new SelectList(memberList, "Id", "FullName", payment.MemberId);
                 return View(payment);
             }
+
             ModelState.Remove("Member");
             if (ModelState.IsValid)
             {

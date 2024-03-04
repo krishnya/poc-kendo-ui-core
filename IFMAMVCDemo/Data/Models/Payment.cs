@@ -16,6 +16,7 @@ namespace IFMAMVCDemo.Data.Models
         [Required]
         [DataType(DataType.Date)]
         [DisplayName("Payment Date")]
+       // [Range(typeof(DateTime), "1/1/1900", "Today", ErrorMessage = "Payment Date cannot be in the future.")]
         public DateTime PaymentDate { get; set; }
 
         [Required]
