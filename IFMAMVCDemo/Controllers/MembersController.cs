@@ -12,11 +12,13 @@ namespace IFMAMVCDemo.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly ILogger<MembersController> _logger;
+        private readonly IWebHostEnvironment _env;
 
-        public MembersController(ApplicationDbContext context, ILogger<MembersController> logger)
+        public MembersController(ApplicationDbContext context, ILogger<MembersController> logger, IWebHostEnvironment env)
         {
             _context = context;
             _logger = logger;
+            _env = env;
         }
 
         // GET: Members
@@ -195,7 +197,8 @@ namespace IFMAMVCDemo.Controllers
                             foreach (var file in files)
                             {
                                 var fileName = $"{member.Id}_{Path.GetFileName(file.FileName)}";
-                                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\uploads", fileName);
+                                var uploads = Path.Combine(_env.WebRootPath, "uploads");
+                                var filePath = Path.Combine(uploads, fileName);
                                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                                 {
                                     await file.CopyToAsync(fileStream);
@@ -309,7 +312,8 @@ namespace IFMAMVCDemo.Controllers
                                 try
                                 {
                                     var fileName = $"{member.Id}_{Path.GetFileName(file.FileName)}";
-                                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\uploads", fileName);
+                                    var uploads = Path.Combine(_env.WebRootPath, "uploads");
+                                    var filePath = Path.Combine(uploads, fileName);
                                     using (var fileStream = new FileStream(filePath, FileMode.Create))
                                     {
                                         await file.CopyToAsync(fileStream);
