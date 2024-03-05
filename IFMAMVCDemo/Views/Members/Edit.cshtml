@@ -168,7 +168,7 @@
                                     foreach (var document in Model.Documents)
                                     {
                                         <li>
-                                            <a href="~/uploads/@document.FileName">@document.FileName</a>
+                                            <a href="~/uploads/@document.FileName" target="_blank">@document.FileName</a>
                                         </li>
                                     }
                                 }
@@ -176,9 +176,9 @@
                             </div>
                             </div>
                             <div class="col-md-4">
-                            <div class="form-group">
+                            <div class="form-group">                                
                                 <label for="files">Files</label>
-                                <input type="file" multiple class="form-control" />
+                                <input type="file" id="files" name="Files" multiple class="form-control" />
                             </div>
                             </div>
                         </div>
