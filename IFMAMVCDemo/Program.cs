@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +27,15 @@ builder.Host.UseSerilog((hostingContext, loggerConfiguration) => loggerConfigura
     .ReadFrom.Configuration(hostingContext.Configuration)
     .Enrich.FromLogContext()
     .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day));
+
+//// Configure Kestrel
+//builder.WebHost.UseKestrel(options =>
+//{
+//    options.ListenLocalhost(5001, listenOptions =>
+//    {
+//        listenOptions.UseHttps("certificate.pfx", "P@ssw0rd");
+//    });
+//});
 
 var app = builder.Build();
 
@@ -61,7 +72,7 @@ else
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -74,6 +85,20 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 //CreateDbIfNotExists(app);
+
+// Open the URL in the default browser when running in a self-contained deployment
+//if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+//{
+//    Process.Start(new ProcessStartInfo("cmd", $"/c start https://localhost:5001") { CreateNoWindow = true });
+//}
+//else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+//{
+//    Process.Start("xdg-open", "https://localhost:5001");
+//}
+//else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+//{
+//    Process.Start("open", "https://localhost:5001")
+//}
 
 app.Run();
 
